@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <title>Used Cars Near Me</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.css">
+
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/select2.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous" />
+</head>
+
+<body>
+
+       <!-- Header Section Start -->
+       <header class="site-header" id="header">
+        <div class="container">
+           <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="index.html">
+              <img src="images/ucnm.png" class="img-fluid" alt="Used Cars Near Me" title="Used Cars Near Me">
+              </a>
+              <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#websitenavbar" aria-controls="websitenavbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="icon-bar top-bar"></span>
+              <span class="icon-bar middle-bar"></span>
+              <span class="icon-bar bottom-bar"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="websitenavbar">
+                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                       <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="srp.html">New Cars</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="srp.html">Used Cars</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="#">Research</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="#">Locate Auto Dealers</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link">Auto Insights</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="#">
+                       <i class="fa fa-heart-o"></i>
+                       <span data-item="wishlist">0</span>
+                       </a>
+                    </li>
+                 </ul>
+              </div>
+           </nav>
+        </div>
+     </header>
+     <!-- Header Section End -->
+
+    <main class="ares-page-body">
+        <!-- Dealer Ads Start -->
+        <div class="container">
+            <div class="dealerAdsBox text-center d-sm-block d-md-none d-lg-none d-xl-nonecol-sm-12">
+                <div class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="#" target="_blank">
+                                <span><i class="fa fa-info-circle"> </i> Ad</span>
+                                <img src="images/ads/300x50.jpg" class="img-fluid" alt="300x50" class="300x50">
+                            </a>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="#" target="_blank">
+                                <span><i class="fa fa-info-circle"> </i> Ad</span>
+                                <img src="images/ads/300x50.jpg" class="img-fluid" alt="300x50" class="300x50">
+                            </a>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="#" target="_blank">
+                                <span><i class="fa fa-info-circle"> </i> Ad</span>
+                                <img src="images/ads/300x50.jpg" class="img-fluid" alt="300x50" class="300x50">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Dealer Ads End -->
+
+        <!-- Vehicle Inventory Grid Section Start -->
+        <section class="vehicle-grid-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 ares-padding-8">
+                        <div class="vehicle-counting-sorting">
+
+                            <div class="vehicle-inventory-sorting mobile-view-sort">
+                                <select name="sorting" class="form-control">
+                                    <option value="" selected="">Recently Added</option>
+                                    <option value="">Best match</option>
+                                    <option value="">Recently added</option>
+                                    <option value="">Price low to high</option>
+                                    <option value="">Price high to low</option>
+                                    <option value="">Mileage low to high</option>
+                                    <option value="">Year ascending order</option>
+                                    <option value="">Year descending order</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                     
+                    <div class="col-3">
+                        <div class="filters">
+    
+                                <div class="more-filters-list">
+                                    <h3>Search By Body Type</h3>
+    
+                                    <div class="bodytype-filters">
+                                        <div class="check-filter checkBodyStyle">
+                                            <label class="control-label" for="body_type-9">
+                                                <input type="checkbox" name="body_type" id="body_type-9" value="9">
+                                                <label for="body_type-9"></label>
+                                            <span class="d-flex flex-column justify-content-center align-items-center text-center">
+                                                    <img alt="SUV" src="images/suv.svg" width="55"> SUV 
+                                                    <span class="text-secondary">(686)</span>
+                                            </span>
+                                            </label>
+                                        </div>
+    
+                                        <div class="check-filter checkBodyStyle">
+                                            <label class="control-label" for="body_type-8">
+                                                <input type="checkbox" name="body_type" id="body_type-8" value="8">
+                                                <label for="body_type-8"></label>
+                                            <span class="d-flex flex-column justify-content-center align-items-center text-center">
+                                                    <img alt="SUV" src="images/sedan.svg" width="55"> Sedan 
+                                                    <span class="text-secondary">(686)</span>
+                                            </span>
+                                            </label>
+                                        </div>
+    
+                                        <div class="check-filter checkBodyStyle">
+                                            <label class="control-label" for="body_type-7">
+                                                <input type="checkbox" name="body_type" id="body_type-7" value="7">
+                                                <label for="body_type-7"></label>
+                                            <span class="d-flex flex-column justify-content-center align-items-center text-center">
+                                                    <img alt="SUV" src="images/truck.svg" width="55"> Truck 
+                                                    <span class="text-secondary">(676)</span>
+                                            </span>
+                                            </label>
+                                        </div>
+    
+                                        <div class="check-filter checkBodyStyle">
+                                            <label class="control-label" for="body_type-6">
+                                                <input type="checkbox" name="body_type" id="body_type-6" value="6">
+                                                <label for="body_type-6"></label>
+                                            <span class="d-flex flex-column justify-content-center align-items-center text-center">
+                                                    <img alt="SUV" src="images/wagon.svg" width="55"> Wagon 
+                                                    <span class="text-secondary">(666)</span>
+                                            </span>
+                                            </label>
+                                        </div>
+    
+                                        <div class="check-filter checkBodyStyle">
+                                            <label class="control-label" for="body_type-5">
+                                                <input type="checkbox" name="body_type" id="body_type-5" value="5">
+                                                <label for="body_type-5"></label>
+                                            <span class="d-flex flex-column justify-content-center align-items-center text-center">
+                                                    <img alt="SUV" src="images/van.svg" width="55"> Van 
+                                                    <span class="text-secondary">(656)</span>
+                                            </span>
+                                            </label>
+                                        </div>
+    
+                                        <div class="check-filter checkBodyStyle">
+                                            <label class="control-label" for="body_type-4">
+                                                <input type="checkbox" name="body_type" id="body_type-4" value="4">
+                                                <label for="body_type-4"></label>
+                                            <span class="d-flex flex-column justify-content-center align-items-center text-center">
+                                                    <img alt="SUV" src="images/hatchback.svg" width="55"> Hatchback 
+                                                    <span class="text-secondary">(646)</span>
+                                            </span>
+                                            </label>
+                                        </div>
+    
+                                        <div class="check-filter checkBodyStyle">
+                                            <label class="control-label" for="body_type-3">
+                                                <input type="checkbox" name="body_type" id="body_type-3" value="3">
+                                                <label for="body_type-3"></label>
+                                            <span class="d-flex flex-column justify-content-center align-items-center text-center">
+                                                    <img alt="SUV" src="images/coupe.svg" width="55"> Coupe 
+                                                    <span class="text-secondary">(636)</span>
+                                            </span>
+                                            </label>
+                                        </div>
+    
+                                        <div class="check-filter checkBodyStyle">
+                                            <label class="control-label" for="body_type-2">
+                                                <input type="checkbox" name="body_type" id="body_type-2" value="2">
+                                                <label for="body_type-2"></label>
+                                            <span class="d-flex flex-column justify-content-center align-items-center text-center">
+                                                    <img alt="SUV" src="images/unknown.svg" width="55"> Unknown 
+                                                    <span class="text-secondary">(626)</span>
+                                            </span>
+                                            </label>
+                                        </div>
+    
+                                        <div class="check-filter checkBodyStyle">
+                                            <label class="control-label" for="body_type-1">
+                                                <input type="checkbox" name="body_type" id="body_type-1" value="1">
+                                                <label for="body_type-1"></label>
+                                            <span class="d-flex flex-column justify-content-center align-items-center text-center">
+                                                    <img alt="SUV" src="images/convertible.svg" width="55"> Convertible 
+                                                    <span class="text-secondary">(616)</span>
+                                            </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="more-filters-list">
+                                    <h3>Search By Price range</h3>
+                                    <div class="filter-input">
+                                        <div id="miles-range" class="range-slider"></div>
+                                        <div class="d-flex justify-content-center">
+                                            <input type="text" id="minMiles" value="0" readonly />
+                                            <input type="text" id="maxMiles" value="100000" readonly />
+                                        </div>
+                                    </div>
+                                </div>
+                          
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="row">
+                            <div class="col-12 ares-padding-8">
+                                <div class="row vehicleInventoryBox">
+                                        <div class="col-4">
+                                           <div class="vehicleImage">
+                                                <img src="images/acura-img6.jpeg" class="img-fluid" alt="Car" title="Car">
+                                            </div>
+                                       </div>
+                                        <div class="col-8">
+                                               <div class="vehicleTitle">
+                                                    <h3 class="vehicleName">2022 Acura MDX</h3>
+                                                    <h5 class="price-range">$33,900 - $50,232</h5>
+                                                </div>
+                                            <div class="p-2 vehicle-details d-flex">
+                                                <h5 class="body-type flex-fill"><i class="fa fa-car" aria-hidden="true"></i> SUV</h5>
+                                                 <h5 class="range flex-fill"><i class="fa fa-road" aria-hidden="true"></i> <span>300 KM</span></h5>
+                                                 <h5 class="battery-capacity flex-fill"><i class="fa fa-battery-full" aria-hidden="true"></i> <span>30.2kWh</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>        
+                            </div>
+            
+                    </div>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+        <!-- Vehicle Inventory Grid Section End -->
+    </main>
+
+     <!-- Footer start -->
+     <footer class="siteFooter pt-5">
+        <div class="container">
+           <div class="row">
+              <div class="col-xl-4">
+                 <div class="">
+                    <a class="navbar-brand p-0 mb-4" href="#">
+                    <img src="images/ucnm.png" class="img-fluid" alt="logo" title="logo">
+                    </a>
+                    <p>Duis sed odio sit amet nibh vulputate roin .</p>
+                 </div>
+              </div>
+              <div class="col-xl-8 p-xl-0">
+                 <div class="row m-xl-0">
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                       <div class="mb-3">
+                          <h6 class="mb-4">Product</h6>
+                          <ul class="list-style-none footer_list-item">
+                             <li><a href="#">Features</a></li>
+                             <li><a href="#">Security</a></li>
+                             <li><a href="#">Team</a></li>
+                             <li><a href="#">Enterprise</a></li>
+                             <li><a href="#">Customer Stories</a></li>
+                          </ul>
+                       </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                       <div class="mb-3">
+                          <h6 class="mb-4">Platform</h6>
+                          <ul class="list-style-none footer_list-item">
+                             <li><a href="#">Partners</a></li>
+                             <li><a href="#">Team</a></li>
+                             <li><a href="#">Enterprise</a></li>
+                             <li><a href="#">Clients</a></li>
+                          </ul>
+                       </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                       <div class="mb-3">
+                          <h6 class="mb-4">Support</h6>
+                          <ul class="list-style-none footer_list-item">
+                             <li><a href="#">Docs</a></li>
+                             <li><a href="#">Community Fourm</a></li>
+                             <li><a href="#">Professional Services</a></li>
+                             <li><a href="#">Lab</a></li>
+                             <li><a href="#">Status</a></li>
+                          </ul>
+                       </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                       <div class="mb-3">
+                          <h6 class="mb-4">Company</h6>
+                          <ul class="list-style-none footer_list-item">
+                             <li><a href="#">About</a></li>
+                             <li><a href="#">Blog</a></li>
+                             <li><a href="#">Careers</a></li>
+                             <li><a href="#">Social Impact</a></li>
+                          </ul>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div class="footer_secondary mt-5 py-3">
+           <div class="container">
+              <div class="row">
+                 <div class="col-md-6">
+                    <div class="d-flex footer-menu">
+                       <span>© 2021 DKOT, Inc.</span>
+                       <ul class="list-style-none footer_list-item mt-2 mt-sm-0 ml-sm-3">
+                          <li><a href="#" class="mr-3">Terms</a></li>
+                          <li><a href="#" class="mr-3">Privacy</a></li>
+                          <li><a href="#" class="mr-3">Sitemap</a></li>
+                          <li><a href="#" class="mr-3">What is DKOT?</a></li>
+                       </ul>
+                    </div>
+                 </div>
+                 <div class="col-md-6 order-first order-md-last">
+                    <ul class="list-style-none social-links mb-2 mb-md-0">
+                       <li>
+                          <a href="#" class="facebook">
+                          <i class="fa fa-facebook-square"></i>
+                          </a>
+                       </li>
+                       <li>
+                          <a href="#" class="twitter">
+                          <i class="fa fa-twitter"></i>
+                          </a>
+                       </li>
+                       <li>
+                          <a href="#" class="youtube">
+                          <i class="fa fa-youtube-play"></i>
+                          </a>
+                       </li>
+                       <li>
+                          <a href="#" class="linkedin">
+                          <i class="fa fa-linkedin"></i>
+                          </a>
+                       </li>
+                    </ul>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
