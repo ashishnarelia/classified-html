@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <title>Used Cars Near Me</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.css">
+
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/select2.min.css">
+
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/slick-theme.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous" />
+
+</head>
+
+<body>
+
+    <!-- Header Section Start -->
+    <header class="site-header" id="header">
+        <div class="ares-container-mid">
+            <nav class="navbar navbar-expand-lg">
+                <div class="logo-with-location">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/ucnm.png" class="img-fluid" alt="Used Cars Near Me" title="Used Cars Near Me">
+                    </a>
+
+                    <div class="dropdown">
+                        <button type="button" class="btn dropdown-toggle text-capitalize" data-toggle="dropdown">
+                            <img src="images/location.png" class="img-fluid mr-1">los angeles, CA
+                        </button>
+                        <div class="dropdown-menu">
+                            <h6>Shop By Location</h6>
+                            <p class="ares-font-13">Finding cars near you can lower your shipping cost and delivery time.</p>
+
+                            <form>
+                                <label>Search By Zipcode</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="30098" id="zipcode" name="zipcode">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">Update</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#websitenavbar" aria-controls="websitenavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="websitenavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="srp.html">New Cars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="srp.html">Used Cars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Research</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Locate Auto Dealers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Auto Insights</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-heart-o"></i>
+                                <span data-item="wishlist">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <main class="researchPage">
+
+        <section class="research-single-form pt-3 pt-md-4 pb-3 ">
+
+            <div class="ares-container-mid">
+                <div class="d-flex align-items-center">
+
+                    <div class="mr-3 flex-shrink-0">
+                        <h6 class="text-dark">Explore More Models</h6>
+                        <span class="_icon" data-toggle="search">
+                            <img src="./images/research/search.svg" class="img-fluid" />
+                        </span>
+                    </div>
+
+                    <div class="research-form" id="research-form">
+                        <span class="__close" data-toggle="search">
+                            <img src="./images/research/close.svg" class="img-fluid" alt="close">
+                        </span>
+                        <h6 class="__title text-center mb-3">Explore More Models</h6>
+                        <div class="theme-select2-design __form-field">
+                            <select class="search-filter" name="Select Make" data-placeholder="Select Make">
+                                <option value="">Select Make</option>
+                                <option value="Acura">Acura</option>
+                                <option value="AlfaRomeo">Alfa Romeo</option>
+                                <option value="AstonMartin">Aston Martin</option>
+                                <option value="BMW">BMW</option>
+                                <option value="Buick">Buick</option>
+                                <option value="Mazda">Mazda</option>
+                                <option value="Mercedes">Mercedes</option>
+                                <option value="Volvo">Volvo</option>
+                                <option value="Volkswagen">Volkswagen</option>
+                            </select>
+                        </div>
+
+                        <div class="theme-select2-design __form-field">
+                            <select class="search-filter" name="Select Model" data-placeholder="Selelct Model">
+                                <option value="">Select Model</option>
+                                <option value="Acura">Acura</option>
+                                <option value="AlfaRomeo">Alfa Romeo</option>
+                                <option value="AstonMartin">Aston Martin</option>
+                                <option value="BMW">BMW</option>
+                                <option value="Buick">Buick</option>
+                                <option value="Mazda">Mazda</option>
+                                <option value="Mercedes">Mercedes</option>
+                                <option value="Volvo">Volvo</option>
+                                <option value="Volkswagen">Volkswagen</option>
+                            </select>
+                        </div>
+
+                        <div class="__form-field">
+                            <button type="submit" class="themeBtn w-100">
+                                GO
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="research-vehicleInfo">
+
+            <div class="ares-container-mid">
+                <div class="row">
+
+                    <div class="col-lg-8 order-last order-lg-first">
+
+                        <div class="yearGallery">
+
+                            <div class="_img c-pointer" data-toggle="gallery">
+                                <img src="./images/research/honda-accord-2010-8.png" class="img-fluid" alt="Honda" />
+                            </div>
+
+                            <div class="year-slider px-5">
+                                <div class="px-1 px-md-2 pb-2">
+                                    <div class="_modelYear">
+                                        2022
+                                    </div>
+                                </div>
+                                <div class="px-1 px-md-2 pb-2">
+                                    <div class="_modelYear">
+                                        2021
+                                    </div>
+                                </div>
+                                <div class="px-1 px-md-2 pb-2">
+                                    <div class="_modelYear">
+                                        2020
+                                    </div>
+                                </div>
+                                <div class="px-1 px-md-2 pb-2">
+                                    <div class="_modelYear">
+                                        2019
+                                    </div>
+                                </div>
+                                <div class="px-1 px-md-2 pb-2">
+                                    <div class="_modelYear">
+                                        2018
+                                    </div>
+                                </div>
+                                <div class="px-1 px-md-2 pb-2">
+                                    <div class="_modelYear">
+                                        2017
+                                    </div>
+                                </div>
+                                <div class="px-1 px-md-2 pb-2">
+                                    <div class="_modelYear">
+                                        2016
+                                    </div>
+                                </div>
+                                <div class="px-1 px-md-2 pb-2">
+                                    <div class="_modelYear">
+                                        2015
+                                    </div>
+                                </div>
+                                <div class="px-1 px-md-2 pb-2">
+                                    <div class="_modelYear">
+                                        2014
+                                    </div>
+                                </div>
+                                <div class="px-1 px-md-2 pb-2">
+                                    <div class="_modelYear">
+                                        2013
+                                    </div>
+                                </div>
+                                <div class="px-1 px-md-2 pb-2">
+                                    <div class="_modelYear">
+                                        2012
+                                    </div>
+                                </div>
+                                <div class="px-1 px-md-2 pb-2">
+                                    <div class="_modelYear">
+                                        2011
+                                    </div>
+                                </div>
+                                <div class="px-1 px-md-2 pb-2">
+                                    <div class="_modelYear">
+                                        2010
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="--specification mt-5 mb-4">
+                            <div class="researchHeading mb-3">
+                                <h4>Avalon Key Specification</h4>
+                            </div>
+
+                            <div class="border">
+
+                                <div class="_specs">
+                                    <div class="__inner">
+                                        <div class="_img">
+                                            <img src="./images/research/specs/body-type.svg" alt="Body Type" width="50">
+                                        </div>
+                                        <span>Body Type</span>
+                                        <p>Sedan</p>
+                                    </div>
+                                    <div class="__inner">
+                                        <div class="_img">
+                                            <img src="./images/research/specs/sitting.svg" alt="Seating" width="35">
+                                        </div>
+                                        <span>Seating</span>
+                                        <p>5</p>
+                                    </div>
+                                    <div class="__inner">
+                                        <div class="_img">
+                                            <img src="./images/research/specs/horse-power.svg" alt="Horse Power" width="50">
+                                        </div>
+                                        <span>Horse Power</span>
+                                        <p>Front Wheel Drive</p>
+                                    </div>
+                                    <div class="__inner">
+                                        <div class="_img">
+                                            <img src="./images/research/specs/warranty.svg" alt="Basic Warrenty" width="50">
+                                        </div>
+                                        <span>Basic Warrenty</span>
+                                        <p>4 Years</p>
+                                    </div>
+                                    <div class="__inner">
+                                        <div class="_img">
+                                            <img src="./images/research/specs/MPG.svg" alt="MPG" width="35">
+                                        </div>
+                                        <span>MPG</span>
+                                        <p>55/45/76</p>
+                                    </div>
+                                </div>
+
+                                <div class="text-center mb-3">
+                                    <a href="#" class="themeBtn --active">View All Specs</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="--trims mt-5 mb-4">
+                            <div class="researchHeading mb-3">
+                                <h4>2022 AVALON TLX 4DR all trim prices</h4>
+                            </div>
+
+                            <div class="border rounded">
+
+                                <div class="bg-light">
+
+                                    <div class="row py-3 px-2 p-md-4 align-items-center justify-content-between m-0">
+                                        <div class="col-5 col-md-3">
+                                            <div class="">
+                                                <span>TRIM</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="text-right text-md-left">
+                                                <span>PRICE(MSRP)</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-0 d-none d-md-block">
+                                            <div class="text-right">
+                                                <span>COMPARE</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="_trim border-bottom">
+                                    <div class="__header">
+                                        <div class="___title">
+                                            <span>XLE</span>
+                                        </div>
+                                        <div class="___price">
+                                            <p class="mb-0">$37,850</p>
+                                        </div>
+                                    </div>
+                                    <div class="__specs">
+                                        <div class="">
+                                            <a href="./research-specs.html" class="themeBtn --active">
+                                                <span>View Specs</span>
+                                                <svg width="13" height="14" class="ml-1" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m2.673 12.698 7.512-8.266.33 6.893c.026.551.5.981 1.05.955a.996.996 0 0 0 .949-1.043l-.445-9.31A.995.995 0 0 0 11.024.98l-9.31.432a.997.997 0 1 0 .096 1.991l6.894-.315-7.512 8.266c-.37.408-.34 1.043.067 1.413.407.37 1.043.34 1.413-.068Z" fill="#0C6FAD"/></svg>
+                                            </a>
+                                        </div>
+                                        <div class="__compare d-flex">
+                                            <span class="d-inline-block d-md-none text-secondary font-13 mr-1">Add to compare</span>
+                                            <div class="check-filter">
+                                                <label class="control-label" for="avalon-2020-xle">
+                                                    <input type="checkbox" id="avalon-2020-xle" />
+                                                    <label for="avalon-2020-xle"></label>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="_trim border-bottom">
+                                    <div class="__header">
+                                        <div class="___title">
+                                            <span>XLE</span>
+                                        </div>
+                                        <div class="___price">
+                                            <p class="mb-0">$37,850</p>
+                                        </div>
+                                    </div>
+                                    <div class="__specs">
+                                        <div class="">
+                                            <a href="./research-specs.html" class="themeBtn --active">
+                                                <span>View Specs</span>
+                                                <svg width="13" height="14" class="ml-1" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m2.673 12.698 7.512-8.266.33 6.893c.026.551.5.981 1.05.955a.996.996 0 0 0 .949-1.043l-.445-9.31A.995.995 0 0 0 11.024.98l-9.31.432a.997.997 0 1 0 .096 1.991l6.894-.315-7.512 8.266c-.37.408-.34 1.043.067 1.413.407.37 1.043.34 1.413-.068Z" fill="#0C6FAD"/></svg>
+                                            </a>
+                                        </div>
+                                        <div class="__compare d-flex">
+                                            <span class="d-inline-block d-md-none text-secondary font-13 mr-1">Add to compare</span>
+                                            <div class="check-filter">
+                                                <label class="control-label" for="avalon-2020-xle-1">
+                                                    <input type="checkbox" id="avalon-2020-xle-1" />
+                                                    <label for="avalon-2020-xle-1"></label>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="_trim">
+                                    <div class="__header">
+                                        <div class="___title">
+                                            <span>XLE</span>
+                                        </div>
+                                        <div class="___price">
+                                            <p class="mb-0">$37,850</p>
+                                        </div>
+                                    </div>
+                                    <div class="__specs">
+                                        <div class="">
+                                            <a href="./research-specs.html" class="themeBtn --active">
+                                                <span>View Specs</span>
+                                                <svg width="13" height="14" class="ml-1" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m2.673 12.698 7.512-8.266.33 6.893c.026.551.5.981 1.05.955a.996.996 0 0 0 .949-1.043l-.445-9.31A.995.995 0 0 0 11.024.98l-9.31.432a.997.997 0 1 0 .096 1.991l6.894-.315-7.512 8.266c-.37.408-.34 1.043.067 1.413.407.37 1.043.34 1.413-.068Z" fill="#0C6FAD"/></svg>
+                                            </a>
+                                        </div>
+                                        <div class="__compare d-flex">
+                                            <span class="d-inline-block d-md-none text-secondary font-13 mr-1">Add to compare</span>
+                                            <div class="check-filter">
+                                                <label class="control-label" for="avalon-2020-xle-2">
+                                                    <input type="checkbox" id="avalon-2020-xle-2" />
+                                                    <label for="avalon-2020-xle-2"></label>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="text-center mt-2 mb-4">
+                                    <a href="#" class="themeBtn --active">Compare All Trims</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="--comparison mt-5 mb-4">
+                            <div class="researchHeading mb-3">
+                                <h4>Compare</h4>
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-xl-3 col-sm-6 pr-sm-2 mb-4 mb-xl-0">
+                                    <div class="compareBox">
+                                        <div class="_img">
+                                            <div class="check-filter">
+                                                <label class="control-label" for="compare-avalon-1">
+                                                    <input type="checkbox" id="compare-avalon-1" />
+                                                    <label for="compare-avalon-1"></label>
+                                                </label>
+                                            </div>
+                                            <img src="https://storage.googleapis.com/wp-classified/sites/14/2020/03/Acura-MDX-VS-Audi-Q7-cars-1024x576-1.jpg" class="img-fluid" />
+                                        </div>
+                                        <span class="_title">Toyota Avalon vs Toyota Camry</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-3 col-sm-6 px-sm-2 pr-xl-2 pr-sm-3 mb-4 mb-xl-0">
+                                    <div class="compareBox">
+                                        <div class="_img">
+                                            <div class="check-filter">
+                                                <label class="control-label" for="compare-avalon-2">
+                                                    <input type="checkbox" id="compare-avalon-2" />
+                                                    <label for="compare-avalon-2"></label>
+                                                </label>
+                                            </div>
+                                            <img src="https://storage.googleapis.com/wp-classified/sites/14/2020/03/Acura-MDX-VS-Audi-Q7-cars-1024x576-1.jpg" class="img-fluid" />
+                                        </div>
+                                        <span class="_title">Toyota Avalon vs Toyota Camry</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-3 col-sm-6 px-sm-2 pl-xl-2 pl-sm-3 mb-4 mb-xl-0">
+                                    <div class="compareBox">
+                                        <div class="_img">
+                                            <div class="check-filter">
+                                                <label class="control-label" for="compare-avalon-3">
+                                                    <input type="checkbox" id="compare-avalon-3" />
+                                                    <label for="compare-avalon-3"></label>
+                                                </label>
+                                            </div>
+                                            <img src="https://storage.googleapis.com/wp-classified/sites/14/2020/03/Acura-MDX-VS-Audi-Q7-cars-1024x576-1.jpg" class="img-fluid" />
+                                        </div>
+                                        <span class="_title">Toyota Avalon vs Toyota Camry</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-3 col-sm-6 pl-sm-2">
+                                    <div class="compareBox addComparison">
+                                        <div>
+                                            <p class="mb-2">Add / Search</p>
+                                            <span>Car Image to Compare</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="text-center mt-3">
+                                <a href="#" class="themeBtn --active">Compare</a>
+                            </div>
+
+                        </div>
+
+                        <div class="--news mt-5 mb-4">
+                            <div class="researchHeading mb-3">
+                                <h4>News on Toyota Avalon 2022</h4>
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-sm-6 pr-sm-2">
+                                    <div class="newsBlock border mb-4">
+                                        <div class="_img">
+                                            <img src="./images/research/2021_toyota_avalon_sedan_limited.jpg" />
+                                        </div>
+                                        <div class="_details">
+                                            <div class="__author mb-2">
+                                                <img src="https://cheerup.theme-sphere.com/wp-content/uploads/2016/05/bella-doe.jpg" class="img-fluid" alt="Bella Doe" width="30" height="30">
+                                                <span>Review by Bella Doe | Jan 19, 2022</span>
+                                            </div>
+                                            <div class="_title mb-3">
+                                                <h6>These are the 5 Most Subversive Cars for the Hipster’s Dream Garage</h6>
+                                            </div>
+                                            <div class="_desc">
+                                                <p class=" mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porta nulla vel enim fringilla sagittis. Donec quis quam...</p>
+                                                <a href="#">Read More</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 pl-sm-2">
+                                    <div class="newsBlock border">
+                                        <div class="_img">
+                                            <img src="./images/research/2021_toyota_avalon_sedan_limited.jpg" />
+                                        </div>
+                                        <div class="_details">
+                                            <div class="__author mb-2">
+                                                <img src="https://cheerup.theme-sphere.com/wp-content/uploads/2016/05/bella-doe.jpg" class="img-fluid" alt="Bella Doe" width="30" height="30">
+                                                <span>Review by Bella Doe | Jan 19, 2022</span>
+                                            </div>
+                                            <div class="_title mb-3">
+                                                <h6>These are the 5 Most Subversive Cars for the Hipster’s Dream Garage</h6>
+                                            </div>
+                                            <div class="_desc">
+                                                <p class=" mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porta nulla vel enim fringilla sagittis. Donec quis quam...</p>
+                                                <a href="#">Read More</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="text-center mt-3">
+                                <a href="#" class="themeBtn --active">Read All</a>
+                            </div>
+
+                        </div>
+
+                        <div class="--customerReviews border mt-5 mb-5">
+                            <div class="_header p-3 p-md-4">
+                                <div class="__rating">
+                                    <div class="mr-3">
+                                        <i class="fa fa-star mr-1"></i>
+                                        <strong>4.7</strong>/<span>5</span>
+                                    </div>
+                                    <div>
+                                        (24 Rating) <span class="d-inline-block mx-1 text-secondary">|</span> 4 Reviews
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="themeBtn --active" data-target="#research-writeReview" data-toggle="modal">Write a Review</a>
+                                </div>
+                            </div>
+
+                            <div class="ratingDesc p-3">
+                                <div class="">
+                                    <svg viewBox="0 0 36 36" class="circular-chart blue">
+										<path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+										<path class="circle" stroke-dasharray="90, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+										<text x="18" y="22.50" class="percentage">4.9</text>
+									</svg>
+                                    <p>Exterior</p>
+                                </div>
+                                <div class="">
+                                    <svg viewBox="0 0 36 36" class="circular-chart blue">
+										<path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+										<path class="circle" stroke-dasharray="70, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+										<text x="18" y="22.50" class="percentage">4.6</text>
+									</svg>
+                                    <p>Comfort</p>
+                                </div>
+                                <div class="">
+                                    <svg viewBox="0 0 36 36" class="circular-chart blue">
+										<path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+										<path class="circle" stroke-dasharray="45, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+										<text x="18" y="22.50" class="percentage">4.5</text>
+									</svg>
+                                    <p>Performance</p>
+                                </div>
+                                <div class="">
+                                    <svg viewBox="0 0 36 36" class="circular-chart blue">
+										<path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+										<path class="circle" stroke-dasharray="45, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+										<text x="18" y="22.50" class="percentage">4.7</text>
+									</svg>
+                                    <p>Fuel Economy</p>
+                                </div>
+                                <div class="">
+                                    <svg viewBox="0 0 36 36" class="circular-chart blue">
+										<path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+										<path class="circle" stroke-dasharray="45, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+										<text x="18" y="22.50" class="percentage">4.9</text>
+									</svg>
+                                    <p>Value for Money</p>
+                                </div>
+                            </div>
+
+                            <div class="p-3 p-md-4 border-top border-bottom">
+                                <p class="mb-0">A Few Reviews May Help the Consumers</p>
+                            </div>
+
+                            <div>
+
+                                <div class="customer-review">
+                                    <div class="_overview mb-3">
+                                        <div class="_img">
+                                            <img src="images/research/reviews/jenn.png" height="55" width="55" class="img-fluid flex-shrink-0" alt="Jim White">
+                                        </div>
+                                        <div>
+                                            <div class="__inner mb-1">
+                                                <div class="__rating mr-3">
+                                                    <i class="fa fa-star active"></i>
+                                                    <i class="fa fa-star active"></i>
+                                                    <i class="fa fa-star active"></i>
+                                                    <i class="fa fa-star active"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                                <h5>Nicest car I have ever owned</h5>
+                                            </div>
+                                            <div>
+                                                <span>By</span>
+                                                <a href="#">Victoria</a>
+                                                <span> | May 19, 2018</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-body text-secondary">
+                                        <div class="_desc">
+                                            <span class="colorPrimary">2016 Acura TLX 4dr Sdn FWD with Technology Package (2.4L)</span>
+                                            <p class="mt-1 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing, sbore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. exercitation ullamco laboris nisi ... <a href="#">read more</a></p>
+                                        </div>
+                                        <div class="_footer">
+                                            <div class="">
+                                                <a href="#">Reply</a>
+                                                <a href="#" class="text-secondary ml-3">Was this review helpful?</a>
+                                            </div>
+                                            <div class="__reactions">
+                                                <div class="mr-3 __inner">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                                                        <path d="M5.5 19H2.8A1.8 1.8 0 0 1 1 17.2v-6.3a1.8 1.8 0 0 1 1.8-1.8h2.7m6.3-1.8V3.7A2.7 2.7 0 0 0 9.1 1L5.5 9.1V19h10.152a1.8 1.8 0 0 0 1.8-1.53l1.242-8.1a1.802 1.802 0 0 0-1.8-2.07H11.8Z" stroke="#191919" stroke-opacity=".5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    <span>(13)</span>
+                                                </div>
+                                                <div class="__inner">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                                                        <path d="M5.5 1H2.8A1.8 1.8 0 0 0 1 2.8v6.3a1.8 1.8 0 0 0 1.8 1.8h2.7m6.3 1.8v3.6A2.7 2.7 0 0 1 9.1 19l-3.6-8.1V1h10.152a1.8 1.8 0 0 1 1.8 1.53l1.242 8.1a1.802 1.802 0 0 1-1.8 2.07H11.8Z" stroke="#191919" stroke-opacity=".5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    <span>(1)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="py-2 py-md-3 px-3 px-md-4 border-top">
+                                <a href="#">Read All Reviews</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="--vehicleOverview">
+
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home">Overview</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile">Photos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="./research-specs.html">Specs</a>
+                                </li>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">More</a>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#">Compare</a>
+                                        <a class="dropdown-item" href="#">Review</a>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="_title">
+                                <h1>2022 Toyota Avalon</h1>
+                            </div>
+                            <div class="_price mt-3 mt-md-4">
+                                <p class=" mb-0">MSRP:</p>
+                                <h2>$32,645 - $35,645</h2>
+                            </div>
+
+                            <div class="_cta mt-4">
+                                <a href="#" class="themeBtn mb-md-4" data-toggle="modal" data-target="#research-leadForm">Buy Toyota Avalon</a>
+                                <a href="#" class="themeBtn active">Check July Offers</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer Section Start -->
+    <footer class="site-footer">
+        <div class="pre-footer">
+            <div class="ares-container-mid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 text-center">
+                        <div class="dealer-social">
+                            <ul>
+                                <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="srp.html">Used Cars</a></li>
+                                <li><a href="srp.html">New Cars</a></li>
+                                <li><a href="#">Research</a></li>
+                                <li><a href="#">Blogs</a></li>
+                                <li><a href="#">Locate Auto Dealers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="termsCondition-footer">
+            <div class="ares-container-mid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <p>All vehicles shown on this website are offered for sale by authorized dealers. By accessing this website, you agree to the Terms of Service and Privacy Policy.</p>
+
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Do Not Sell My Personal Information</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright-footer">
+            <div class="ares-container-mid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <p class="footer-copyright">© and ™ Used Cars Near Me, Inc. All rights reserved. Vehicle photos © Evox Images © VinQuery Solutions, © VinAudit, © ip-api.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Lead Form -->
+    <div class="modal research-leadForm" id="research-leadForm">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-body">
+
+                    <div class="tab-content" id="myTabContent">
+
+                        <div class="tab-pane fade show active" id="selectDealers">
+
+                            <div class="_title text-center mb-2">
+                                <h5>Select dealers near 39510</h5>
+                            </div>
+                            <div class="dealersList">
+
+                                <div class="checkDealer">
+
+                                    <div>
+                                        <p class="mb-0">Brite BMW</p>
+                                        <span>Sector 38A (New York)</span>
+                                    </div>
+
+                                    <div class="flex-shrink-0">
+                                        <div class="check-filter">
+                                            <label class="control-label" for="brit-bmw">
+                                                <input type="checkbox" id="brit-bmw" />
+                                                <label for="brit-bmw"></label>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="checkDealer">
+
+                                    <div>
+                                        <p class="mb-0">Brite BMW</p>
+                                        <span>Sector 38A (New York)</span>
+                                    </div>
+
+                                    <div class="flex-shrink-0">
+                                        <div class="check-filter">
+                                            <label class="control-label" for="brit-bmw-1">
+                                                <input type="checkbox" id="brit-bmw-1" />
+                                                <label for="brit-bmw-1"></label>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="checkDealer">
+
+                                    <div>
+                                        <p class="mb-0">Brite BMW</p>
+                                        <span>Sector 38A (New York)</span>
+                                    </div>
+
+                                    <div class="flex-shrink-0">
+                                        <div class="check-filter">
+                                            <label class="control-label" for="brit-bmw-2">
+                                                <input type="checkbox" id="brit-bmw-2" />
+                                                <label for="brit-bmw-2"></label>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="checkDealer">
+
+                                    <div>
+                                        <p class="mb-0">Brite BMW</p>
+                                        <span>Sector 38A (New York)</span>
+                                    </div>
+
+                                    <div class="flex-shrink-0">
+                                        <div class="check-filter">
+                                            <label class="control-label" for="brit-bmw-3">
+                                                <input type="checkbox" id="brit-bmw-3" />
+                                                <label for="brit-bmw-3"></label>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="checkDealer">
+
+                                    <div>
+                                        <p class="mb-0">Brite BMW</p>
+                                        <span>Sector 38A (New York)</span>
+                                    </div>
+
+                                    <div class="flex-shrink-0">
+                                        <div class="check-filter">
+                                            <label class="control-label" for="brit-bmw-4">
+                                                <input type="checkbox" id="brit-bmw-4" />
+                                                <label for="brit-bmw-4"></label>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="text-center mt-4">
+                                <button type="button" data-toggle="tab" data-target="#personalInfo" class="themeBtn">Submit</button>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="personalInfo">
+                            <div class="pt-3">
+                                <div class="row m-0">
+                                    <div class="col-md-6 pl-md-0 pr-md-2">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="First Name" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 pr-md-0 pl-md-2">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Last Name" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 pl-md-0 pr-md-2">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Contact Number" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 pr-md-0 pl-md-2">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Email Address" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <button type="button" data-dismiss="modal" class="themeBtn">Request Quote</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Write a Review -->
+    <div class="modal research-writeReview" id="research-writeReview">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-body">
+
+                    <div class="tab-content">
+
+                        <div class="tab-pane fade show active" id="review-rating">
+                            <div class="_title mb-4">
+                                <h5>SUBMIT YOUR REVIEW</h5>
+                            </div>
+                            <div class="_addRating">
+
+                                <div class="__inner">
+                                    <p>Exterior</p>
+                                    <div class="d-flex">
+                                        <div class="__rating mr-4">
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div>
+                                            <span>3/5</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="__inner">
+                                    <p>Comfort</p>
+                                    <div class="d-flex">
+                                        <div class="__rating mr-4">
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div>
+                                            <span>3/5</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="__inner">
+                                    <p>Performance</p>
+                                    <div class="d-flex">
+                                        <div class="__rating mr-4">
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div>
+                                            <span>3/5</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="__inner">
+                                    <p>Fuel Economy</p>
+                                    <div class="d-flex">
+                                        <div class="__rating mr-4">
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div>
+                                            <span>3/5</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="__inner">
+                                    <p>Value for Money</p>
+                                    <div class="d-flex">
+                                        <div class="__rating mr-4">
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div>
+                                            <span>3/5</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-group mt-4">
+                                <textarea class="form-control p-3" rows="7" placeholder="Share your experience"></textarea>
+                            </div>
+                            <div class="text-center mt-4">
+                                <button type="button" data-toggle="tab" data-target="#review-personalInfo" class="themeBtn">SUBMIT</button>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="review-personalInfo">
+                            <div class="">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Full Name" />
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Last Name" />
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="email" placeholder="Email ID" />
+                                </div>
+                            </div>
+                            <div class="text-center mt-4">
+                                <button type="button" data-dismiss="modal" class="themeBtn">SUBMIT</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="researchGallerySlider" id="researchGallerySlider">
+
+        <div class="ares-container-mid">
+
+            <button type="button" class="close c-pointer" data-toggle="gallery">
+                <i class="fa fa-angle-left"></i>
+                <span>Back</span>
+            </button>
+
+            <div class="pt-5">
+
+                <ul class="nav nav-pills mb-3" id="pills-tab">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-all-tab" data-toggle="pill" data-target="#gallery-all">All</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="gallery-interior-tab" data-toggle="pill" data-target="#gallery-interior">Interior</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="gallery-exterior-tab" data-toggle="pill" data-target="#gallery-exterior">Exterior</button>
+                    </li>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="gallery-360-tab" data-toggle="pill" data-target="#gallery-360">360</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="gallery-tabContent">
+                    <div class="tab-pane fade show active" id="gallery-all">
+
+                        <div>
+                            <div class="yearGallery galleryCarousel" id="galleryCarousel">
+
+                                <div>
+                                    <div class="_img">
+                                        <img src="images/gallery/toyota-prius-2019-9.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="_img">
+                                        <img src="images/gallery/toyota-prius-2019-1.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="_img">
+                                        <img src="images/gallery/toyota-prius-2019-16.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="_img">
+                                        <img src="images/gallery/toyota-prius-2019-27.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="_img">
+                                        <img src="images/gallery/toyota-prius-2019-41.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="galleryCarousel-nav mx-n1 ">
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-1.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-16.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-27.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-41.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-9.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-1.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-16.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-27.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-41.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-9.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-1.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-16.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-27.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-41.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-9.png" class="img-fluid" alt="slide" /></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="gallery-interior">
+                        <div>
+                            <div class="yearGallery galleryCarousel" id="galleryCarousel">
+
+                                <div>
+                                    <div class="_img">
+                                        <img src="images/gallery/toyota-prius-2019-1.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="_img">
+                                        <img src="images/gallery/toyota-prius-2019-16.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="_img">
+                                        <img src="images/gallery/toyota-prius-2019-27.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="_img">
+                                        <img src="images/gallery/toyota-prius-2019-41.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="_img">
+                                        <img src="images/gallery/toyota-prius-2019-9.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="galleryCarousel-nav mx-n1 ">
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-1.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-16.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-27.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-41.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-9.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-1.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-16.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-27.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-41.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-9.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-1.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-16.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-27.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-41.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-9.png" class="img-fluid" alt="slide" /></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="gallery-exterior">
+                        <div>
+                            <div class="yearGallery galleryCarousel" id="galleryCarousel">
+
+                                <div>
+                                    <div class="_img">
+                                        <img src="images/gallery/toyota-prius-2019-16.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="_img">
+                                        <img src="images/gallery/toyota-prius-2019-1.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="_img">
+                                        <img src="images/gallery/toyota-prius-2019-27.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="_img">
+                                        <img src="images/gallery/toyota-prius-2019-41.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="_img">
+                                        <img src="images/gallery/toyota-prius-2019-9.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="galleryCarousel-nav mx-n1 ">
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-1.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-16.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-27.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-41.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-9.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-1.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-16.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-27.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-41.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-9.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-1.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-16.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-27.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-41.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-9.png" class="img-fluid" alt="slide" /></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="gallery-360">
+                        <div>
+                            <div class="yearGallery galleryCarousel" id="galleryCarousel">
+
+                                <div>
+                                    <div class="_img">
+                                        <img src="images/gallery/toyota-prius-2019-27.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="_img">
+                                        <img src="images/gallery/toyota-prius-2019-1.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="_img">
+                                        <img src="images/gallery/toyota-prius-2019-16.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="_img">
+                                        <img src="images/gallery/toyota-prius-2019-41.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="_img">
+                                        <img src="images/gallery/toyota-prius-2019-9.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="galleryCarousel-nav mx-n1 ">
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-1.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-16.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-27.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-41.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-9.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-1.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-16.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-27.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-41.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-9.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-1.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-16.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-27.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-41.png" class="img-fluid" alt="slide" /></div>
+                                <div class="p-1"><img src="./images/gallery/toyota-prius-2019-9.png" class="img-fluid" alt="slide" /></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

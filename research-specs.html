@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <title>Used Cars Near Me</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/select2.min.css">
+
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/slick-theme.css">
+
+    <!-- Jquery UI -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous" />
+
+</head>
+
+<body>
+
+    <!-- Header Section Start -->
+    <header class="site-header" id="header">
+        <div class="ares-container-mid">
+            <nav class="navbar navbar-expand-lg">
+                <div class="logo-with-location">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/ucnm.png" class="img-fluid" alt="Used Cars Near Me" title="Used Cars Near Me">
+                    </a>
+
+                    <div class="dropdown">
+                        <button type="button" class="btn dropdown-toggle text-capitalize" data-toggle="dropdown">
+                            <img src="images/location.png" class="img-fluid mr-1">los angeles, CA
+                        </button>
+                        <div class="dropdown-menu">
+                            <h6>Shop By Location</h6>
+                            <p class="ares-font-13">Finding cars near you can lower your shipping cost and delivery time.</p>
+
+                            <form>
+                                <label>Search By Zipcode</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="30098" id="zipcode" name="zipcode">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">Update</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#websitenavbar" aria-controls="websitenavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="websitenavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="srp.html">New Cars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="srp.html">Used Cars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Research</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Locate Auto Dealers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Auto Insights</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-heart-o"></i>
+                                <span data-item="wishlist">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <main class="researchPage ">
+        <section class="research-single-form pt-3 pb-3 ">
+
+            <div class="ares-container-mid">
+                <div class="d-flex align-items-center">
+
+                    <div class="mr-3 flex-shrink-0">
+                        <h6 class="text-dark">Explore More Models</h6>
+                        <span class="_icon" data-toggle="search">
+                            <img src="./images/research/search.svg" class="img-fluid" />
+                        </span>
+                    </div>
+
+                    <div class="research-form" id="research-form">
+                        <span class="__close" data-toggle="search">
+                            <img src="./images/research/close.svg" class="img-fluid" alt="close">
+                        </span>
+                        <h6 class="__title text-center mb-3">Explore More Models</h6>
+                        <div class="theme-select2-design __form-field">
+                            <select class="search-filter" name="Select Make" data-placeholder="Select Make">
+                                <option value="">Select Make</option>
+                                <option value="Acura">Acura</option>
+                                <option value="AlfaRomeo">Alfa Romeo</option>
+                                <option value="AstonMartin">Aston Martin</option>
+                                <option value="BMW">BMW</option>
+                                <option value="Buick">Buick</option>
+                                <option value="Mazda">Mazda</option>
+                                <option value="Mercedes">Mercedes</option>
+                                <option value="Volvo">Volvo</option>
+                                <option value="Volkswagen">Volkswagen</option>
+                            </select>
+                        </div>
+
+                        <div class="theme-select2-design __form-field">
+                            <select class="search-filter" name="Select Model" data-placeholder="Selelct Model">
+                                <option value="">Select Model</option>
+                                <option value="Acura">Acura</option>
+                                <option value="AlfaRomeo">Alfa Romeo</option>
+                                <option value="AstonMartin">Aston Martin</option>
+                                <option value="BMW">BMW</option>
+                                <option value="Buick">Buick</option>
+                                <option value="Mazda">Mazda</option>
+                                <option value="Mercedes">Mercedes</option>
+                                <option value="Volvo">Volvo</option>
+                                <option value="Volkswagen">Volkswagen</option>
+                            </select>
+                        </div>
+
+                        <div class="__form-field">
+                            <button type="submit" class="ares-themeBtn w-100">
+                                GO
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="research-vehicleInfo">
+
+            <div class="ares-container-mid">
+                <div class="row">
+
+                    <div class="col-lg-8">
+
+                        <div class="yearGallery">
+
+                            <div class="_img">
+                                <img src="./images/research/honda-accord-2010-8.png" class="img-fluid" alt="Honda" />
+                            </div>
+
+                            <div class="research-single-form">
+                                <div class="research-form">
+
+                                    <div class="selectTrim">
+                                        <div class="theme-select2-design __form-field">
+                                            <select class="search-filter" name="Select Make" data-placeholder="Select Trim">
+                                                <option value="">Select Trim</option>
+                                                <option value="Acura">ILX</option>
+                                                <option value="AlfaRomeo">TLX</option>
+                                                <option value="AstonMartin">RSX</option>
+                                                <option value="AstonMartin">MDX</option>
+                                                <option value="AstonMartin">RDX</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="--specification mt-5 mb-4 px-3">
+                            <div class="researchHeading mb-3 mx-n3">
+                                <h4>Vehicle Overview</h4>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Price</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">$32,645*</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Year</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">2022</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Make</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Toyota</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Model</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Avalon</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Trim</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Avalon Hybrid Limited FWD (Natl)</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Classification</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Mid-size car</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="--specification mt-5 mb-4 px-3">
+                            <div class="researchHeading mb-3 mx-n3">
+                                <h4>Engine and Transmission</h4>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Engine Type and Required Fuel</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Gas/Electric I-4</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Displacement (liters/cubic inches)</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">2.5 L/152</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Maximum Horsepower @ RPM</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">215 @ 5700</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Maximum Torque @ RPM</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">163 @ 3600</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Transmission Description</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">CVT w/OD</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Number of Transmission Speeds</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">1</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Drivetrain</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Front Wheel Drive</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="--specification mt-5 mb-4 px-3">
+                            <div class="researchHeading mb-3 mx-n3">
+                                <h4>Milage, Fuel and Range</h4>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">EPA Fuel Economy, combined/city/highway (mpg)</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">43 / 43 / 43</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">EPA Fuel Economy Equivalent (for hybrid and electric vehicles), combined/city/highway (MPGe)</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">N/A / N/A / N/A</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">CO2 Emissions, 15K mi/year (tons)</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">4.1</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Range, city/highway (miles)</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">567.60 / 567.60</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Fuel Capacity / Gas Tank Size</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">13.2</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Aux Fuel Tank Capacity (gallons)</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">1</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Fuel System</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Port / Direct Injection</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="--specification mt-5 mb-4 px-3">
+                            <div class="researchHeading mb-3 mx-n3">
+                                <h4>Milage, Fuel and Range</h4>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">EPA Fuel Economy, combined/city/highway (mpg)</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">43 / 43 / 43</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">EPA Fuel Economy Equivalent (for hybrid and electric vehicles), combined/city/highway (MPGe)</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">N/A / N/A / N/A</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">CO2 Emissions, 15K mi/year (tons)</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">4.1</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Range, city/highway (miles)</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">567.60 / 567.60</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Fuel Capacity / Gas Tank Size</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">13.2</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Aux Fuel Tank Capacity (gallons)</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">1</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Fuel System</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Port / Direct Injection</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="--specification mt-5 mb-4 px-3">
+                            <div class="researchHeading mb-3 mx-n3">
+                                <h4>Steering, Suspension and Brakes</h4>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Steering Type</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Rack-Pinion</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Turning Diameter / Radius, curb to curb (feet)</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">38.7</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Front Suspension Type</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Strut</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Rear Suspension Type</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Multi-Link</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Brake Type</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">4-Wheel Disc</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Anti-Lock-Braking System</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">4-Wheel</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Fuel System</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Port / Direct Injection</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="--specification mt-5 mb-4 px-3">
+                            <div class="researchHeading mb-3 mx-n3">
+                                <h4>Wheels and Tires </h4>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Front Wheel Size (inches)</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">18 X 8</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Front Wheel Material</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Aluminum</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Front Tire Size</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">P235/45VR18</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Rear Wheel Size (inches)</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">18 X 8</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Rear Tire Size</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">P235/45VR18</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Rear Wheel Material</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Aluminum</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Spare Wheel Size (inches)</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Compact</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Spare Wheel Material</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Steel</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Spare Tire Size</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Compact</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="--specification mt-5 mb-4 px-3">
+                            <div class="researchHeading mb-3 mx-n3">
+                                <h4>Exterior Dimensions, Interior Dimensions & Capacity</h4>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Wheelbase (inches)</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">113</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Length (inches)</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">195.9</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Width, without mirrors (inches)</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">72.8</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Height (inches)</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">56.5</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Minimum Ground Clearance (inches)</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">5.3</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Passenger / Seating Capacity</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">5</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Second Row Leg Room (inches)</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">40.4</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Second Row Shoulder Room (inches)</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">57.1</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Second Row Hip Room (inches)</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">54.3</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Trunk Space (cubic feet)</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">57.1</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">Base Curb Weight (pounds)</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-6">
+                                    <div class="pr-2 py-3 p-md-3">
+                                        <p class="mb-0">5434</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="--specification mt-5 mb-4 px-3">
+                            <div class="researchHeading mb-3 mx-n3">
+                                <h4>Infortainment</h4>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <p class="mb-0 px-0 py-3 p-md-3">Radio: Premium Audio w/Dynamic Navigation -inc: 14 JBL speakers including a subwoofer and amplifier</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <p class="mb-0 px-0 py-3 p-md-3">touchscreen, USB media port, Bluetooth hands-free phone capability and music streaming, Android Auto</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <p class="mb-0 px-0 py-3 p-md-3">Apple CarPlay, Amazon Alexa compatibility, SirusXM w/3-month All Access trial, Safety Connect w/1-year trial, Service Connect w/10-year trial, Remote Connect w/1-year trial, Wi-Fi Connect w/up to 2GB within 3-month
+                                        trial, Destination Assist w/1-year trial and 3-year Dynamic Navigation trial|Radio w/Seek-Scan, Clock, Speed Compensated Volume Control, Aux Audio Input Jack, Steering Wheel Controls and Radio Data System|Window
+                                        Grid Antenna|Digital Signal Processor|2 LCD Monitors In The Front|Navtraffic Real-Time Traffic Display</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="--specification mt-5 mb-4 px-3">
+                            <div class="researchHeading mb-3 mx-n3">
+                                <h4>Interior</h4>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <p class="mb-0 px-0 py-3 p-md-3">Radio: Premium Audio w/Dynamic Navigation -inc: 14 JBL speakers including a subwoofer and amplifier</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <p class="mb-0 px-0 py-3 p-md-3">touchscreen, USB media port, Bluetooth hands-free phone capability and music streaming, Android Auto</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <p class="mb-0 px-0 py-3 p-md-3">Apple CarPlay, Amazon Alexa compatibility, SirusXM w/3-month All Access trial, Safety Connect w/1-year trial, Service Connect w/10-year trial, Remote Connect w/1-year trial, Wi-Fi Connect w/up to 2GB within 3-month
+                                        trial, Destination Assist w/1-year trial and 3-year Dynamic Navigation trial|Radio w/Seek-Scan, Clock, Speed Compensated Volume Control, Aux Audio Input Jack, Steering Wheel Controls and Radio Data System|Window
+                                        Grid Antenna|Digital Signal Processor|2 LCD Monitors In The Front|Navtraffic Real-Time Traffic Display</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 order-first order-lg-last">
+                        <div class="--vehicleOverview">
+
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link " id="pills-home-tab" data-toggle="pill" href="#pills-home">Overview</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile">Photos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="pills-contact-tab" data-toggle="pill" href="./research-specs.html">Specs</a>
+                                </li>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">More</a>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="_title">
+                                <h1>2022 Toyota Avalon</h1>
+                            </div>
+                            <div class="_price mt-4">
+                                <p class=" mb-0">MSRP:</p>
+                                <h2>$32,645 - $35,645</h2>
+                            </div>
+
+                            <div class="_cta mt-4">
+                                <a href="#" class="themeBtn w-100 mb-md-4">Buy Toyota Avalon</a>
+                                <a href="#" class="themeBtn w-100 active">Check July Offers</a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer Section Start -->
+    <footer class="site-footer">
+        <div class="pre-footer">
+            <div class="ares-container-mid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 text-center">
+                        <div class="dealer-social">
+                            <ul>
+                                <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="srp.html">Used Cars</a></li>
+                                <li><a href="srp.html">New Cars</a></li>
+                                <li><a href="#">Research</a></li>
+                                <li><a href="#">Blogs</a></li>
+                                <li><a href="#">Locate Auto Dealers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="termsCondition-footer">
+            <div class="ares-container-mid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <p>All vehicles shown on this website are offered for sale by authorized dealers. By accessing this website, you agree to the Terms of Service and Privacy Policy.</p>
+
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Do Not Sell My Personal Information</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright-footer">
+            <div class="ares-container-mid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <p class="footer-copyright">© and ™ Used Cars Near Me, Inc. All rights reserved. Vehicle photos © Evox Images © VinQuery Solutions, © VinAudit, © ip-api.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

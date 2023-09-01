@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <title>Used Cars Near Me</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.css">
+
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/select2.min.css">
+
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/slick-theme.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous" />
+
+</head>
+
+<body>
+
+    <!-- Header Section Start -->
+    <header class="site-header" id="header">
+        <div class="ares-container-mid">
+            <nav class="navbar navbar-expand-lg">
+                <div class="logo-with-location">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/ucnm.png" class="img-fluid" alt="Used Cars Near Me" title="Used Cars Near Me">
+                    </a>
+
+                    <div class="dropdown">
+                        <button type="button" class="btn dropdown-toggle text-capitalize" data-toggle="dropdown">
+                            <img src="images/location.png" class="img-fluid mr-1">los angeles, CA
+                        </button>
+                        <div class="dropdown-menu">
+                            <h6>Shop By Location</h6>
+                            <p class="ares-font-13">Finding cars near you can lower your shipping cost and delivery time.</p>
+
+                            <form>
+                                <label>Search By Zipcode</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="30098" id="zipcode" name="zipcode">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">Update</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#websitenavbar" aria-controls="websitenavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="websitenavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="srp.html">New Cars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="srp.html">Used Cars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Research</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Locate Auto Dealers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Auto Insights</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-heart-o"></i>
+                                <span data-item="wishlist">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Sell your Car Description Section Start -->
+    <section class="sell-carDesc-section">
+        <div class="ares-container-mid">
+            <div class="form-wizard">
+                <form action="" method="post" role="form">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-wizard-header">
+                                <ul class="list-unstyled form-wizard-steps clearfix">
+                                    <li class="active"><span>1</span>Vehicle Details</li>
+                                    <li class=""><span>2</span>Vehicle Condition</li>
+                                    <li class=""><span>3</span>Liabilities</li>
+                                    <li class=""><span>4</span>Contact Info</li>
+                                    <li class=""><span>5</span>Select Dealers</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 sell-carDesc-border">
+                            <div class="sell-carDesc-Details">
+                                <div class="sell-carDesc-img">
+                                    <img src="images/sell-car/2018_acura_mdx.png" class="img-fluid" alt="Acura MDX" title="Acura MDX">
+                                    <h1>2018 Acura MDX</h1>
+                                </div>
+                                <div class="sell-carDesc-list">
+                                    <ul>
+                                        <li>
+                                            <span class="sell-carDesc-type">Trim</span>
+                                            <span class="sell-carDesc-detail">9- Spd AT SH-AWD w/Advance and Entertainment</span>
+                                        </li>
+                                        <li>
+                                            <span class="sell-carDesc-type">Style</span>
+                                            <span class="sell-carDesc-detail">Sports Utility 4-DR</span>
+                                        </li>
+                                        <li>
+                                            <span class="sell-carDesc-type">Engine</span>
+                                            <span class="sell-carDesc-detail">3.5L V6 SOHC 24</span>
+                                        </li>
+                                        <li>
+                                            <span class="sell-carDesc-type">Transmission</span>
+                                            <span class="sell-carDesc-detail">9-Speed Automatic</span>
+                                        </li>
+                                        <li>
+                                            <span class="sell-carDesc-type">Drivetrain</span>
+                                            <span class="sell-carDesc-detail">AWD</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sell-carDesc-link">
+                                    <a href="#"><span><i class="fa fa-long-arrow-left"></i></span>Edit Vehicle</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <fieldset class="wizard-fieldset show">
+                                <h2>Vehicle Details</h2>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control wizard-required" name="vin" id="vin" value="3C7WRNDL7LG512598" disabled>
+                                    <label for="vin" class="wizard-form-text-label">VIN</label>
+                                    <div class="wizard-form-error"></div>
+                                </div>
+
+                                <div class="form-group theme-select2-design">
+                                    <select class="search-filter form-control wizard-required" name="exterior_color" id="exterior_color">
+                                        <option value="">Select Color</option>
+                                        <option value="bcp">Black Copper Pearl</option>
+                                        <option value="cbp">Crystal Black Pearl</option>
+                                        <option value="black">Black</option>
+                                        <option value="blue">Blue</option>
+                                        <option value="red">Red</option>
+                                        <option value="green">Green</option>
+                                    </select>
+                                    <label for="exterior_color" class="wizard-form-select-label">Select Color</label>
+                                    <div class="wizard-form-error"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control wizard-required" name="meter-reading" id="meter-reading">
+                                    <label for="meter-reading" class="wizard-form-text-label">Meter Reading (Approx)</label>
+                                    <div class="wizard-form-error"></div>
+                                </div>
+
+                                <div class="form-group theme-select2-design">
+                                    <select class="search-filter form-control wizard-required" name="car_features" id="car_features">
+                                        <option value="">Select Features</option>
+                                        <option value="touch-screen">Touch Screen</option>
+                                        <option value="apple-car-play">Apple Car Play</option>
+                                        <option value="android-auto">Android Auto</option>
+                                        <option value="touch">Touch</option>
+                                        <option value="car-music">Car Music</option>
+                                        <option value="android">Android</option>
+                                    </select>
+                                    <label for="car_features" class="wizard-form-select-label">Select Color</label>
+                                    <div class="wizard-form-error"></div>
+                                </div>
+
+                                <div class="form-group clearfix">
+                                    <a href="javascript:;" class="form-wizard-next-btn float-right">Next</a>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="wizard-fieldset">
+                                <h2>Vehicle Condition</h2>
+
+                                <div class="form-group">
+                                    <p class="font-weight-bold">What is the conditions of the car?</p>
+
+                                    <ul class="wizard-radioButton d-flex list-style-none p-0">
+                                        <li class="radioButtonOption">
+                                            <label for="poor_condition">
+                                            <input id="poor_condition" type="radio" name="condition" value="poor">
+                                            <span class="radioButtonOption-text">Poor</span>
+                                            </label>
+                                        </li>
+                                        <li class="radioButtonOption">
+                                            <label for="average_condition">
+                                            <input id="average_condition" type="radio" name="condition" value="average">
+                                            <span class="radioButtonOption-text">Average</span>
+                                            </label>
+                                        </li>
+                                        <li class="radioButtonOption">
+                                            <label for="good_condition">
+                                            <input id="good_condition" type="radio" name="condition" value="good">
+                                            <span class="radioButtonOption-text">Good</span>
+                                            </label>
+                                        </li>
+                                        <li class="radioButtonOption">
+                                            <label for="best_condition">
+                                            <input id="best_condition" type="radio" name="condition" value="best">
+                                            <span class="radioButtonOption-text">Best</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="form-group">
+                                    <p class="font-weight-bold">Has the vehicle ever been in an accident?</p>
+
+                                    <ul class="wizard-radioButton d-flex list-style-none p-0" data-target="#accidentType">
+                                        <li class="radioButtonOption">
+                                            <label for="yes_accident">
+                                            <input id="yes_accident" type="radio" name="has_car_been_in_an_accident" value="true">
+                                            <span class="radioButtonOption-text">Yes</span>
+                                            </label>
+                                        </li>
+                                        <li class="radioButtonOption">
+                                            <label for="no_accident">
+                                            <input id="no_accident" type="radio" name="has_car_been_in_an_accident" value="false">
+                                            <span class="radioButtonOption-text">No</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="form-group">
+                                    <p class="font-weight-bold">Accident Type</p>
+
+                                    <ul class="wizard-radioButton d-flex list-style-none p-0" data-target="#accidentType">
+                                        <li class="radioButtonOption">
+                                            <label for="major_accident">
+                                            <input id="major_accident" type="radio" name="accident_type" value="true">
+                                            <span class="radioButtonOption-text">Yes</span>
+                                            </label>
+                                        </li>
+                                        <li class="radioButtonOption">
+                                            <label for="minor_accident">
+                                            <input id="minor_accident" type="radio" name="accident_type" value="false">
+                                            <span class="radioButtonOption-text">No</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="form-group">
+                                    <p class="font-weight-bold">Has this vehicle been smoked in?</p>
+
+                                    <ul class="wizard-radioButton d-flex list-style-none p-0">
+                                        <li class="radioButtonOption">
+                                            <label for="smoke_yes">
+                                            <input id="smoke_yes" type="radio" name="has_car_been_smoked_in" value="true">
+                                            <span class="radioButtonOption-text">Yes</span>
+                                            </label>
+                                        </li>
+                                        <li class="radioButtonOption">
+                                            <label for="smoke_no">
+                                            <input id="smoke_no" type="radio" name="has_car_been_smoked_in" value="false">
+                                            <span class="radioButtonOption-text">No</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="form-group">
+                                    <p class="font-weight-bold">Do you have more than one keys?</p>
+
+                                    <ul class="wizard-radioButton d-flex list-style-none p-0">
+                                        <li class="radioButtonOption">
+                                            <label for="key_yes">
+                                            <input id="key_yes" type="radio" name="have_more_than_one_key" value="true">
+                                            <span class="radioButtonOption-text">Yes</span>
+                                            </label>
+                                        </li>
+                                        <li class="radioButtonOption">
+                                            <label for="key_no">
+                                            <input id="key_no" type="radio" name="have_more_than_one_key" value="false">
+                                            <span class="radioButtonOption-text">No</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="form-group clearfix">
+                                    <a href="javascript:;" class="form-wizard-previous-btn float-left">Previous</a>
+                                    <a href="javascript:;" class="form-wizard-next-btn float-right">Next</a>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="wizard-fieldset">
+                                <h2>Liabilities</h2>
+
+                                <div class="form-group">
+                                    <p class="font-weight-bold">Any active loan or lease on the car?</p>
+
+                                    <ul class="wizard-radioButton d-flex list-style-none p-0">
+                                        <li class="radioButtonOption">
+                                            <label for="loan_no">
+                                            <input id="loan_no" type="radio" name="active_loan_or_lease" value="false">
+                                            <span class="radioButtonOption-text">No</span>
+                                            </label>
+                                        </li>
+                                        <li class="radioButtonOption">
+                                            <label for="loan_yes">
+                                            <input id="loan_yes" type="radio" name="active_loan_or_lease" value="loan">
+                                            <span class="radioButtonOption-text">Loan</span>
+                                            </label>
+                                        </li>
+                                        <li class="radioButtonOption">
+                                            <label for="lease_yes">
+                                            <input id="lease_yes" type="radio" name="active_loan_or_lease" value="lease">
+                                            <span class="radioButtonOption-text">Lease</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div id="loan_element">
+                                    <div class="form-group">
+                                        <p class="font-weight-bold">Loan Amount($)</p>
+                                        <input type="text" class="form-control integer" name="loan_amount">
+                                    </div>
+                                </div>
+
+                                <div id="lease_element">
+                                    <div class="form-group">
+                                        <p class="font-weight-bold">Buyback Value($)</p>
+                                        <input type="text" class="form-control integer" name="buyback_value">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <p class="font-weight-bold">Lease Amount($)</p>
+                                        <input type="text" class="form-control integer" name="lease_amount">
+                                    </div>
+                                </div>
+
+                                <div class="form-group clearfix">
+                                    <a href="javascript:;" class="form-wizard-previous-btn float-left">Previous</a>
+                                    <a href="javascript:;" class="form-wizard-next-btn float-right">Next</a>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="wizard-fieldset">
+                                <h2>Personal Information</h2>
+
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control wizard-required" name="user-location-code" id="user-location-code">
+                                            <label for="user-location-code" class="wizard-form-text-label">Enter Zipcode, City or State</label>
+                                            <div class="wizard-form-error"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-12 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control wizard-required" name="user-fname" id="user-fname">
+                                            <label for="user-fname" class="wizard-form-text-label">First Name</label>
+                                            <div class="wizard-form-error"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-12 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control wizard-required" name="user-lname" id="user-lname">
+                                            <label for="user-lname" class="wizard-form-text-label">Last Name</label>
+                                            <div class="wizard-form-error"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-12 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control wizard-required" name="user-contact" id="user-contact">
+                                            <label for="user-contact" class="wizard-form-text-label">Contact No</label>
+                                            <div class="wizard-form-error"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-12 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control wizard-required" name="user-email" id="user-email">
+                                            <label for="user-email" class="wizard-form-text-label">Email</label>
+                                            <div class="wizard-form-error"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-12 col-md-12">
+                                        <div class="form-group theme-select2-design">
+                                            <select class="search-filter form-control wizard-required" name="user_contact_way" id="user_contact_way">
+                                                <option value="">User Contact Way</option>
+                                                <option value="email">Email</option>
+                                                <option value="text">Text</option>
+                                                <option value="message">Message</option>
+                                            </select>
+                                            <label for="user_contact_way" class="wizard-form-select-label">Preferred Way To Contact You</label>
+                                            <div class="wizard-form-error"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-12 col-md-12">
+                                        <div class="form-group form-content-condition">
+                                            <input type="checkbox" class="form-control wizard-required" name="user-form-condition" id="user-form-condition">
+                                            <p>I confirm that the above-mentioned contact information belongs to me, and I agree to receive calls/text messages/emails from the selected dealers about my vehicle.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-12 col-md-12">
+                                        <div class="form-group clearfix">
+                                            <a href="javascript:;" class="form-wizard-previous-btn float-left">Previous</a>
+                                            <a href="javascript:;" class="form-wizard-next-btn float-right">Next</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="wizard-fieldset">
+                                <div class="select-dealers-brand">
+                                    <h2>Select Dealers</h2>
+
+                                    <div class="toggle-dealers">
+                                        <h3>Show Acura Dealers Only</h3>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="customSwitch7">
+                                            <label class="custom-control-label" for="customSwitch7"></label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="select-dealer-list">
+                                    <div class="dealer-check-filter">
+                                        <label class="control-label c-pointer" for="dealer-name1">
+                                            <input type="checkbox" id="dealer-name1">
+                                            <label for="dealer-name1"></label>
+
+                                        <div class="dealer-name">
+                                            <div class="dealer-title-info">
+                                                <div class="dealer-title">
+                                                    <h6>BMW of San Francisco</h6>
+                                                </div>
+                                                <div class="dealer-address">
+                                                    <p>1675 Howard St, San Francisco, CA 94103 <span>(12 miles)</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="dealer-showroomImg">
+                                                <img src="https://storage.googleapis.com/aresstorage/upload/dealer/showroom/3102/637281649764905999.jpg" class="img-fluid" />
+                                            </div>
+                                        </div>
+
+                                        </label>
+                                    </div>
+
+                                    <div class="dealer-check-filter">
+                                        <label class="control-label c-pointer" for="dealer-name2">
+                                            <input type="checkbox" id="dealer-name2">
+                                            <label for="dealer-name2"></label>
+
+                                        <div class="dealer-name">
+                                            <div class="dealer-title-info">
+                                                <div class="dealer-title">
+                                                    <h6>BMW of San Francisco</h6>
+                                                </div>
+                                                <div class="dealer-address">
+                                                    <p>1675 Howard St, San Francisco, CA 94103 <span>(12 miles)</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="dealer-showroomImg">
+                                                <img src="https://storage.googleapis.com/aresstorage/upload/dealer/showroom/3102/637281649764905999.jpg" class="img-fluid" />
+                                            </div>
+                                        </div>
+
+                                        </label>
+                                    </div>
+
+                                    <div class="dealer-check-filter">
+                                        <label class="control-label c-pointer" for="dealer-name3">
+                                            <input type="checkbox" id="dealer-name3">
+                                            <label for="dealer-name3"></label>
+
+                                        <div class="dealer-name">
+                                            <div class="dealer-title-info">
+                                                <div class="dealer-title">
+                                                    <h6>BMW of San Francisco</h6>
+                                                </div>
+                                                <div class="dealer-address">
+                                                    <p>1675 Howard St, San Francisco, CA 94103 <span>(12 miles)</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="dealer-showroomImg">
+                                                <img src="https://storage.googleapis.com/aresstorage/upload/dealer/showroom/3102/637281649764905999.jpg" class="img-fluid" />
+                                            </div>
+                                        </div>
+
+                                        </label>
+                                    </div>
+
+                                    <div class="dealer-check-filter">
+                                        <label class="control-label c-pointer" for="dealer-name4">
+                                            <input type="checkbox" id="dealer-name4">
+                                            <label for="dealer-name4"></label>
+
+                                        <div class="dealer-name">
+                                            <div class="dealer-title-info">
+                                                <div class="dealer-title">
+                                                    <h6>BMW of San Francisco</h6>
+                                                </div>
+                                                <div class="dealer-address">
+                                                    <p>1675 Howard St, San Francisco, CA 94103 <span>(12 miles)</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="dealer-showroomImg">
+                                                <img src="https://storage.googleapis.com/aresstorage/upload/dealer/showroom/3102/637281649764905999.jpg" class="img-fluid" />
+                                            </div>
+                                        </div>
+
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group clearfix mt-4">
+                                    <a href="javascript:;" class="form-wizard-next-btn float-right">Get Estimates and Quotes</a>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <!-- Sell your Car Description Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="site-footer">
+        <div class="pre-footer">
+            <div class="ares-container-mid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 text-center">
+                        <div class="dealer-social">
+                            <ul>
+                                <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="srp.html">Used Cars</a></li>
+                                <li><a href="srp.html">New Cars</a></li>
+                                <li><a href="#">Research</a></li>
+                                <li><a href="#">Blogs</a></li>
+                                <li><a href="#">Locate Auto Dealers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="termsCondition-footer">
+            <div class="ares-container-mid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <p>All vehicles shown on this website are offered for sale by authorized dealers. By accessing this website, you agree to the Terms of Service and Privacy Policy.</p>
+
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Do Not Sell My Personal Information</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright-footer">
+            <div class="ares-container-mid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <p class="footer-copyright">© and ™ Used Cars Near Me, Inc. All rights reserved. Vehicle photos © Evox Images © VinQuery Solutions, © VinAudit, © ip-api.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/sell-car.js"></script>
+</body>
+
+</html>

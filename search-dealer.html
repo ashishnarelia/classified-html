@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <title>Used Cars Near Me</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.css">
+
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/select2.min.css">
+
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/slick-theme.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,1,200" />
+</head>
+
+<body>
+
+    <!-- Header Section Start -->
+    <header class="site-header" id="header">
+        <div class="ares-container-mid">
+            <nav class="navbar navbar-expand-lg">
+                <div class="logo-with-location">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/ucnm.png" class="img-fluid" alt="Used Cars Near Me" title="Used Cars Near Me">
+                    </a>
+
+                    <div class="dropdown">
+                        <button type="button" class="btn dropdown-toggle text-capitalize" data-toggle="dropdown">
+                            <img src="images/location.png" class="img-fluid mr-1">los angeles, CA
+                        </button>
+                        <div class="dropdown-menu">
+                            <h6>Shop By Location</h6>
+                            <p class="ares-font-13">Finding cars near you can lower your shipping cost and delivery time.</p>
+
+                            <form>
+                                <label>Search By Zipcode</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="30098" id="zipcode" name="zipcode">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">Update</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#websitenavbar" aria-controls="websitenavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="websitenavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="srp.html">New Cars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="srp.html">Used Cars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Research</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Locate Auto Dealers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Auto Insights</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-heart-o"></i>
+                                <span data-item="wishlist">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- listing map view -->
+    <section class="dealer-map-grid-section">
+
+        <div class="bg-white dealer-map-grid-form">
+            <div class="ares-container-mid">
+                <div class="row">
+                    <div class=" col-md-12 col-lg-8 col-xl-6">
+                        <div class="searchForm-container">
+                            <div class="searchForm">
+                                <ul class="nav nav-pills">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="pill" href="#find_dealer">Find Dealer By Make</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="pill" href="#dealer_name">Find Dealer By Name</a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content">
+                                    <div id="find_dealer" class="tab-pane active">
+                                        <form class="form-inner theme-select2-design" action="#">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+                                                    <div class="row">
+                                                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 padding-8">
+                                                            <div class="form-field">
+                                                                <select class="search-filter" name="Condition" data-placeholder="Condition">
+                                                                    <option value="new_used">New & Used Car Dealers</option>
+                                                                    <option value="new">New Car Dealers</option>
+                                                                    <option value="used">Used Car Dealers</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 padding-8">
+                                                            <div class="form-field">
+                                                                <select class="search-filter" name="make" data-placeholder="All Makes">
+                                                                    <option value="">All Makes</option>
+                                                                    <option value="Acura">Acura</option>
+                                                                    <option value="AlfaRomeo">Alfa Romeo</option>
+                                                                    <option value="AstonMartin">Aston Martin</option>
+                                                                    <option value="BMW">BMW</option>
+                                                                    <option value="Buick">Buick</option>
+                                                                    <option value="Mazda">Mazda</option>
+                                                                    <option value="Mercedes">Mercedes</option>
+                                                                    <option value="Volvo">Volvo</option>
+                                                                    <option value="Volkswagen">Volkswagen</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 padding-8">
+                                                    <div class="form-field">
+                                                        <div class="">
+                                                            <button class="ares-themeBtn">Search</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div id="dealer_name" class="tab-pane fade">
+                                        <form class="form-inner theme-select2-design" action="#">
+                                            <div class="row">
+                                                <div class="col-md-9 col-lg-9 col-xl-9 padding-8">
+                                                    <div class="form-field">
+                                                        <div class="search-bar">
+                                                            <select class="search-bar-select" name="search" data-placeholder="Enter Dealer Name">
+                                                                <option value=""></option>
+                                                            </select>
+                                                            <span class="lnr lnr-magnifier search-icon"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-3 col-lg-3 col-xl-3 padding-8">
+                                                    <div class="form-field">
+                                                        <div class="">
+                                                            <button class="ares-themeBtn">Search</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid p-0">
+            <div class="dealer-map-grid-section-inner">
+                <div class="dealers-map-view-outer position-relative">
+                    <div class="dealers-map-view">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.6096678821978!2d-118.65379818478225!3d34.1563270805778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c29e131729c557%3A0xa31bb804a5e4fdd!2s24009%20Ventura%20Blvd%20%23235%2C%20Calabasas%2C%20CA%2091302%2C%20USA!5e0!3m2!1sen!2sin!4v1606807321361!5m2!1sen!2sin"
+                            allowfullscreen="" aria-hidden="false" tabindex="0" width="100" height="100"></iframe>
+                    </div>
+                </div>
+
+                <div class="dealer-detail-card-outer">
+                    <div class="dealer-detail-card">
+                        <div class="showroom-box-wrapper">
+                            <div class="row m-0">
+                                <div class="col-12 col-sm-12 col-md-7 padding-5">
+                                    <div class="showroom-img img-full">
+                                        <img src="images/showroom1.jpg" class="img-fluid" alt="Acura Dealer">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-5 padding-5">
+                                    <div class="showroom-img img-half">
+                                        <img src="images/showroom2.jpg" class="img-fluid" alt="Acura Dealer">
+                                    </div>
+                                    <div class="showroom-img img-half">
+                                        <img src="images/showroom3.jpg" class="img-fluid" alt="Acura Dealer">
+                                        <a href="#" data-toggle="modal" data-target="#showroomImage-popup">+50</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dealer-info">
+                            <div class="dealer-social-media">
+                                <p class="new-dealer">New Car Dealer</p>
+
+                                <div class="social-media-wrapper">
+                                    <div class="social-media-share">
+                                        <span class="material-symbols-outlined icon-share">share</span>
+                                    </div>
+
+                                    <div class="social-media-list">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3>Toyota of Hackensack <span class="material-symbols-outlined icon-verify">verified</span></h3>
+
+                            <div class="dealer-rating">
+                                <span>
+                                    <ul>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </span>
+
+                                <span class="">4.9 (23.7k)</span>
+                            </div>
+
+                            <div class="dealer-seo-menu">
+                                <ul>
+                                    <li><a href="#"><span class="material-symbols-rounded">public</span><span class="seo-menu-text">Website</span></a></li>
+                                    <li><a href="#"><span class="material-symbols-rounded">phone_in_talk</span><span class="seo-menu-text">Contact</span></a></li>
+                                    <li><a href="#"><span class="material-symbols-rounded">directions_alt</span><span class="seo-menu-text">Direction</span></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="dealer-brand">
+                                <h6>Dealer Makes:</h6>
+                                <ul>
+                                    <li>Hyundai</li>
+                                    <li>Honda</li>
+                                    <li>Dodge</li>
+                                    <li>Audi</li>
+                                    <li>
+                                        <a href="#" data-toggle="modal" data-target="#dealership-brandsPopup">View All</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                        <div class="dealer-seo-btn">
+                            <div class="row m-0">
+                                <div class="col-12 col-sm-12 col-md-4 padding-5">
+                                    <a class="seo-btns btn-outline" href="#">Sales</a>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-4 padding-5">
+                                    <a class="seo-btns btn-outline" href="#">Service</a>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-4 padding-5">
+                                    <a class="seo-btns btn-outline" href="#">Finance</a>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 padding-5">
+                                    <a class="seo-btns btn-fill" href="#">Browse Vehicles</a>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 padding-5">
+                                    <a class="seo-btns btn-fill" href="#">View Dealer Details</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dealer-address">
+                            <p><img src="images/location.svg" class="img-fluid" alt="loaction"> 278 River Street Hackensack, NJ 07601</p>
+                            <p><img src="images/distance.svg" class="img-fluid" alt="distance"> 20 miles away</p>
+                            <div class="accordion dealer-showroomTime" id="accordionExample">
+                                <button type="button" data-toggle="collapse" data-target="#collapseTime" aria-expanded="true" aria-controls="collapseTime">
+                                    <img src="images/time.svg" class="img-fluid" alt="time">
+                                    09:00AM - 10:00PM
+                                    <span class="showroomTime">Open</span>
+                                </button>
+
+                                <div id="collapseTime" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <ul>
+                                        <li><span class="week-text">Monday</span> <span class="week-time">10:00 AM - 10:00 PM</span></li>
+                                        <li><span class="week-text">Tuesday</span> <span class="week-time">10:00 AM - 10:00 PM</span></li>
+                                        <li><span class="week-text">Wednesday</span> <span class="week-time">10:00 AM - 10:00 PM</span></li>
+                                        <li><span class="week-text">Thursday</span> <span class="week-time">10:00 AM - 10:00 PM</span></li>
+                                        <li><span class="week-text">Friday</span> <span class="week-time">10:00 AM - 10:00 PM</span></li>
+                                        <li><span class="week-text">Saturaday</span> <span class="week-time">10:00 AM - 10:00 PM</span></li>
+                                        <li><span class="week-text">Sunday</span> <span class="week-time">Closed</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dealer-review">
+                            <div class="dealer-review-title">
+                                <h4>Reviews</h4>
+                                <a href="#">View All</a>
+                            </div>
+
+                            <div class="dealer-review-wrapper">
+                                <div class="dealer-review-img">
+                                    <img src="images/profiles.jpg" class="img-fluid" alt="Jim White">
+                                    <h5>Justine Brunet <span>2 hours ago</span></h5>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing eu fames scelerisque risus cursus purus. Id praesent id risus cursus.</p>
+                            </div>
+                        </div>
+
+                        <div class="dealer-business">
+                            <h6>Is this your Business?</h6>
+                            <a href="#">
+                                <img src="images/claim-business.svg" alt="claim business" class="img-fluid">Claim this Business
+                            </a>
+                        </div>
+
+                        <div class="dealer-suggestion">
+                            <a href="#" data-toggle="modal" data-target="#suggestEdit">
+                                <img src="images/edit.svg" alt="claim business" class="img-fluid">Suggest an edit
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="dealer-grid-block-container-outer">
+                    <div class="dealer-grid-block-container custom-slim-scroll">
+
+                        <div class="dealer-map-grid-wrapper mt-3">
+                            <div class="d-flex">
+                                <div class="dealer-map-grid-img">
+                                    <img src="images/dealer2.jpg" class="img-fluid" alt="dealer">
+                                </div>
+                                <div class="dealer-map-grid-content">
+                                    <div class="dealer-map-grid-title">
+                                        <h6><a href="javascript:void(0)" class="dealer-map-grid-title-card">Toyota of Hackensack</a></h6>
+                                        <div class="dealerMap-Range">
+                                            <span>
+                                                <img src="images/distance.svg" class="img-fluid" alt="range">
+                                                20 mi
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="dealer-map-grid-condition">
+                                        <p class="dealer-new">New Car Dealer</p>
+                                        <div class="dealerMap-Range">
+                                            <span><i class="fa fa-star"></i> 4.9 (23.7K)</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="dealer-map-grid-info">
+                                        <div class="dealer-map-grid-infoImg">
+                                            <img src="images/location.svg" class="img-fluid" alt="loaction">
+                                        </div>
+                                        <span>278 River Street Hackensack, NJ 07601</span>
+
+                                    </div>
+
+                                    <ul class="dealer-map-grid-info-links">
+                                        <li><a href="#">Sales</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Finance</a></li>
+                                    </ul>
+
+                                    <ul class="dealer-map-grid-btn">
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Website</a></li>
+                                        <li><a href="#">Direction</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dealer-map-grid-wrapper mt-3">
+                            <div class="d-flex">
+                                <div class="dealer-map-grid-img">
+                                    <img src="images/dealer2.jpg" class="img-fluid" alt="dealer">
+                                </div>
+                                <div class="dealer-map-grid-content">
+                                    <div class="dealer-map-grid-title">
+                                        <h6><a href="javascript:void(0)" class="dealer-map-grid-title-card">Toyota of Hackensack</a></h6>
+                                        <div class="dealerMap-Range">
+                                            <span>
+                                                <img src="images/distance.svg" class="img-fluid" alt="range">
+                                                20 mi
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="dealer-map-grid-condition">
+                                        <p class="dealer-new">New Car Dealer</p>
+                                        <div class="dealerMap-Range">
+                                            <span><i class="fa fa-star"></i> 4.9 (23.7K)</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="dealer-map-grid-info">
+                                        <div class="dealer-map-grid-infoImg">
+                                            <img src="images/location.svg" class="img-fluid" alt="loaction">
+                                        </div>
+                                        <span>278 River Street Hackensack, NJ 07601</span>
+
+                                    </div>
+
+                                    <ul class="dealer-map-grid-info-links">
+                                        <li><a href="#">Sales</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Finance</a></li>
+                                    </ul>
+
+                                    <ul class="dealer-map-grid-btn">
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Website</a></li>
+                                        <li><a href="#">Direction</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dealer-map-grid-wrapper mt-3">
+                            <div class="d-flex">
+                                <div class="dealer-map-grid-img">
+                                    <img src="images/dealer2.jpg" class="img-fluid" alt="dealer">
+                                </div>
+                                <div class="dealer-map-grid-content">
+                                    <div class="dealer-map-grid-title">
+                                        <h6><a href="javascript:void(0)" class="dealer-map-grid-title-card">Toyota of Hackensack</a></h6>
+                                        <div class="dealerMap-Range">
+                                            <span>
+                                                <img src="images/distance.svg" class="img-fluid" alt="range">
+                                                20 mi
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="dealer-map-grid-condition">
+                                        <p class="dealer-new">New Car Dealer</p>
+                                        <div class="dealerMap-Range">
+                                            <span><i class="fa fa-star"></i> 4.9 (23.7K)</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="dealer-map-grid-info">
+                                        <div class="dealer-map-grid-infoImg">
+                                            <img src="images/location.svg" class="img-fluid" alt="loaction">
+                                        </div>
+                                        <span>278 River Street Hackensack, NJ 07601</span>
+
+                                    </div>
+
+                                    <ul class="dealer-map-grid-info-links">
+                                        <li><a href="#">Sales</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Finance</a></li>
+                                    </ul>
+
+                                    <ul class="dealer-map-grid-btn">
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Website</a></li>
+                                        <li><a href="#">Direction</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dealer-map-grid-wrapper mt-3">
+                            <div class="d-flex">
+                                <div class="dealer-map-grid-img">
+                                    <img src="images/dealer2.jpg" class="img-fluid" alt="dealer">
+                                </div>
+                                <div class="dealer-map-grid-content">
+                                    <div class="dealer-map-grid-title">
+                                        <h6><a href="javascript:void(0)" class="dealer-map-grid-title-card">Toyota of Hackensack</a></h6>
+                                        <div class="dealerMap-Range">
+                                            <span>
+                                                <img src="images/distance.svg" class="img-fluid" alt="range">
+                                                20 mi
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="dealer-map-grid-condition">
+                                        <p class="dealer-new">New Car Dealer</p>
+                                        <div class="dealerMap-Range">
+                                            <span><i class="fa fa-star"></i> 4.9 (23.7K)</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="dealer-map-grid-info">
+                                        <div class="dealer-map-grid-infoImg">
+                                            <img src="images/location.svg" class="img-fluid" alt="loaction">
+                                        </div>
+                                        <span>278 River Street Hackensack, NJ 07601</span>
+
+                                    </div>
+
+                                    <ul class="dealer-map-grid-info-links">
+                                        <li><a href="#">Sales</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Finance</a></li>
+                                    </ul>
+
+                                    <ul class="dealer-map-grid-btn">
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Website</a></li>
+                                        <li><a href="#">Direction</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dealer-map-grid-wrapper mt-3">
+                            <div class="d-flex">
+                                <div class="dealer-map-grid-img">
+                                    <img src="images/dealer2.jpg" class="img-fluid" alt="dealer">
+                                </div>
+                                <div class="dealer-map-grid-content">
+                                    <div class="dealer-map-grid-title">
+                                        <h6><a href="javascript:void(0)" class="dealer-map-grid-title-card">Toyota of Hackensack</a></h6>
+                                        <div class="dealerMap-Range">
+                                            <span>
+                                                <img src="images/distance.svg" class="img-fluid" alt="range">
+                                                20 mi
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="dealer-map-grid-condition">
+                                        <p class="dealer-new">New Car Dealer</p>
+                                        <div class="dealerMap-Range">
+                                            <span><i class="fa fa-star"></i> 4.9 (23.7K)</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="dealer-map-grid-info">
+                                        <div class="dealer-map-grid-infoImg">
+                                            <img src="images/location.svg" class="img-fluid" alt="loaction">
+                                        </div>
+                                        <span>278 River Street Hackensack, NJ 07601</span>
+
+                                    </div>
+
+                                    <ul class="dealer-map-grid-info-links">
+                                        <li><a href="#">Sales</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Finance</a></li>
+                                    </ul>
+
+                                    <ul class="dealer-map-grid-btn">
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Website</a></li>
+                                        <li><a href="#">Direction</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dealer-map-grid-wrapper mt-3">
+                            <div class="d-flex">
+                                <div class="dealer-map-grid-img">
+                                    <img src="images/dealer2.jpg" class="img-fluid" alt="dealer">
+                                </div>
+                                <div class="dealer-map-grid-content">
+                                    <div class="dealer-map-grid-title">
+                                        <h6><a href="javascript:void(0)" class="dealer-map-grid-title-card">Toyota of Hackensack</a></h6>
+                                        <div class="dealerMap-Range">
+                                            <span>
+                                                <img src="images/distance.svg" class="img-fluid" alt="range">
+                                                20 mi
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="dealer-map-grid-condition">
+                                        <p class="dealer-new">New Car Dealer</p>
+                                        <div class="dealerMap-Range">
+                                            <span><i class="fa fa-star"></i> 4.9 (23.7K)</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="dealer-map-grid-info">
+                                        <div class="dealer-map-grid-infoImg">
+                                            <img src="images/location.svg" class="img-fluid" alt="loaction">
+                                        </div>
+                                        <span>278 River Street Hackensack, NJ 07601</span>
+
+                                    </div>
+
+                                    <ul class="dealer-map-grid-info-links">
+                                        <li><a href="#">Sales</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Finance</a></li>
+                                    </ul>
+
+                                    <ul class="dealer-map-grid-btn">
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Website</a></li>
+                                        <li><a href="#">Direction</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dealer-map-grid-wrapper mt-3">
+                            <div class="d-flex">
+                                <div class="dealer-map-grid-img">
+                                    <img src="images/dealer2.jpg" class="img-fluid" alt="dealer">
+                                </div>
+                                <div class="dealer-map-grid-content">
+                                    <div class="dealer-map-grid-title">
+                                        <h6><a href="javascript:void(0)" class="dealer-map-grid-title-card">Toyota of Hackensack</a></h6>
+                                        <div class="dealerMap-Range">
+                                            <span>
+                                                <img src="images/distance.svg" class="img-fluid" alt="range">
+                                                20 mi
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="dealer-map-grid-condition">
+                                        <p class="dealer-new">New Car Dealer</p>
+                                        <div class="dealerMap-Range">
+                                            <span><i class="fa fa-star"></i> 4.9 (23.7K)</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="dealer-map-grid-info">
+                                        <div class="dealer-map-grid-infoImg">
+                                            <img src="images/location.svg" class="img-fluid" alt="loaction">
+                                        </div>
+                                        <span>278 River Street Hackensack, NJ 07601</span>
+
+                                    </div>
+
+                                    <ul class="dealer-map-grid-info-links">
+                                        <li><a href="#">Sales</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Finance</a></li>
+                                    </ul>
+
+                                    <ul class="dealer-map-grid-btn">
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Website</a></li>
+                                        <li><a href="#">Direction</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- listing map view -->
+
+    <!-- Footer Section Start -->
+    <footer class="site-footer">
+        <div class="pre-footer">
+            <div class="ares-container-mid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 text-center">
+                        <div class="dealer-social">
+                            <ul>
+                                <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="srp.html">Used Cars</a></li>
+                                <li><a href="srp.html">New Cars</a></li>
+                                <li><a href="#">Research</a></li>
+                                <li><a href="#">Blogs</a></li>
+                                <li><a href="#">Locate Auto Dealers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="termsCondition-footer">
+            <div class="ares-container-mid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <p>All vehicles shown on this website are offered for sale by authorized dealers. By accessing this website, you agree to the Terms of Service and Privacy Policy.</p>
+
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Do Not Sell My Personal Information</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright-footer">
+            <div class="ares-container-mid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <p class="footer-copyright">© and ™ Used Cars Near Me, Inc. All rights reserved. Vehicle photos © Evox Images © VinQuery Solutions, © VinAudit, © ip-api.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- The Modal -->
+    <div class="modal suggestEdit" id="suggestEdit">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title">Suggest an edit</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="suggestEdit-content">
+                        <a href="#" class="border-top border-bottom py-3" data-dismiss="modal" data-toggle="modal" data-target="#detail-suggestEditPopup">
+                            <img src="images/edit.png" class="img-fluid" alt="edit">
+                            <div>
+                                <h6>Change Name, Website or Other</h6>
+                                <p>Edit name, location, hours etc.</p>
+                            </div>
+                        </a>
+                        <a href="#" class="border-bottom py-3">
+                            <img src="images/location-dark.png" data-dismiss="modal" class="img-fluid" alt="location">
+                            <div>
+                                <h6>Close or remove</h6>
+                                <p>Mark as closed or temporarily closed </p>
+                            </div>
+                        </a>
+                        <a href="#" class=" py-3">
+                            <img src="images/duplicate-business.png" data-dismiss="modal" class="img-fluid" alt="duplicate-business">
+                            <div>
+                                <h6>Duplicate business</h6>
+                                <p>Report Business as Duplicate</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal Popup for Dealers All Brands -->
+    <div class="modal fade model-poupBox" id="dealership-brandsPopup">
+        <div class="modal-dialog dealership-info-section">
+            <div class="modal-content border-0">
+                <div class="modal-body p-0">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                    <div class="dealership-brands">
+                        <ul class="row">
+                            <li class="col-6 col-sm-6 col-md-4 padding-8"><a href="#">Acura</a></li>
+                            <li class="col-6 col-sm-6 col-md-4 padding-8"><a href="#">Audi</a></li>
+                            <li class="col-6 col-sm-6 col-md-4 padding-8"><a href="#">BMW</a></li>
+                            <li class="col-6 col-sm-6 col-md-4 padding-8"><a href="#">Alfa Romeo</a></li>
+                            <li class="col-6 col-sm-6 col-md-4 padding-8"><a href="#">Buick</a></li>
+                            <li class="col-6 col-sm-6 col-md-4 padding-8"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal detail-suggestEditPopup" id="detail-suggestEditPopup">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header d-block">
+                    <h5 class="modal-title d-f">Suggest an edit</h5>
+                    <p>Toyota of Hackensack</p>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <form action="#">
+                    <div class="modal-body">
+                        <div class="editPopup-content">
+
+                            <div class="row">
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="form-field">
+                                            <label for="user-name">Name</label>
+                                            <input type="text" class="form-control searchInput" name="user-name" placeholder="Frontier Toyota">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="form-field">
+                                            <label for="location">Location</label>
+                                            <input type="text" class="form-control searchInput" name="location" placeholder="278 River Street Hackensack, NJ 07601">
+                                            <span class="lnr lnr-cross"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="form-field">
+                                            <label for="hours">Hours</label>
+                                            <input type="text" class="form-control searchInput" name="hous" placeholder="09:00AM - 10:00PM">
+                                            <span class="lnr lnr-cross"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="form-field">
+                                            <label for="hours">Phone</label>
+                                            <input type="text" class="form-control searchInput" name="hous" value="9588548444">
+                                            <span class="lnr lnr-cross"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="form-field">
+                                            <label for="website">Website</label>
+                                            <input type="text" class="form-control searchInput" name="website" placeholder="carweek.com">
+                                            <span class="lnr lnr-cross"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="modal-footer border-top-0">
+                        <div>
+                            <button class="ares-themeBtn" data-dismiss="modal">Cancel</button>
+                        </div>
+                        <div>
+                            <button class="ares-themeBtn" data-dismiss="modal">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal Popup for Location -->
+    <div class="modal fade model-poupBox" id="location-poup">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="search-car-input">
+                        <h5>Enter Location Here</h5>
+                        <p>Find the right wheels/brand of your choice</p>
+                        <form>
+                            <div class="search-bar">
+                                <input type="text" name="" placeholder="Enter Location ...">
+
+                                <span class="form-icon search-icon">
+                                    <img src="images/searchlocation.png" class="img-fluid" alt="search">
+                                </span>
+                            </div>
+
+
+                            <div class="text-center">
+                                <button class="theme-btn" href="car-search.html">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

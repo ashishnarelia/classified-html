@@ -1,0 +1,1735 @@
+.ares-page-body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  color: var(--text-color);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  text-rendering: optimizeLegibility;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --text-opacity: 1;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -ms-touch-action: auto;
+  touch-action: auto;
+  position: relative;
+}
+
+.ares-page-body h1,
+.ares-page-body h2,
+.ares-page-body h3,
+.ares-page-body h4,
+.ares-page-body h5,
+.ares-page-body h6 {
+  color: var(--dark-color);
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: .5px;
+  padding: 0;
+  margin: 0;
+}
+
+.ares-page-body a,
+.ares-page-body a:hover,
+.ares-page-body a:active,
+.ares-page-body a:focus {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: var(--primary-color);
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+.ares-page-body a:hover,
+.ares-page-body a:active,
+.ares-page-body a:focus {
+  color: --primary-color-darker;
+}
+
+.ares-page-body .ares-themeBtn {
+  display: inline-block;
+  padding: 10px;
+  min-width: 185px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 0px;
+  text-transform: capitalize;
+  text-align: center;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.ares-page-body .ares-themeBtn:hover, .ares-page-body .ares-themeBtn:focus {
+  border: 1px solid var(--primary-color-darker);
+  background: var(--primary-color-darker);
+  color: var(--white-color);
+}
+
+.ares-page-body .ares-themeBtn.btnWhite {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+}
+
+.ares-page-body .ares-themeBtn.btnWhite:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.ares-page-body p {
+  margin-bottom: 0px;
+}
+
+.ares-page-body ul,
+.ares-page-body li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ares-page-body button {
+  border: none;
+}
+
+.ares-page-body button:focus {
+  outline: none;
+}
+
+.ares-page-body .form-control:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.ares-page-body .ares-container-mid {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .ares-page-body .ares-container-mid {
+    padding: 0 4%;
+  }
+}
+
+@media (max-width: 991px) {
+  .ares-page-body .ares-container-mid {
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1450px) {
+  .ares-page-body .ares-container-mid {
+    max-width: 1300px;
+    padding: 0 15px;
+  }
+}
+
+.ares-page-body .ares-padding-8 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.ares-page-body .font-weight-600 {
+  font-weight: 600;
+}
+
+.ares-page-body .font-weight-500 {
+  font-weight: 500;
+}
+
+.ares-page-body .ares-font-13 {
+  font-size: 13px;
+}
+
+.ares-page-body .ares-font-12 {
+  font-size: 12px;
+}
+
+.ares-page-body .ares-font-11 {
+  font-size: 11px;
+}
+
+.ares-page-body .ares-font-14 {
+  font-size: 14px;
+}
+
+.ares-page-body .ares-font-10 {
+  font-size: 10px;
+}
+
+.ares-page-body .theme-color-primary {
+  color: var(--primary-color);
+}
+
+/*----------------------------- Sell Your Car Form Elements with input and Select Box CSS Start  ----------------------------- */
+.form-elements {
+  margin-bottom: 25px;
+}
+
+@media (max-width: 767px) {
+  .form-elements {
+    margin-bottom: 20px;
+  }
+}
+
+.form-elements:last-child {
+  margin-bottom: 0;
+}
+
+.form-elements .form-field {
+  position: relative;
+}
+
+.form-elements .form-field label {
+  position: absolute;
+  top: 14px;
+  left: 8px;
+  background-color: var(--white-color);
+  font-weight: 400;
+  font-size: 14px;
+  display: block;
+  text-align: left;
+  margin: 0;
+  padding: 0 8px;
+  color: var(--text-color);
+  border-radius: 0px;
+  cursor: auto;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 0;
+}
+
+.form-elements .form-field input[type=text] {
+  font-size: 14px;
+  display: block;
+  width: 100%;
+  height: 48px;
+  padding: 0 15px;
+  line-height: 48px;
+  color: var(--text-color);
+  border: 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  -webkit-filter: none;
+          filter: none;
+  opacity: 1;
+  position: relative;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form-elements .form-field input[type=text]:focus, .form-elements .form-field input[type=text]:active {
+  border: 1px solid #ddd;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.form-elements .form-field input[type=text]::-webkit-input-placeholder {
+  font-size: 14px;
+  color: var(--dark-color);
+  opacity: 1;
+}
+
+@media (min-width: 1601px) {
+  .form-elements .form-field input[type=text]::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .form-elements .form-field input[type=text]::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+}
+
+.form-elements .form-field input[type=text]:-ms-input-placeholder {
+  font-size: 14px;
+  color: var(--dark-color);
+  opacity: 1;
+}
+
+@media (min-width: 1601px) {
+  .form-elements .form-field input[type=text]:-ms-input-placeholder {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .form-elements .form-field input[type=text]:-ms-input-placeholder {
+    font-size: 14px;
+  }
+}
+
+.form-elements .form-field input[type=text]::-ms-input-placeholder {
+  font-size: 14px;
+  color: var(--dark-color);
+  opacity: 1;
+}
+
+@media (min-width: 1601px) {
+  .form-elements .form-field input[type=text]::-ms-input-placeholder {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .form-elements .form-field input[type=text]::-ms-input-placeholder {
+    font-size: 14px;
+  }
+}
+
+.form-elements .form-field input[type=text]::-webkit-input-placeholder {
+  font-size: 14px;
+  color: var(--dark-color);
+  opacity: 1;
+}
+
+.form-elements .form-field input[type=text]:-ms-input-placeholder {
+  font-size: 14px;
+  color: var(--dark-color);
+  opacity: 1;
+}
+
+.form-elements .form-field input[type=text]::-ms-input-placeholder {
+  font-size: 14px;
+  color: var(--dark-color);
+  opacity: 1;
+}
+
+.form-elements .form-field input[type=text]::placeholder {
+  font-size: 14px;
+  color: var(--dark-color);
+  opacity: 1;
+}
+
+@media (min-width: 1601px) {
+  .form-elements .form-field input[type=text]::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  .form-elements .form-field input[type=text]:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .form-elements .form-field input[type=text]::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .form-elements .form-field input[type=text]::placeholder {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .form-elements .form-field input[type=text]::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  .form-elements .form-field input[type=text]:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .form-elements .form-field input[type=text]::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .form-elements .form-field input[type=text]::placeholder {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1601px) {
+  .form-elements .form-field {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .form-elements .form-field {
+    font-size: 14px;
+  }
+}
+
+.form-elements .form-field.theme-select2-design .select2-container .select2-selection--single {
+  height: 48px;
+}
+
+.form-elements .form-field.theme-select2-design .select2-container .select2-selection--multiple {
+  min-height: 48px;
+  line-height: 1;
+  border: 1px solid #ddd;
+}
+
+.form-elements .form-field.theme-select2-design .select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 48px;
+}
+
+.form-elements .form-field.theme-select2-design .select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 46px;
+}
+
+.form-elements .form-field.theme-select2-design .select2-container--default .select2-selection--multiple .select2-search--inline .select2-search__field {
+  line-height: 38px;
+}
+
+.form-elements .form-field.theme-select2-design .select2-container--default li.select2-selection__choice {
+  margin-top: 13px;
+  height: 24px;
+  line-height: 22px;
+  font-size: 13px;
+}
+
+.form-elements .form-field.theme-select2-design .select2-container--default .select2-selection__choice__remove {
+  color: var(--primary-color);
+}
+
+.form-elements input:focus ~ label,
+.form-elements input:not(:focus):valid ~ label,
+.form-elements input[readonly="true"] ~ label,
+.form-elements select.search-filter:focus ~ label,
+.form-elements select.search-filter:not(:focus):valid ~ label,
+.form-elements select.search-filter[readonly="true"] ~ label {
+  -webkit-transform: scale(0.85) translateY(-26px);
+          transform: scale(0.85) translateY(-26px);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
+.form-elements input:-moz-read-only,
+.form-elements select.search-filter:-moz-read-only {
+  background-color: transparent;
+}
+
+.form-elements input:read-only,
+.form-elements select.search-filter:read-only {
+  background-color: transparent;
+}
+
+.form-elements input:not(:focus):invalid,
+.form-elements select.search-filter:not(:focus):invalid {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.form-elements .ares-themeBtn {
+  width: 100%;
+  display: block;
+  height: 48px;
+  line-height: 48px;
+  padding: 0;
+}
+
+/*----------------------------- Sell Your Car Form Elements with input and Select Box CSS Start  ----------------------------- */
+/*----------------------------- Sell Your Car First Page CSS Start  ----------------------------- */
+.sell-carBanner-section {
+  padding: 75px 0 0;
+  position: relative;
+  z-index: 1;
+}
+
+.sell-carBanner-section::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1%;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(199, 199, 199, 0.19)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to top, rgba(199, 199, 199, 0.19) 0, rgba(255, 255, 255, 0));
+  display: block !important;
+  z-index: -1;
+}
+
+@media (max-width: 767px) {
+  .sell-carBanner-section::after {
+    height: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .sell-carBanner-section {
+    padding: 25px 0 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .sell-carBanner-section {
+    padding: 40px 0 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sell-carBanner-section {
+    padding: 60px 0 0;
+  }
+}
+
+.sell-carBanner-section .banner-heading {
+  padding-bottom: 65px;
+}
+
+@media (max-width: 767px) {
+  .sell-carBanner-section .banner-heading {
+    padding-bottom: 15px;
+  }
+}
+
+.sell-carBanner-section .banner-heading h1 {
+  font-size: 36px;
+  color: var(--dark-color);
+  line-height: 1;
+  margin: 0px;
+  text-transform: capitalize;
+}
+
+@media (max-width: 767px) {
+  .sell-carBanner-section .banner-heading h1 {
+    font-size: 24px;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .sell-carBanner-section .banner-heading h1 {
+    font-size: 28px;
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sell-carBanner-section .banner-heading h1 {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 1601px) {
+  .sell-carBanner-section .banner-heading h1 {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .sell-carBanner-section .banner-heading h1 {
+    font-size: 36px;
+  }
+}
+
+.sell-carBanner-section .banner-heading p {
+  font-size: 18px;
+  color: var(--dark-color);
+  margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+  .sell-carBanner-section .banner-heading p {
+    font-size: 15px;
+    line-height: 1.25;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .sell-carBanner-section .banner-heading p {
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 1601px) {
+  .sell-carBanner-section .banner-heading p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .sell-carBanner-section .banner-heading p {
+    font-size: 18px;
+  }
+}
+
+.sell-carBanner-section .sell-carBanner-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+@media (max-width: 767px) {
+  .sell-carBanner-section .sell-carBanner-images {
+    display: none;
+  }
+}
+
+.sell-carBanner-section .sell-carBanner-images .car-images {
+  max-width: 275px;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .sell-carBanner-section .sell-carBanner-images .car-images {
+    max-width: 135px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+  .sell-carBanner-section .sell-carBanner-images .car-images {
+    max-width: 160px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sell-carBanner-section .sell-carBanner-images .car-images {
+    max-width: 200px;
+  }
+}
+
+.sell-car-section {
+  padding: 0;
+  margin-top: -200px;
+  padding-bottom: 75px;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 75px;
+}
+
+@media (max-width: 767px) {
+  .sell-car-section {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+  .sell-car-section {
+    margin-top: -140px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+  .sell-car-section {
+    margin-top: -160px;
+    padding-bottom: 50px;
+  }
+}
+
+.sell-car-section .sellCar-searchForm {
+  background-color: var(--white-color);
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  max-width: 375px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 25px 25px 30px;
+}
+
+@media (max-width: 767px) {
+  .sell-car-section .sellCar-searchForm {
+    padding: 20px 20px 25px;
+  }
+}
+
+.sell-car-section .sellCar-searchForm h6 {
+  font-size: 15px;
+  color: var(--dark-color);
+  text-transform: capitalize;
+}
+
+.sell-car-section .sellCar-searchForm .sellCar-searchFormTab ul.nav {
+  margin: 20px 0 25px;
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .sell-car-section .sellCar-searchForm .sellCar-searchFormTab ul.nav {
+    margin: 15px 0 20px;
+  }
+}
+
+.sell-car-section .sellCar-searchForm .sellCar-searchFormTab ul.nav li.nav-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+
+.sell-car-section .sellCar-searchForm .sellCar-searchFormTab ul.nav li.nav-item a.nav-link {
+  border-radius: 0;
+  padding: 12px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  font-size: 13px;
+  font-weight: 500;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+@media (max-width: 767px) {
+  .sell-car-section .sellCar-searchForm .sellCar-searchFormTab ul.nav li.nav-item a.nav-link {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1601px) {
+  .sell-car-section .sellCar-searchForm .sellCar-searchFormTab ul.nav li.nav-item a.nav-link {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .sell-car-section .sellCar-searchForm .sellCar-searchFormTab ul.nav li.nav-item a.nav-link {
+    font-size: 13px;
+  }
+}
+
+.sell-car-section .sellCar-searchForm .sellCar-searchFormTab ul.nav li.nav-item a.nav-link:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.sell-car-section .sellCar-searchForm .sellCar-searchFormTab ul.nav li.nav-item a.nav-link.active {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.sell-car-section .sellCar-searchForm .sellCar-searchFormTab p {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 28px;
+  line-height: 1.5;
+  color: var(--dark-color);
+}
+
+@media (max-width: 767px) {
+  .sell-car-section .sellCar-searchForm .sellCar-searchFormTab p {
+    margin-bottom: 20px;
+  }
+}
+
+/*----------------------------- Sell Your Car First Page CSS End  ----------------------------- */
+/*----------------------------- Sell Your Car Second Page CSS Start  ----------------------------- */
+.sell-carDesc-section {
+  padding: 30px 0 60px;
+  position: relative;
+}
+
+.sell-carDesc-section .form-wizard {
+  max-width: 992px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sell-carDesc-section .form-wizard ul.form-wizard-steps {
+  margin: 20px 0 50px;
+  border: 0;
+  padding: 0;
+  font-size: 0;
+  background-color: var(--white-color);
+  border-radius: 0px;
+  overflow: hidden;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .sell-carDesc-section .form-wizard ul.form-wizard-steps {
+    margin: 10px 0 20px;
+  }
+}
+
+.sell-carDesc-section .form-wizard ul.form-wizard-steps li {
+  display: inline-block;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--dark-color);
+  background-color: var(--white-color);
+  font-size: 14px;
+  padding: 0 25px;
+  font-weight: 500;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .sell-carDesc-section .form-wizard ul.form-wizard-steps li {
+    font-size: 12px;
+    padding: 10px 5px;
+    background-color: #f9f9f9;
+    text-align: left;
+    margin: 5px 5px;
+    max-width: 125px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .sell-carDesc-section .form-wizard ul.form-wizard-steps li {
+    font-size: 12px;
+    padding: 10px 5px;
+  }
+}
+
+@media (min-width: 1601px) {
+  .sell-carDesc-section .form-wizard ul.form-wizard-steps li {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .sell-carDesc-section .form-wizard ul.form-wizard-steps li {
+    font-size: 14px;
+  }
+}
+
+.sell-carDesc-section .form-wizard ul.form-wizard-steps li:hover {
+  color: var(--dark-color);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.sell-carDesc-section .form-wizard ul.form-wizard-steps li span {
+  display: inline-block;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  margin-right: 5px;
+  width: 15px;
+  height: 18px;
+  font-size: 10px;
+  text-align: center;
+  top: -1px;
+  position: relative;
+  z-index: 1;
+}
+
+.sell-carDesc-section .form-wizard ul.form-wizard-steps li.active {
+  color: var(--dark-color);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.sell-carDesc-section .form-wizard ul.form-wizard-steps li.active span::after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  background: url(../images/sell-car/sell-tick-mark.png) #fff;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: -2px;
+  width: 15px;
+  height: 18px;
+  display: block;
+  z-index: 2;
+}
+
+.sell-carDesc-section .form-wizard .sell-carDesc-border {
+  border-right: 2px solid #ddd;
+}
+
+.sell-carDesc-section .form-wizard .sell-carDesc-Details {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto !important;
+}
+
+.sell-carDesc-section .form-wizard .sell-carDesc-Details .sell-carDesc-img {
+  max-width: 250px;
+  width: 100%;
+  margin: 0 auto !important;
+  margin-bottom: 20px !important;
+}
+
+@media (max-width: 767px) {
+  .sell-carDesc-section .form-wizard .sell-carDesc-Details .sell-carDesc-img {
+    margin-bottom: 40px !important;
+    margin-bottom: 40px !important;
+  }
+}
+
+.sell-carDesc-section .form-wizard .sell-carDesc-Details .sell-carDesc-img h1 {
+  font-size: 20px;
+  text-align: center;
+  color: var(--dark-color);
+}
+
+.sell-carDesc-section .form-wizard .sell-carDesc-Details .sell-carDesc-list ul {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+
+.sell-carDesc-section .form-wizard .sell-carDesc-Details .sell-carDesc-list ul li {
+  padding: 5px 0;
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: bold;
+}
+
+.sell-carDesc-section .form-wizard .sell-carDesc-Details .sell-carDesc-list ul li .sell-carDesc-type {
+  width: 115px;
+}
+
+.sell-carDesc-section .form-wizard .sell-carDesc-Details .sell-carDesc-list ul li .sell-carDesc-detail {
+  font-weight: 400;
+  text-align: right;
+}
+
+.sell-carDesc-section .form-wizard .sell-carDesc-Details .sell-carDesc-link {
+  text-align: right;
+}
+
+.sell-carDesc-section .form-wizard .sell-carDesc-Details .sell-carDesc-link a {
+  font-size: 13px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.sell-carDesc-section .form-wizard .sell-carDesc-Details .sell-carDesc-link a span {
+  margin-right: 3px;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset {
+  display: none;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset.show {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .sell-carDesc-section .form-wizard .wizard-fieldset {
+    margin-top: 40px;
+  }
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset h2 {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: var(--dark-color);
+  margin-bottom: 20px;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .wizard-form-error {
+  display: none;
+  background-color: #d70b0b;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-control {
+  font-size: 13px;
+  border-radius: 4px;
+  height: auto !important;
+  padding: 10px;
+  color: var(--dark-color);
+  background-color: transparent;
+  border: 1px solid #ddd;
+  padding-left: 15px;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-control::-webkit-input-placeholder {
+  font-size: 14px;
+  color: var(--dark-color);
+  opacity: 1;
+}
+
+@media (min-width: 1601px) {
+  .sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-control::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-control::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-control:-ms-input-placeholder {
+  font-size: 14px;
+  color: var(--dark-color);
+  opacity: 1;
+}
+
+@media (min-width: 1601px) {
+  .sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-control:-ms-input-placeholder {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-control:-ms-input-placeholder {
+    font-size: 14px;
+  }
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-control::-ms-input-placeholder {
+  font-size: 14px;
+  color: var(--dark-color);
+  opacity: 1;
+}
+
+@media (min-width: 1601px) {
+  .sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-control::-ms-input-placeholder {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-control::-ms-input-placeholder {
+    font-size: 14px;
+  }
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-control::-webkit-input-placeholder {
+  font-size: 14px;
+  color: var(--dark-color);
+  opacity: 1;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-control:-ms-input-placeholder {
+  font-size: 14px;
+  color: var(--dark-color);
+  opacity: 1;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-control::-ms-input-placeholder {
+  font-size: 14px;
+  color: var(--dark-color);
+  opacity: 1;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-control::placeholder {
+  font-size: 14px;
+  color: var(--dark-color);
+  opacity: 1;
+}
+
+@media (min-width: 1601px) {
+  .sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-control::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  .sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-control:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-control::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-control::placeholder {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-control::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  .sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-control:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-control::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-control::placeholder {
+    font-size: 14px;
+  }
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-control:disabled ~ label {
+  color: var(--dark-color);
+  display: block;
+  background-color: var(--white-color);
+  top: -8px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 13px;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group .wizard-form-text-label {
+  position: absolute;
+  left: 8px;
+  top: 11px;
+  padding: 0 8px;
+  font-size: 13px;
+  margin-bottom: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group .wizard-form-select-label {
+  position: absolute;
+  left: 8px;
+  top: -8px;
+  padding: 0 8px;
+  font-size: 13px;
+  margin-bottom: 0;
+  color: var(--dark-color);
+  display: block;
+  background-color: var(--white-color);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group.focus-input .wizard-form-text-label {
+  color: var(--dark-color);
+  display: block;
+  background-color: var(--white-color);
+  top: -8px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 13px;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group.theme-select2-design select {
+  color: var(--dark-color);
+  padding-left: 11px;
+  padding-right: 30px;
+  display: inline-block;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url("../images/drop-down.png") #fff;
+  background-repeat: no-repeat;
+  background-position: 98% 50%;
+  background-size: 13px 13px;
+  height: 42px;
+  line-height: 40px;
+  font-size: 13px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+@media (min-width: 1601px) {
+  .sell-carDesc-section .form-wizard .wizard-fieldset .form-group.theme-select2-design select {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .sell-carDesc-section .form-wizard .wizard-fieldset .form-group.theme-select2-design select {
+    font-size: 14px;
+  }
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group.theme-select2-design .select2-container .select2-selection--single {
+  height: 42px;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group.theme-select2-design .select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 42px;
+  font-size: 13px;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group.form-content-condition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group.form-content-condition input[type=checkbox] {
+  width: 20px;
+  margin-right: 5px;
+  height: 20px;
+  position: relative;
+  top: 2px;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group.form-content-condition p {
+  font-size: 14px;
+  line-height: 1.25;
+  color: var(--dark-color);
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-wizard-previous-btn {
+  font-size: 15px;
+  display: block;
+  padding: 8px 10px;
+  min-width: 185px;
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 0px;
+  text-transform: capitalize;
+  text-align: center;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  .sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-wizard-previous-btn {
+    min-width: 125px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-wizard-previous-btn {
+    min-width: 125px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-wizard-previous-btn {
+    min-width: 125px;
+  }
+}
+
+@media (min-width: 1601px) {
+  .sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-wizard-previous-btn {
+    min-width: 175px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-wizard-previous-btn {
+    min-width: 175px;
+  }
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-wizard-next-btn {
+  font-size: 15px;
+  display: block;
+  padding: 8px 10px;
+  min-width: 185px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 0px;
+  text-transform: capitalize;
+  text-align: center;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+@media (max-width: 767px) {
+  .sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-wizard-next-btn {
+    min-width: 125px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-wizard-next-btn {
+    min-width: 125px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-wizard-next-btn {
+    min-width: 125px;
+  }
+}
+
+@media (min-width: 1601px) {
+  .sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-wizard-next-btn {
+    min-width: 175px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .sell-carDesc-section .form-wizard .wizard-fieldset .form-group .form-wizard-next-btn {
+    min-width: 175px;
+  }
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group .wizard-radioButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group .wizard-radioButton .radioButtonOption {
+  cursor: pointer;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group .wizard-radioButton .radioButtonOption label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--dark-color);
+  margin: 0;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group .wizard-radioButton .radioButtonOption input {
+  display: none;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group .wizard-radioButton .radioButtonOption input[type="radio"]:checked ~ .radioButtonOption-text {
+  background: #777;
+  color: var(--white-color);
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group .wizard-radioButton .radioButtonOption .radioButtonOption-text {
+  border: 1px solid #ddd;
+  min-width: 70px;
+  height: 35px;
+  background: var(--white-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: var(--text-color);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px 12px;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+@media (max-width: 767px) {
+  .sell-carDesc-section .form-wizard .wizard-fieldset .form-group .wizard-radioButton .radioButtonOption .radioButtonOption-text {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group .wizard-radioButton .radioButtonOption:first-child .radioButtonOption-text {
+  border-radius: 5px 0 0 5px;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group .wizard-radioButton .radioButtonOption:last-child .radioButtonOption-text {
+  border-radius: 0 5px 5px 0;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .form-group .wizard-radioButton .radioButtonOption:not(:first-child) .radioButtonOption-text {
+  border-left: 0;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealers-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealers-brand h2 {
+  margin-bottom: 0;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealers-brand h3 {
+  font-size: 13px;
+  color: var(--dark-color);
+  margin-right: 15px;
+}
+
+@media (max-width: 767px) {
+  .sell-carDesc-section .form-wizard .wizard-fieldset .select-dealers-brand h3 {
+    width: 100px;
+    margin-right: 5px;
+  }
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealers-brand .toggle-dealers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealers-brand .toggle-dealers .custom-control-input {
+  display: none;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealers-brand .toggle-dealers .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealers-brand .toggle-dealers .custom-control-label::before,
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealers-brand .toggle-dealers .custom-control-label::after {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+  box-shadow: none;
+  border-color: #adb5bd;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealers-brand .toggle-dealers .custom-switch .custom-control-label::before {
+  width: 38px;
+  height: 20px;
+  border-radius: 30px;
+  top: 2px;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealers-brand .toggle-dealers .custom-switch .custom-control-label::after {
+  top: calc(.25rem + 1px);
+  left: calc(-2.25rem + 3px);
+  width: calc(1rem - 2px);
+  height: calc(1rem - 2px);
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealers-brand .toggle-dealers .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+  -webkit-transform: translatex(20px);
+          transform: translatex(20px);
+  left: calc(-2.25rem + 1px);
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealers-brand .toggle-dealers .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+  border-color: #adb5bd;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealer-list {
+  max-height: 250px;
+  overflow-y: scroll;
+  margin-top: 30px;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealer-list .dealer-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 5px -1px #ccc;
+          box-shadow: 0 0 5px -1px #ccc;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealer-list .dealer-name .dealer-title-info {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 10px 15px;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealer-list .dealer-name .dealer-title-info .dealer-title {
+  width: 100%;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealer-list .dealer-name .dealer-title-info .dealer-title h6 {
+  color: var(--dark-color);
+  font-size: 14px;
+  margin-bottom: 0px;
+  padding-left: 30px;
+  padding-top: 5px;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealer-list .dealer-name .dealer-title-info .dealer-address {
+  width: 100%;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealer-list .dealer-name .dealer-title-info .dealer-address p {
+  color: var(--dark-color);
+  font-size: 13px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealer-list .dealer-name .dealer-title-info .dealer-address span {
+  font-size: 12px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealer-list .dealer-name .dealer-title-info .dealer-address span::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  display: inline-block !important;
+  height: 2px;
+  width: 2px;
+  border-radius: 50%;
+  top: 48%;
+  background-color: var(--dark-color);
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealer-list .dealer-name .dealer-title-info .dealer-address img {
+  position: relative;
+  top: -1px;
+  height: 12px;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealer-list .dealer-name .dealer-showroomImg {
+  max-width: 110px;
+  height: auto;
+  overflow: hidden;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealer-list .dealer-name .dealer-showroomImg img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealer-list .dealer-check-filter {
+  padding-left: 1px;
+  margin-bottom: 30px;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealer-list .dealer-check-filter label {
+  position: relative;
+  display: block;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealer-list .dealer-check-filter input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -3;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealer-list .dealer-check-filter input[type="checkbox"]:not(:checked) + label:after,
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealer-list .dealer-check-filter input[type="checkbox"]:checked + label:after {
+  position: absolute;
+  top: -2px;
+  left: 8px;
+  font-size: 12px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  color: var(--white-color);
+  font-family: 'FontAwesome';
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f00c";
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealer-list .dealer-check-filter input[type="checkbox"]:not(:checked) + label::after {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 0, 0) scale(0);
+  transform: translate3d(0, 0, 0) scale(0);
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealer-list .dealer-check-filter input[type="checkbox"]:checked + label:before {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealer-list .dealer-check-filter input[type="checkbox"]:checked ~ .dealer {
+  -webkit-box-shadow: 0 0 0 2px var(--primary-color), 0 0 15px -5px #ccc;
+          box-shadow: 0 0 0 2px var(--primary-color), 0 0 15px -5px #ccc;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealer-list .dealer-check-filter input[type="checkbox"] + label {
+  padding-left: 25px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: absolute;
+  top: 20px;
+  left: 12px;
+}
+
+.sell-carDesc-section .form-wizard .wizard-fieldset .select-dealer-list .dealer-check-filter input[type="checkbox"] + label:before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: -5px;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  background: #eee;
+}
+
+/*----------------------------- Sell Your Car Second Page CSS End  ----------------------------- */
+/*----------------------------- Sell Your Car Third Page CSS End  ----------------------------- */
+.sell-carThankYou-section {
+  padding: 60px 0;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .sell-carThankYou-section {
+    padding: 20px 0 30px;
+  }
+}
+
+.sell-carThankYou-section .sell-carThankYou-sectionInner {
+  max-width: 766px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sell-carThankYou-section .sell-carThankYou-sectionInner p {
+  color: var(--dark-color);
+  font-size: 14px;
+}
+
+.sell-carThankYou-section .sell-carThankYou-sectionInner h1 {
+  font-size: 32px;
+  line-height: 1.25;
+  margin: 0px;
+  text-transform: capitalize;
+  color: var(--dark-color);
+}
+
+@media (max-width: 767px) {
+  .sell-carThankYou-section .sell-carThankYou-sectionInner h1 {
+    font-size: 28px;
+  }
+}
+
+.sell-carThankYou-section .sell-carThankYou-sectionInner h2 {
+  color: var(--dark-color);
+  font-size: 16px;
+  margin: 0 30px;
+  font-weight: 400;
+}
+
+@media (max-width: 767px) {
+  .sell-carThankYou-section .sell-carThankYou-sectionInner h2 {
+    margin-bottom: 5px;
+  }
+}
+
+.sell-carThankYou-section .sell-carThankYou-sectionInner h2 span {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.sell-carThankYou-section .sell-carThankYou-sectionInner h3 {
+  color: var(--dark-color);
+  font-size: 28px;
+  line-height: 1;
+}
+
+@media (max-width: 767px) {
+  .sell-carThankYou-section .sell-carThankYou-sectionInner h3 {
+    margin-bottom: 5px;
+    font-size: 24px;
+  }
+}
+
+.sell-carThankYou-section .sell-carThankYou-sectionInner .sell-carThankYou-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 0;
+}
+
+@media (max-width: 767px) {
+  .sell-carThankYou-section .sell-carThankYou-sectionInner .sell-carThankYou-image {
+    display: block;
+    padding: 15px 0;
+  }
+}
+
+.sell-carThankYou-section .sell-carThankYou-sectionInner .sell-carThankYou-image img {
+  max-width: 250px;
+  width: 100%;
+}
+
+.sell-carThankYou-section .sell-carThankYou-sectionInner .sell-carThankYou-model {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .sell-carThankYou-section .sell-carThankYou-sectionInner .sell-carThankYou-model {
+    padding: 10px 0;
+    margin-bottom: 10px;
+  }
+}
+
+.sell-carThankYou-section .sell-carThankYou-sectionInner .sell-carThankYou-model p span {
+  font-weight: 500;
+}
+
+/*----------------------------- Sell Your Car Third Page CSS End  ----------------------------- */
+/*# sourceMappingURL=sell-car.css.map */

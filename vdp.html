@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <title>Used Cars Near Me</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.css">
+
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/slick-theme.css">
+
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/select2.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css?v=5">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous" />
+
+</head>
+
+<body>
+
+    <!-- Header Section Start -->
+    <header class="site-header" id="header">
+        <div class="ares-container-mid">
+            <nav class="navbar navbar-expand-lg">
+                <div class="logo-with-location">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/ucnm.png" class="img-fluid" alt="Used Cars Near Me" title="Used Cars Near Me">
+                    </a>
+
+                    <div class="dropdown">
+                        <button type="button" class="btn dropdown-toggle text-capitalize" data-toggle="dropdown">
+                            <img src="images/location.png" class="img-fluid mr-1">los angeles, CA
+                        </button>
+                        <div class="dropdown-menu">
+                            <h6>Shop By Location</h6>
+                            <p class="ares-font-13">Finding cars near you can lower your shipping cost and delivery time.</p>
+
+                            <form>
+                                <label>Search By Zipcode</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="30098" id="zipcode" name="zipcode">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">Update</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#websitenavbar" aria-controls="websitenavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="websitenavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="srp.html">New Cars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="srp.html">Used Cars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Research</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Locate Auto Dealers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Auto Insights</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-heart-o"></i>
+                                <span data-item="wishlist">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <main class="ares-page-body">
+
+        <section class="vehicleDetail-block">
+            <div class="ares-container-mid">
+                <div class="row m-lg-0">
+
+                    <div class="col-lg-7 col-md-12">
+                        <div class="vdpLeft-block">
+                            <div class="vdp-slider-container">
+                                <div class="row">
+                                    <div class="col-md-12 p-0">
+                                        <div class="slider slider-single">
+                                            <div class="single-img">
+                                                <img src="./images/vdp/slider/2020-Chevrolet-Silverado-1500-Work-Truck-3GCNWAEF0LG325819-7845.jpeg" class="img-fluid" alt="slide" />
+                                            </div>
+                                            <div class="single-img">
+                                                <img src="./images/vdp/slider/2020-Chevrolet-Silverado-1500-Work-Truck-3GCNWAEF0LG325819-8791.jpeg" class="img-fluid" alt="slide" />
+                                            </div>
+                                            <div class="single-img">
+                                                <img src="./images/vdp/slider/2020-Chevrolet-Silverado-1500-Work-Truck-3GCNWAEF0LG325819-3105.jpeg" class="img-fluid" alt="slide" />
+                                            </div>
+                                            <div class="single-img">
+                                                <img src="./images/vdp/slider/2020-Chevrolet-Silverado-1500-Work-Truck-3GCNWAEF0LG325819-3446.jpeg" class="img-fluid" alt="slide" />
+                                            </div>
+                                            <div class="single-img">
+                                                <img src="./images/vdp/slider/2020-Chevrolet-Silverado-1500-Work-Truck-3GCNWAEF0LG325819-3896.jpeg" class="img-fluid" alt="slide" />
+                                            </div>
+                                            <div class="single-img">
+                                                <img src="./images/vdp/slider/2020-Chevrolet-Silverado-1500-Work-Truck-3GCNWAEF0LG325819-3969.jpeg" class="img-fluid" alt="slide" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 d-none d-md-block p-0">
+                                        <div class="slider slider-nav mx-n1 ">
+                                            <div class="single-img-thumb p-1"><img src="./images/vdp/slider/2020-Chevrolet-Silverado-1500-Work-Truck-3GCNWAEF0LG325819-8791.jpeg" class="img-fluid" alt="slide" /></div>
+                                            <div class="single-img-thumb p-1"><img src="./images/vdp/slider/2020-Chevrolet-Silverado-1500-Work-Truck-3GCNWAEF0LG325819-7845.jpeg" class="img-fluid" alt="slide" /></div>
+                                            <div class="single-img-thumb p-1"><img src="./images/vdp/slider/2020-Chevrolet-Silverado-1500-Work-Truck-3GCNWAEF0LG325819-3105.jpeg" class="img-fluid" alt="slide" /></div>
+                                            <div class="single-img-thumb p-1"><img src="./images/vdp/slider/2020-Chevrolet-Silverado-1500-Work-Truck-3GCNWAEF0LG325819-3446.jpeg" class="img-fluid" alt="slide" /></div>
+                                            <div class="single-img-thumb p-1"><img src="./images/vdp/slider/2020-Chevrolet-Silverado-1500-Work-Truck-3GCNWAEF0LG325819-3896.jpeg" class="img-fluid" alt="slide" /></div>
+                                            <div class="single-img-thumb p-1"><img src="./images/vdp/slider/2020-Chevrolet-Silverado-1500-Work-Truck-3GCNWAEF0LG325819-3969.jpeg" class="img-fluid" alt="slide" /></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 px-lg-0">
+                                        <div class="slider-car-count d-flex justify-content-between mt-2 mt-md-0">
+                                            <div class="slider-car-count-inner d-flex justify-content-center align-items-center">
+                                                <img src="images/vdp/camera.svg" class="img-fluid mr-2" alt="camera">
+                                                <p class="mb-0">1/32</p>
+                                            </div>
+                                            <div class="vehicleViews">
+                                                <div class="slider-car-count-inner d-flex justify-content-center align-items-center">
+                                                    <img src="images/vdp/views.svg" class="img-fluid mr-2" width="20" alt="views">
+                                                    <p class="mb-0">622</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-12 pr-lg-0">
+
+                        <div class="vdp-sidebar p-0 pt-3 pl-lg-3" id="vdp-sidebar">
+                            <diV class="wishList-wrapper d-flex justify-content-end">
+                                <diV>
+                                    <i class="fa fa-star-o mr-1"></i>
+                                    <span class="ares-font-13">Add to wishlist</span>
+                                </diV>
+                            </diV>
+
+                            <div class="vdpTitle mb-3">
+                                <div class="_condition ares-font-13">Used</div>
+                                <h1 class="_title">2018 Chevrolet Sliverado 1500 LT</h1>
+                            </div>
+
+                            <div class="carOverview mb-md-4">
+                                <div class="row m-0 justify-content-between">
+                                    <div class="_box --price">
+                                        <div>
+                                            <span class="ares-font-12">Dealer Price</span>
+                                            <h5>$60,610</h5>
+                                        </div>
+                                    </div>
+                                    <div class="_box">
+                                        <div>
+                                            <span class="ares-font-12">Estimated EMI</span>
+                                            <h5>$748<span class="ares-font-10 font-weight-normal">/Mo
+                                                <a href="#" data-calc="open">Calculate <i class="fa fa-info-circle"></i></a></span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="_box">
+                                        <div>
+                                            <span class="ares-font-12">
+                                                Price History
+                                            </span>
+                                            <div>
+                                                <h5 class="d-inline-block">$350</h5>
+                                                <span class="text-success ares-font-10">
+                                                    <img src="./images/vdp/price-drop.svg" class="_img" /> in 7 days</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="_box">
+                                        <div>
+                                            <span class="ares-font-12">Listing updated</span>
+                                            <div>
+                                                <h5 class="d-inline-block">20</h5>
+                                                <span class="text-success ares-font-10">days ago</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="overviewCta">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div id="contactCta">
+                                            <a href="#" data-toggle="modal" data-target="#leadForm" class="ares-themeBtn w-100 mb-3">I'm Interested</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="#" class="ares-themeBtn w-100 btnWhite mb-3">Buy on dealer website</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carOffers mb-md-4">
+                                <div class="row justify-content-md-around flex-wrap m-0">
+
+                                    <div class="text-center carOffer-cta px-md-2 pr-2">
+                                        <a href="#" class="py-2">
+                                            <img class="img-fluid mr-2 d-none d-md-block" src="./images/vdp/offers.svg" />
+                                            <span class="ares-font-14">Check Offers</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="text-center carOffer-cta px-md-2 pl-2">
+                                        <a href="#" class="py-2">
+                                            <img class="img-fluid mr-2 d-none d-md-block" src="./images/vdp/finance.svg" />
+                                            <span class="ares-font-14">Apply For Financing</span>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <diV class="overviewFeatures">
+                                <div class="row">
+
+                                    <div class="col-xl-12">
+                                        <div class="vdp-sidebar-box border mb-md-4">
+                                            <div class="miscellaneous-features flex-1 px-3 text-center">
+                                                <div>
+                                                    <p class="font-weight-normal">Home Delivery</p>
+                                                    <span class="theme-color-primary">Available - 92111</span>
+                                                </div>
+                                            </div>
+                                            <div class="miscellaneous-features flex-1 px-3 text-center">
+                                                <div>
+                                                    <p class="font-weight-normal">Virtual Appointment</p>
+                                                    <span class="theme-color-primary">Available</span>
+                                                </div>
+                                            </div>
+                                            <div class="miscellaneous-features flex-1 px-3 text-center">
+                                                <div>
+                                                    <p class="font-weight-normal">Test Drive</p>
+                                                    <span class="theme-color-primary">Available - 92111</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </diV>
+
+                            <diV>
+                                <div class="row">
+
+                                    <div class="col-xl-6 col-md-12 col-sm-6">
+                                        <div class="vdp-sidebar-box mb-3 mb-xl-0 border d-block justify-content-start w-100 p-0">
+                                            <div class="text-center py-2 px-4">
+                                                <div class="overallSafetyRating mb-2">
+                                                    <span class="fa fa-star active"></span>
+                                                    <span class="fa fa-star active"></span>
+                                                    <span class="fa fa-star active"></span>
+                                                    <span class="fa fa-star active"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </div>
+                                                <p class="m-0 text-uppercase ares-font-13">Overall Safety Rating From NHTSA</p>
+                                            </div>
+                                            <hr class="m-0">
+                                            <div class="p-2 d-flex row mx-0">
+                                                <div class="text-center border-right px-2 flex-grow-1 col-6 px-0">
+                                                    <h6 class="">5</h6>
+                                                    <p class="m-0 ares-font-12">RECALLS</p>
+                                                </div>
+                                                <div class="pl-1 ares-font-12 flex-grow-1 text-center col-6 px-0">
+                                                    <p class="mb-1">Investigations <span class="text-dark">0</span></p>
+                                                    <p class="m-0">Complaints <span class="text-dark">45</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-6 col-md-12 col-sm-6">
+                                        <div class="vdp-sidebar-box  mb-3 border mb-xl-0 d-block justify-content-start w-100 p-0">
+                                            <div class="text-center dealerAd p-2">
+                                                <div class="mb-1">
+                                                    <a href="#" class="">Champion Chevrolet of Reno </a>
+                                                </div>
+                                                <p class="mb-1 text-uppercase ares-font-12">
+                                                    <i class="fa fa-map-marker"></i> Gardent City, GA 31408
+                                                </p>
+                                            </div>
+                                            <hr class="m-0">
+                                            <div class="p-2 row mx-0 align-items-center">
+                                                <div class="text-center border-right flex-grow-1 col-6">
+                                                    <h6 class="">240</h6>
+                                                    <p class="m-0 ares-font-12">Cars available</p>
+                                                </div>
+                                                <div class="px-3 py-2 flex-grow-1 col-6 text-center">
+                                                    <a href="#" class="">View Cars</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </diV>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Dealer Ads Start -->
+        <div class="ares-container-mid">
+            <div class="dealerAdsBox text-center d-sm-block d-md-none d-lg-none d-xl-nonecol-sm-12">
+                <div class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="#" target="_blank">
+                                <span><i class="fa fa-info-circle"> </i> Ad</span>
+                                <img src="images/ads/300x50.jpg" class="img-fluid" alt="300x50" class="300x50">
+                            </a>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="#" target="_blank">
+                                <span><i class="fa fa-info-circle"> </i> Ad</span>
+                                <img src="images/ads/300x50.jpg" class="img-fluid" alt="300x50" class="300x50">
+                            </a>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="#" target="_blank">
+                                <span><i class="fa fa-info-circle"> </i> Ad</span>
+                                <img src="images/ads/300x50.jpg" class="img-fluid" alt="300x50" class="300x50">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Dealer Ads End -->
+
+        <section class="vehice-overview pt-3 pt-md-5 pb-4">
+
+            <div class="container">
+                <div class="vdp-heading mb-3 mb-md-4">
+                    <h3>Vehicle Overview</h3>
+                </div>
+
+                <div class="veicleOverview-container">
+                    <div class="veicleOverview-box mb-3 ares-font-13">
+                        <div>
+                            <span>Body Type</span>
+                            <p class="mb-0 font-weight-600">SUV</p>
+                        </div>
+                    </div>
+
+                    <div class="veicleOverview-box mb-3 ares-font-13">
+                        <div>
+                            <span>Engine</span>
+                            <p class="mb-0 font-weight-600">3.5L V-6 Gas</p>
+                        </div>
+                    </div>
+
+                    <div class="veicleOverview-box mb-3 ares-font-13">
+                        <div>
+                            <span>Transmission</span>
+                            <p class="mb-0 font-weight-600">Automatic</p>
+                        </div>
+                    </div>
+
+                    <div class="veicleOverview-box mb-3 ares-font-13">
+                        <div>
+                            <span>Fuel Type</span>
+                            <p class="mb-0 font-weight-600">Gasoline</p>
+                        </div>
+                    </div>
+
+                    <div class="veicleOverview-box mb-3 ares-font-13">
+                        <div>
+                            <span>Miles</span>
+                            <p class="mb-0 font-weight-600">20 Miles</p>
+                        </div>
+                    </div>
+
+                    <div class="veicleOverview-box mb-3 ares-font-13">
+                        <div>
+                            <span>Exterior Color</span>
+                            <p class="mb-0 font-weight-600">Dark Blue</p>
+                        </div>
+                    </div>
+
+                    <div class="veicleOverview-box mb-3 ares-font-13">
+                        <div>
+                            <span>Interior Color</span>
+                            <p class="mb-0 font-weight-600">Dark Blue</p>
+                        </div>
+                    </div>
+
+                    <div class="veicleOverview-box mb-3 ares-font-13">
+                        <div>
+                            <span>VIN No.</span>
+                            <p class="mb-0 font-weight-600">1234567890SDFGHJ</p>
+                        </div>
+                    </div>
+
+                    <div class="veicleOverview-box mb-3 ares-font-13">
+                        <div>
+                            <span>Stock ID</span>
+                            <p class="mb-0 font-weight-600">234567h</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="vehicle-features mb-1">
+            <div class="container pt-4 pt-md-5 pb-3 pb-md-3">
+                <div class="vdp-heading mb-3 mb-md-4">
+                    <h3> Features</h3>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                        <div class="vdp-Popularfeatures-box">
+                            <p>Premium Wheels</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                        <div class="vdp-Popularfeatures-box">
+                            <p>Premium Seat Material</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                        <div class="vdp-Popularfeatures-box">
+                            <p>Front Heated Seats</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                        <div class="vdp-Popularfeatures-box">
+                            <p>Remote Engine Start</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                        <div class="vdp-Popularfeatures-box">
+                            <p>Multi-Zone Climate Control</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                        <div class="vdp-Popularfeatures-box">
+                            <p>Blind Spot System</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                        <div class="vdp-Popularfeatures-box">
+                            <p>Lane Keep Assist</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                        <div class="vdp-Popularfeatures-box">
+                            <p>Backup Camera</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                        <div class="vdp-Popularfeatures-box">
+                            <p>Parking Sensors</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                        <div class="vdp-Popularfeatures-box">
+                            <p>Bluetooth</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                        <div class="vdp-Popularfeatures-box">
+                            <p>Multi-Zone Climate Control</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                        <div class="vdp-Popularfeatures-box">
+                            <p>Blind Spot System</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                        <div class="vdp-Popularfeatures-box">
+                            <p>Lane Keep Assist</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                        <div class="vdp-Popularfeatures-box">
+                            <p>Backup Camera</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                        <div class="vdp-Popularfeatures-box">
+                            <p>Blind Spot System</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                        <div class="vdp-Popularfeatures-box">
+                            <p>Lane Keep Assist</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="view-allBtn mt-2">
+                            <a href="#">See all Features</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Dealer Ads Start -->
+        <div class="row">
+            <div class="dealerAdsBox text-center col-12">
+                <div class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="#" target="_blank">
+                                <span><i class="fa fa-info-circle"> </i> Ad</span>
+                                <img src="images/ads/728x90.jpg" class="img-fluid" alt="728X90" class="728X90">
+                            </a>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="#" target="_blank">
+                                <span><i class="fa fa-info-circle"> </i> Ad</span>
+                                <img src="images/ads/728x90.jpg" class="img-fluid" alt="728X90" class="728X90">
+                            </a>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="#" target="_blank">
+                                <span><i class="fa fa-info-circle"> </i> Ad</span>
+                                <img src="images/ads/728x90.jpg" class="img-fluid" alt="728X90" class="728X90">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Dealer Ads End -->
+
+        <section class="py-4 py-md-5 mt-1 vdp-carfax">
+            <div class="container">
+
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+
+                    <div class="vdp-heading">
+                        <h3 class="mb-3">Vehicle History</h3>
+                        <p class="ares-font-13 mb-4 mb-md-0">Car report by authorize Partner CARFAX, you can buy full report by carfax.com <a href="#">click here to buy</a></p>
+                    </div>
+
+                    <div>
+                        <img class="img-fluid mb-2" src="https://storage.googleapis.com/sba-frontend-dev-bucket/Carweek/images/vdp-images/carfaxlogo.svg" />
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="pt-5 pb-5 vdp-dealerDetails">
+            <div class="container">
+
+                <div class="__wrapper">
+                    <div class="row">
+
+                        <div class="col-md-7">
+                            <div class="__details">
+                                <h4 class="mb-3 mb-md-4">Champion Chevrolet of Reno</h4>
+                                <div class="mb-4">
+                                    <h5 class="mb-2">Dealer's Note</h5>
+                                    <p class="ares-font-13">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nesciunt numquam nulla cum inventore vitae consequuntur explicabo eveniet vel alias, tempora maxime delectus sed quibusdam ... <a href="#">Read More</a></p>
+                                </div>
+                                <div class="mb-4">
+                                    <h5 class="mb-2">Location</h5>
+                                    <p class="ares-font-13">150N BartlettStreet, Medford, OR 97501</p>
+                                </div>
+                                <div class="">
+                                    <a href="#" class="ares-themeBtn mr-2">Get Direction</a>
+                                    <a href="#" class="ares-themeBtn btnWhite">Contact Dealerships</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="map-container">
+                                <iframe class="w-100 mb-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.650241934119!2d-122.87209490000001!3d42.3286582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54cf7a3a9015ff75%3A0x661e4a67725d7f6d!2s150%20N%20Bartlett%20St%2C%20Medford%2C%20OR%2097501%2C%20USA!5e0!3m2!1sen!2sin!4v1657717373897!5m2!1sen!2sin"
+                                    height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="pb-3 similar-cars">
+            <div class="ares-container-mid">
+
+                <div class="vdp-heading mb-4">
+                    <h3>Cars Similar to <span class="theme-color-primary">Chevrolet Sliverado</span></h3>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="vehicleInventoryBox">
+                            <a href="#">
+                                <div class="vehicleImage">
+                                    <img src="images/acura-img6.jpeg" class="img-fluid" alt="Car" title="Car">
+                                </div>
+
+                                <div class="vehicleInventoryBox-detail">
+                                    <button class="vehicleInventory-wishlist" data-wishlist="true" href="#" data-action="add-wishlist" data-vin="1GT49PEY8NF189466" title="Add To Wishlist">
+                                    <i class="fa fa-star-o favourite-icon"></i>
+                                </button>
+
+                                    <div class="vehicleTitle">
+                                        <p class="vehicleCondition condition-used">Used</p>
+                                        <h3 class="vehicleName">2022 Acura MDX</h3>
+                                        <h6 class="vehicleTrim">Type w/advance package <span>SUV</span></h6>
+                                    </div>
+
+                                    <div class="vehicleInventory-priceDetail">
+                                        <div class="vehicleInventory-price">
+                                            <h6 class="current-price">$33,900</h6>
+                                        </div>
+                                        <div class="vehicleInventory-emi">
+                                            <h5><span class="fa fa-exclamation-circle" data-toggle="tooltip" data-placement="left" title="Estimated payment for 60 Months at 0% APR*"></span> EMI $688/Month</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="vehicleInventoryDescription">
+                                        <ul>
+                                            <li>300000 mi</li>
+                                            <li>Automatic</li>
+                                            <li>Flex Fuel</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="vehicleInventory-location">
+                                        <p><img src="images/vehicle-location.png" class="img-fluid" alt="Car" title="Car"> Maple Shade, NJ 8052 <span>( 10 Miles Away )</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="vehicleInventoryBox">
+                            <a href="#">
+                                <div class="vehicleImage">
+                                    <img src="images/acura-img5.jpeg" class="img-fluid" alt="Car" title="Car">
+                                </div>
+
+                                <div class="vehicleInventoryBox-detail">
+                                    <button class="vehicleInventory-wishlist" data-wishlist="true" href="#" data-action="add-wishlist" data-vin="1GT49PEY8NF189466" title="Add To Wishlist">
+                                    <i class="fa fa-star-o favourite-icon"></i>
+                                </button>
+
+                                    <div class="vehicleTitle">
+                                        <p class="vehicleCondition condition-used">Used</p>
+                                        <h3 class="vehicleName">2022 Acura MDX</h3>
+                                        <h6 class="vehicleTrim">Type w/advance package <span>SUV</span></h6>
+                                    </div>
+
+                                    <div class="vehicleInventory-priceDetail">
+                                        <div class="vehicleInventory-price">
+                                            <h6 class="current-price">$33,900</h6>
+                                        </div>
+                                        <div class="vehicleInventory-emi">
+                                            <h5><span class="fa fa-exclamation-circle" data-toggle="tooltip" data-placement="left" title="Estimated payment for 60 Months at 0% APR*"></span> EMI $688/Month</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="vehicleInventoryDescription">
+                                        <ul>
+                                            <li>300000 mi</li>
+                                            <li>Automatic</li>
+                                            <li>Flex Fuel</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="vehicleInventory-location">
+                                        <p><img src="images/vehicle-location.png" class="img-fluid" alt="Car" title="Car"> Maple Shade, NJ 8052 <span>( 10 Miles Away )</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="vehicleInventoryBox">
+                            <a href="#">
+                                <div class="vehicleImage">
+                                    <img src="images/acura-img4.jpeg" class="img-fluid" alt="Car" title="Car">
+                                </div>
+
+                                <div class="vehicleInventoryBox-detail">
+                                    <button class="vehicleInventory-wishlist" data-wishlist="true" href="#" data-action="add-wishlist" data-vin="1GT49PEY8NF189466" title="Add To Wishlist">
+                                    <i class="fa fa-star-o favourite-icon"></i>
+                                </button>
+
+                                    <div class="vehicleTitle">
+                                        <p class="vehicleCondition condition-new">New</p>
+                                        <h3 class="vehicleName">2022 Acura MDX</h3>
+                                        <h6 class="vehicleTrim">Type w/advance package <span>SUV</span></h6>
+                                    </div>
+
+                                    <div class="vehicleInventory-priceDetail">
+                                        <div class="vehicleInventory-price">
+                                            <h6 class="current-price">$33,900</h6>
+                                        </div>
+                                        <div class="vehicleInventory-emi">
+                                            <h5><span class="fa fa-exclamation-circle" data-toggle="tooltip" data-placement="left" title="Estimated payment for 60 Months at 0% APR*"></span> EMI $688/Month</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="vehicleInventoryDescription">
+                                        <ul>
+                                            <li>300000 mi</li>
+                                            <li>Automatic</li>
+                                            <li>Flex Fuel</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="vehicleInventory-location">
+                                        <p><img src="images/vehicle-location.png" class="img-fluid" alt="Car" title="Car"> Maple Shade, NJ 8052 <span>( 10 Miles Away )</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="vehicleInventoryBox">
+                            <a href="#">
+                                <div class="vehicleImage">
+                                    <img src="images/acura-img3.jpeg" class="img-fluid" alt="Car" title="Car">
+                                </div>
+
+                                <div class="vehicleInventoryBox-detail">
+                                    <button class="vehicleInventory-wishlist" data-wishlist="true" href="#" data-action="add-wishlist" data-vin="1GT49PEY8NF189466" title="Add To Wishlist">
+                                    <i class="fa fa-star-o favourite-icon"></i>
+                                </button>
+
+                                    <div class="vehicleTitle">
+                                        <p class="vehicleCondition condition-used">Used</p>
+                                        <h3 class="vehicleName">2022 Acura MDX</h3>
+                                        <h6 class="vehicleTrim">Type w/advance package <span>SUV</span></h6>
+                                    </div>
+
+                                    <div class="vehicleInventory-priceDetail">
+                                        <div class="vehicleInventory-price">
+                                            <h6 class="current-price">$33,900</h6>
+                                        </div>
+                                        <div class="vehicleInventory-emi">
+                                            <h5><span class="fa fa-exclamation-circle" data-toggle="tooltip" data-placement="left" title="Estimated payment for 60 Months at 0% APR*"></span> EMI $688/Month</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="vehicleInventoryDescription">
+                                        <ul>
+                                            <li>300000 mi</li>
+                                            <li>Automatic</li>
+                                            <li>Flex Fuel</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="vehicleInventory-location">
+                                        <p><img src="images/vehicle-location.png" class="img-fluid" alt="Car" title="Car"> Maple Shade, NJ 8052 <span>( 10 Miles Away )</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Dealer Ads Start -->
+        <div class="row mb-4">
+            <div class="dealerAdsBox text-center col-12">
+                <div class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="#" target="_blank">
+                                <span><i class="fa fa-info-circle"> </i> Ad</span>
+                                <img src="images/ads/970x250.jpg" class="img-fluid" alt="970x250" class="970x250">
+                            </a>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="#" target="_blank">
+                                <span><i class="fa fa-info-circle"> </i> Ad</span>
+                                <img src="images/ads/970x250.jpg" class="img-fluid" alt="970x250" class="970x250">
+                            </a>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="#" target="_blank">
+                                <span><i class="fa fa-info-circle"> </i> Ad</span>
+                                <img src="images/ads/970x250.jpg" class="img-fluid" alt="970x250" class="970x250">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Dealer Ads End -->
+
+    </main>
+
+    <!-- Finance Calculator -->
+    <div class="financeCalc">
+        <div class="financeCalc-top">
+            <h6 class="m-0">Calculate Your EMI</h6>
+            <span class="financeCalc-close" data-calc="close">×</span>
+        </div>
+
+        <div class="financeCalc-result ares-font-13">
+            <div class="row">
+                <div class="col-6 border-right">
+                    <div>
+                        <p class="mb-0 theme-color-primary">Estimated EMI</p>
+                        <div class="font-weight-600">
+                            <span class="text-dark">$5,034</span>/
+                            <span>Month</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div>
+                        <p class="mb-0 theme-color-primary">Total Loan Amount</p>
+                        <div class="font-weight-600">
+                            <span class="text-dark">$60,610</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="financeCalc-result border-top ares-font-13">
+            <div class="row">
+
+                <div class="col-6 border-right">
+                    <div>
+                        <p class="mb-0 theme-color-primary">Total Interest</p>
+                        <div class="font-weight-600">
+                            <span class="text-dark">$0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div>
+                        <p class="mb-0 theme-color-primary">Payble Amount</p>
+                        <div class="font-weight-600">
+                            <span class="text-dark">$60,610</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="financeCalc-result border-top ares-font-13">
+            <div class="row">
+
+                <div class="col-12">
+                    <div>
+                        <p class="mb-0 theme-color-primary">Car Listing Price [$]</p>
+                        <div class="font-weight-600">
+                            <span class="text-dark">$60,410</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="financeCalc-main">
+
+            <div class="downpayment border-top border-bottom py-4">
+                <div class="d-flex justify-content-between">
+                    <span class="ares-font-13 theme-color-primary">Annual Percentage Rate [APR%]</span>
+                    <div class="ares-font-13">$<span data-calc="price_output">150,000</span></div>
+                </div>
+                <div class="emiSlider">
+                    <input class="rangeSlide" data-input="calcField" type="range" min="10000" max="100000" value="43000">
+                </div>
+                <div class="sliderRange mt-1 ares-font-13 text-dark font-weight-600 d-flex justify-content-between">
+                    <span>0%</span>
+                    <span>36%</span>
+                </div>
+            </div>
+
+            <div class="downpayment border-top border-bottom py-4">
+                <div class="d-flex justify-content-between">
+                    <span class="ares-font-13 theme-color-primary">Tenure [Months]</span>
+                    <div class="ares-font-13">12</div>
+                </div>
+                <div class="emiSlider">
+                    <input class="rangeSlide" data-input="calcField" type="range" min="10000" max="100000" value="43000">
+                </div>
+                <div class="sliderRange mt-1 ares-font-13 text-dark font-weight-600 d-flex justify-content-between">
+                    <span>12 mo</span>
+                    <span>180 mo</span>
+                </div>
+            </div>
+
+            <div class="downpayment border-top border-bottom py-4">
+                <div class="d-flex justify-content-between">
+                    <span class="ares-font-13 theme-color-primary">Down Payment [Optional]</span>
+                    <div class="ares-font-13">0</div>
+                </div>
+                <div class="emiSlider">
+                    <input class="rangeSlide" data-input="calcField" type="range" min="10000" max="100000" value="43000">
+                </div>
+                <div class="sliderRange mt-1 ares-font-13 text-dark font-weight-600 d-flex justify-content-between">
+                    <span>$0</span>
+                    <span>$60,560</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Lead Form Modal -->
+    <div class="modal fade leadForm" id="leadForm">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+                <div class="modal-body p-3 p-md-5">
+                    <div class="_title mb-3 pb-3">
+                        <div>
+                            <h4>I'm Interested</h4>
+                            <p class="ares-font-13">Enter your details to receive more information</p>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 pr-md-2">
+                                <div class="form-group">
+                                    <div class="form-field">
+                                        <input type="text" class="form-control" id="first-name" name="first-name" autofocus="true" required>
+                                        <label for="first-name">First Name </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 pl-md-2">
+                                <div class="form-group">
+                                    <div class="form-field">
+                                        <input type="text" class="form-control" id="last-name" name="last-name" required>
+                                        <label for="last-name">Last Name </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 pr-md-2">
+                                <div class="form-group">
+                                    <div class="form-field">
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                        <label for="email">E-mail </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 pl-md-2">
+                                <div class="form-group">
+                                    <div class="form-field">
+                                        <input type="text" class="form-control" id="phone" name="phone" required>
+                                        <label for="phone">Contact Number </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-group theme-select2-design">
+                                    <div class="form-control-filter">
+                                        <select class="search-filter" name="carcondition" data-placeholder="Check Availablity / Schedule a Test Drive">
+                                            <option value="">Check Availablity / Schedule a Test Drive</option>
+                                            <option value="check availablity">Check Availablity</option>
+                                            <option value="schedule test drive">Schedule a Test Drive</option>                            
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <div class="form-field">
+                                        <textarea row="2" id="message" class="form-control" required></textarea>
+                                        <label for="message">Service Details </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group text-center">
+                                    <button class="ares-themeBtn">Submit Request</button>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="ares-font-10">
+                                    <p class="mb-0">
+                                        By clicking here, you give <a href="#">Usedcarsnearme</a> and its sellers/partners permission to contact you via text or phone which may involve automated marketing and pre-recorded calls. It is not necessary to
+                                        obtain consent in order to purchase products or services. By submitting this form you have read and agree to our <a href="#">Privacy Statement</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer Section Start -->
+    <footer class="site-footer">
+        <div class="pre-footer">
+            <div class="ares-container-mid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 text-center">
+                        <div class="dealer-social">
+                            <ul>
+                                <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="srp.html">Used Cars</a></li>
+                                <li><a href="srp.html">New Cars</a></li>
+                                <li><a href="#">Research</a></li>
+                                <li><a href="#">Blogs</a></li>
+                                <li><a href="#">Locate Auto Dealers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="termsCondition-footer">
+            <div class="ares-container-mid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <p>All vehicles shown on this website are offered for sale by authorized dealers. By accessing this website, you agree to the Terms of Service and Privacy Policy.</p>
+
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Do Not Sell My Personal Information</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright-footer">
+            <div class="ares-container-mid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <p class="footer-copyright">© and ™ Used Cars Near Me, Inc. All rights reserved. Vehicle photos © Evox Images © VinQuery Solutions, © VinAudit, © ip-api.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- slick -->
+    <script src="js/slick.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/vdp.js"></script>
+</body>
+
+</html>

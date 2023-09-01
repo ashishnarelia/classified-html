@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AIAA,4EAA4E;AAE5E,AAAA,0BAA0B,CAAC;EACvB,OAAO,EAAE,MAAM;EACf,QAAQ,EAAE,QAAQ;CACrB",
+    "sources": [
+        "../scss/carweek-dealer.scss",
+        "../scss/abstracts/_variables.scss",
+        "../scss/abstracts/_mixins.scss",
+        "../scss/abstracts/_functions.scss",
+        "../scss/pages/_carweek-dealer.scss"
+    ],
+    "names": [],
+    "file": "carweek-dealer.css"
+}

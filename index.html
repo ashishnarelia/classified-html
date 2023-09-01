@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+      <title>Used Cars Near Me</title>
+      <!-- Font Family -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.css">
+      <!-- Select2 CSS -->
+      <link rel="stylesheet" type="text/css" media="screen" href="css/select2.min.css">
+      <!-- Slick Slider CSS -->
+      <link rel="stylesheet" type="text/css" media="screen" href="css/slick.css">
+      <link rel="stylesheet" type="text/css" media="screen" href="css/slick-theme.css">
+      <!-- Custom CSS -->
+      <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous" />
+   </head>
+   <body>
+      <!-- Header Section Start -->
+      <header class="site-header" id="header">
+         <div class="container">
+            <nav class="navbar navbar-expand-lg">
+               <a class="navbar-brand" href="index.html">
+               <img src="images/ucnm.png" class="img-fluid" alt="Used Cars Near Me" title="Used Cars Near Me">
+               </a>
+               <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#websitenavbar" aria-controls="websitenavbar" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="icon-bar top-bar"></span>
+               <span class="icon-bar middle-bar"></span>
+               <span class="icon-bar bottom-bar"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="websitenavbar">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="srp.html">New Cars</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="srp.html">Used Cars</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Research</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Locate Auto Dealers</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link">Auto Insights</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">
+                        <i class="fa fa-heart-o"></i>
+                        <span data-item="wishlist">0</span>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </header>
+      <!-- Header Section End -->
+      <!-- home banner section starts-->
+      <section class="home-banner-section">
+         <div class="container">
+            <div class="row justify-content-between align-items-center">
+               <div class="home-banner-tabs-section">
+                  <div class="main-heading text-center wow slideInUp">
+                     <h1>Find Great Deals Here</h1>
+                  </div>
+                  <div class="text-center">
+                     <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#findCar">Find car</a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#searchHome">Search Car</a></li>
+                     </ul>
+                  </div>
+                  <div class="home-banner-section-form tab-content">
+                     <div id="findCar" class="findCarSearch theme-select2-design tab-pane active">
+                        <form>
+                           <div class="row">
+                              <div class="col-12 col-sm-12 col-md-12">
+                                 <div class="filter-field">
+                                    <select class="search-filter" data-placeholder="Select Condition">
+                                       <option value="">Select Condition</option>
+                                       <option value="used">New Car Dealer</option>
+                                       <option value="new">Used Car Dealer</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-12 col-sm-12 col-md-12">
+                                 <div class="filter-field">
+                                    <select class="search-filter" data-placeholder="Select Brand">
+                                       <option value="">Select Any Brand</option>
+                                       <option value="Acura">Acura</option>
+                                       <option value="AlfaRomeo">Alfa Romeo</option>
+                                       <option value="AstonMartin">Aston Martin</option>
+                                       <option value="BMW">BMW</option>
+                                       <option value="Buick">Buick</option>
+                                       <option value="Mazda">Mazda</option>
+                                       <option value="Mercedes">Mercedes</option>
+                                       <option value="Volvo">Volvo</option>
+                                       <option value="Volkswagen">Volkswagen</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-12 col-sm-12 col-md-12">
+                                 <div class="filter-field">
+                                    <select class="search-filter" data-placeholder="Select Any Model">
+                                       <option value="">Select Any Model</option>
+                                       <option value="ilx">ILX</option>
+                                       <option value="mdx">MDX</option>
+                                       <option value="tlx">TLX</option>
+                                       <option value="tx">TX</option>
+                                       <option value="rdx">RDX</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-12 col-sm-12 col-md-12">
+                                 <div class="filter-field">
+                                    <select class="search-filter" data-placeholder="Select Any Year">
+                                       <option value="">Select Any Year</option>
+                                       <option value="2020">2020</option>
+                                       <option value="2019">2019</option>
+                                       <option value="2018">2018</option>
+                                       <option value="2017">2017</option>
+                                       <option value="2016">2016</option>
+                                       <option value="2015">2015</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-12 col-sm-12 col-md-12">
+                                 <div class="filter-field">
+                                    <button type="submit" class="btn btn-default themeBtn w-100">
+                                    Search
+                                    </button>
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                     <div id="searchHome" class="tab-pane">
+                        <div  class="tab-pane">
+                           <div class="input-group mb-3 mt-3">
+                                <div id="search-autocomplete" class="form-outline">
+                              <input type="search" class="form-control" id="form1" placeholder="search any vehicle" aria-label="search any vehicle" aria-describedby="basic-addon2">
+                              </div>
+                              <div class="input-group-append">
+                                 <button type="submit" class="input-group-text" id="basic-addon2">Search</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-7">
+            </div>
+         </div>
+         </div>
+         </div>
+         </div>
+         <div class="col-lg-2">
+         </div>
+         <div class="col-lg-6">
+         </div>
+         </div>
+         </div>
+      </section>
+      <!-- home banner section ends -->
+      <section class="most-searched-car-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="main-heading heading-dark mb-4">
+                     <h2 class="mb-3 text-capitalize title-sep"> Drive your <span>favorite car models</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 wow slideInUp" style="visibility: visible; animation-name: slideInUp;">
+                  <div class="most-searched-car-models">
+                     <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                           <a class="nav-link active" data-toggle="tab" href="#All-Models">All Models</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" data-toggle="tab" href="#Convertible">Convertible</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" data-toggle="tab" href="#Coupe">Coupe</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" data-toggle="tab" href="#SUV">SUV</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" data-toggle="tab" href="#Sedan">Sedan</a>
+                        </li>
+                     </ul>
+                     <div class="tab-content mt-4">
+                        <div id="All-Models" class="tab-pane active">
+                           <div class="row justify-content-center">
+                              <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                 <div class="vehicleGrid">
+                                    <div class="vehicleGrid-Img">
+                                       <img src="images/Jaguar-XF.png" class="img-fluid mx-auto d-block" alt="Jaguar-F-type">
+                                    </div>
+                                    <div class="vehicleGrid-content">
+                                       <h4 class="text-uppercase">XF</h4>
+                                       <a href="#"> View Details <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                 <div class="vehicleGrid">
+                                    <div class="vehicleGrid-Img">
+                                       <img src="images/Jaguar-F-Pace.png" class="img-fluid mx-auto d-block" alt="Jaguar-F-Pace">
+                                    </div>
+                                    <div class="vehicleGrid-content">
+                                       <h4 class="text-uppercase">F-Pace</h4>
+                                       <a href="#"> View Details <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                 <div class="vehicleGrid">
+                                    <div class="vehicleGrid-Img">
+                                       <img src="images/jaguar-xe.png" class="img-fluid mx-auto d-block" alt="XE">
+                                    </div>
+                                    <div class="vehicleGrid-content">
+                                       <h4 class="text-uppercase">XE</h4>
+                                       <a href="#"> View Details <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                 <div class="vehicleGrid">
+                                    <div class="vehicleGrid-Img">
+                                       <img src="images/jaguar-e-pace.png" class="img-fluid mx-auto d-block" alt="e-pace">
+                                    </div>
+                                    <div class="vehicleGrid-content">
+                                       <h4 class="text-uppercase">E-Pace</h4>
+                                       <a href="#"> View Details <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                 <div class="vehicleGrid">
+                                    <div class="vehicleGrid-Img">
+                                       <img src="images/Jaguar-XF.png" class="img-fluid mx-auto d-block" alt="XF">
+                                    </div>
+                                    <div class="vehicleGrid-content">
+                                       <h4 class="text-uppercase">XF</h4>
+                                       <a href="#"> View Details <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                 <div class="vehicleGrid">
+                                    <div class="vehicleGrid-Img">
+                                       <img src="images/JAGUAR-I-PACE.png" class="img-fluid mx-auto d-block" alt="I-PACE">
+                                    </div>
+                                    <div class="vehicleGrid-content">
+                                       <h4 class="text-uppercase">I-Pace</h4>
+                                       <a href="#"> View Details <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div id="Convertible" class="tab-pane fade">
+                           <div class="row justify-content-center">
+                              <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                 <div class="vehicleGrid">
+                                    <div class="vehicleGrid-Img">
+                                       <img src="images/Jaguar-XF.png" class="img-fluid mx-auto d-block" alt="Jaguar-F-type">
+                                    </div>
+                                    <div class="vehicleGrid-content">
+                                       <h4 class="text-uppercase">XF</h4>
+                                       <a href="#"> View Details <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div id="Coupe" class="tab-pane fade">
+                           <div class="row justify-content-center">
+                              <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                 <div class="vehicleGrid">
+                                    <div class="vehicleGrid-Img">
+                                       <img src="images/jaguar-xe.png" class="img-fluid mx-auto d-block" alt="XE">
+                                    </div>
+                                    <div class="vehicleGrid-content">
+                                       <h4 class="text-uppercase">XE</h4>
+                                       <a href="#"> View Details <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div id="SUV" class="tab-pane fade">
+                           <div class="row justify-content-center">
+                              <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                 <div class="vehicleGrid">
+                                    <div class="vehicleGrid-Img">
+                                       <img src="images/Jaguar-F-Pace.png" class="img-fluid mx-auto d-block" alt="Jaguar-F-Pace">
+                                    </div>
+                                    <div class="vehicleGrid-content">
+                                       <h4 class="text-uppercase">F-Pace</h4>
+                                       <a href="#"> View Details <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                 <div class="vehicleGrid">
+                                    <div class="vehicleGrid-Img">
+                                       <img src="images/jaguar-e-pace.png" class="img-fluid mx-auto d-block" alt="e-pace">
+                                    </div>
+                                    <div class="vehicleGrid-content">
+                                       <h4 class="text-uppercase">E-Pace</h4>
+                                       <a href="#"> View Details <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div id="Sedan" class="tab-pane fade">
+                           <div class="row justify-content-center">
+                              <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                 <div class="vehicleGrid">
+                                    <div class="vehicleGrid-Img">
+                                       <img src="images/Jaguar-XF.png" class="img-fluid mx-auto d-block" alt="XF">
+                                    </div>
+                                    <div class="vehicleGrid-content">
+                                       <h4 class="text-uppercase">XF</h4>
+                                       <a href="#"> View Details <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                 <div class="vehicleGrid">
+                                    <div class="vehicleGrid-Img">
+                                       <img src="images/JAGUAR-I-PACE.png" class="img-fluid mx-auto d-block" alt="I-PACE">
+                                    </div>
+                                    <div class="vehicleGrid-content">
+                                       <h4 class="text-uppercase">I-Pace</h4>
+                                       <a href="#"> View Details <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- car brand section starts -->
+      <section class="car-brand-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="themeHeading heading-dark mb-4 ml-0">
+                     <h2 class="mb-3 text-capitalize title-sep">Explore Vehicles by <span>Brands</span></h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12  wow slideInUp">
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#newcars">New cars</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#usedcars">Used Cars</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-sm-12 wow slideInUp">
+                  <div class="tab-content search-make-block">
+                     <div id="newcars" class="tab-pane active">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="brands-slider mt-3 mx-md-n2">
+                                 <div class="slider-item">
+                                    <a href="#">
+                                       <div class="brand-name">
+                                          <img src="images/brand/acura.png" class="img-fluid" title="acura" alt="acura">
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="slider-item">
+                                    <a href="#">
+                                       <div class="brand-name">
+                                          <img src="images/brand/chrysler.png" class="img-fluid" title="chrysler" alt="chrysler">
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="slider-item">
+                                    <a href="#">
+                                       <div class="brand-name">
+                                          <img src="images/brand/dodge.png" class="img-fluid" title="dodge" alt="dodge">
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="slider-item">
+                                    <a href="#">
+                                       <div class="brand-name">
+                                          <img src="images/brand/Ferrari.png" class="img-fluid" title="ferrari" alt="ferrari">
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="slider-item">
+                                    <a href="#">
+                                       <div class="brand-name">
+                                          <img src="images/brand/fiat.png" class="img-fluid" title="fiat" alt="fiat">
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="slider-item">
+                                    <a href="#">
+                                       <div class="brand-name">
+                                          <img src="images/brand/ford.png" class="img-fluid" title="ford" alt="ford">
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="slider-item">
+                                    <a href="#">
+                                       <div class="brand-name">
+                                          <img src="images/brand/alfa-romeo.png" class="img-fluid" title="alfa-romeo" alt="alfa-romeo">
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="slider-item">
+                                    <a href="#">
+                                       <div class="brand-name">
+                                          <img src="images/brand/audi.png" class="img-fluid" title="audi" alt="audi">
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="slider-item">
+                                    <a href="#">
+                                       <div class="brand-name">
+                                          <img src="images/brand/bmw.png" class="img-fluid" title="bmw" alt="bmw">
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="slider-item">
+                                    <a href="#">
+                                       <div class="brand-name">
+                                          <img src="images/brand/chevrolet.png" class="img-fluid" title="chevrolet" alt="chevrolet">
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="slider-item">
+                                    <a href="#">
+                                       <div class="brand-name">
+                                          <img src="images/brand/kia.png" class="img-fluid" title="kia" alt="kia">
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="slider-item">
+                                    <a href="#">
+                                       <div class="brand-name">
+                                          <img src="images/brand/Infiniti.png" class="img-fluid" title="Infiniti" alt="Infiniti">
+                                       </div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="usedcars" class="tab-pane">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="brands-slider mt-3 mx-md-n2">
+                                 <div class="slider-item">
+                                    <a href="#">
+                                       <div class="brand-name">
+                                          <img src="images/brand/acura.png" class="img-fluid" title="acura" alt="acura">
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="slider-item">
+                                    <a href="#">
+                                       <div class="brand-name">
+                                          <img src="images/brand/alfa-romeo.png" class="img-fluid" title="alfa-romeo" alt="alfa-romeo">
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="slider-item">
+                                    <a href="#">
+                                       <div class="brand-name">
+                                          <img src="images/brand/audi.png" class="img-fluid" title="audi" alt="audi">
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="slider-item">
+                                    <a href="#">
+                                       <div class="brand-name">
+                                          <img src="images/brand/bmw.png" class="img-fluid" title="bmw" alt="bmw">
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="slider-item">
+                                    <a href="#">
+                                       <div class="brand-name">
+                                          <img src="images/brand/chevrolet.png" class="img-fluid" title="chevrolet" alt="chevrolet">
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="slider-item">
+                                    <a href="#">
+                                       <div class="brand-name">
+                                          <img src="images/brand/chrysler.png" class="img-fluid" title="chrysler" alt="chrysler">
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="slider-item">
+                                    <a href="#">
+                                       <div class="brand-name">
+                                          <img src="images/brand/dodge.png" class="img-fluid" title="dodge" alt="dodge">
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="slider-item">
+                                    <a href="#">
+                                       <div class="brand-name">
+                                          <img src="images/brand/Ferrari.png" class="img-fluid" title="ferrari" alt="ferrari">
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="slider-item">
+                                    <a href="#">
+                                       <div class="brand-name">
+                                          <img src="images/brand/fiat.png" class="img-fluid" title="fiat" alt="fiat">
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="slider-item">
+                                    <a href="#">
+                                       <div class="brand-name">
+                                          <img src="images/brand/ford.png" class="img-fluid" title="ford" alt="ford">
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="slider-item">
+                                    <a href="#">
+                                       <div class="brand-name">
+                                          <img src="images/brand/kia.png" class="img-fluid" title="kia" alt="kia">
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="slider-item">
+                                    <a href="#">
+                                       <div class="brand-name">
+                                          <img src="images/brand/Infiniti.png" class="img-fluid" title="Infiniti" alt="Infiniti">
+                                       </div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- car brand section ends -->
+      <!-- New car Section Start -->
+      <section class="new-car-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12 col-md-12 col-lg-12">
+                  <div class="main-heading heading-dark">
+                     <h2>Our Top Vehicles</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-12">
+                  <div class="gridSlider">
+                     <div class="cargrid-slide">
+                        <div class="new-car-wrapper">
+                           <div class="new-car-title">
+                              <h4><a href="#">Ferrari F355 GTS</a></h4>
+                              <p>Starting MSRP $52,600*</p>
+                           </div>
+                           <div class="new-car-img">
+                              <a href="#"><img src="images/car/458.png" class="img-fluid" alt="Chrysler"></a>
+                           </div>
+                           <div class="new-car-content">
+                              <div class="new-car-btn">
+                                 <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="cargrid-slide">
+                        <div class="new-car-wrapper">
+                           <div class="new-car-title">
+                              <h4><a href="#">Ferrari 488 Spider</a></h4>
+                              <p>Starting MSRP $52,600*</p>
+                           </div>
+                           <div class="new-car-img">
+                              <a href="#"><img src="images/car/488.png" class="img-fluid" alt="Chrysler"></a>
+                           </div>
+                           <div class="new-car-content">
+                              <div class="new-car-btn">
+                                 <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="cargrid-slide">
+                        <div class="new-car-wrapper">
+                           <div class="new-car-title">
+                              <h4><a href="#">Ferrari F8 Tributo</a></h4>
+                              <p>Starting MSRP $52,600*</p>
+                           </div>
+                           <div class="new-car-img">
+                              <a href="#"><img src="images/car/f8-tributo.png" class="img-fluid" alt="Chrysler"></a>
+                           </div>
+                           <div class="new-car-content">
+                              <div class="new-car-btn">
+                                 <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="cargrid-slide">
+                        <div class="new-car-wrapper">
+                           <div class="new-car-title">
+                              <h4><a href="#">Ferrari 812 Superfast</a></h4>
+                              <p>Starting MSRP $52,600*</p>
+                           </div>
+                           <div class="new-car-img">
+                              <a href="#"><img src="images/car/812-superfast.png" class="img-fluid" alt="Chrysler"></a>
+                           </div>
+                           <div class="new-car-content">
+                              <div class="new-car-btn">
+                                 <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="cargrid-slide">
+                        <div class="new-car-wrapper">
+                           <div class="new-car-title">
+                              <h4><a href="#">Ferrari F355 GTS</a></h4>
+                              <p>Starting MSRP $52,600*</p>
+                           </div>
+                           <div class="new-car-img">
+                              <a href="#"><img src="images/car/458.png" class="img-fluid" alt="Chrysler"></a>
+                           </div>
+                           <div class="new-car-content">
+                              <div class="new-car-btn">
+                                 <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="cargrid-slide">
+                        <div class="new-car-wrapper">
+                           <div class="new-car-title">
+                              <h4><a href="#">Ferrari 488 Spider</a></h4>
+                              <p>Starting MSRP $52,600*</p>
+                           </div>
+                           <div class="new-car-img">
+                              <a href="#"><img src="images/car/488.png" class="img-fluid" alt="Chrysler"></a>
+                           </div>
+                           <div class="new-car-content">
+                              <div class="new-car-btn">
+                                 <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row mt-5">
+               <div class="col-12 col-md-12 composer-themeBtn text-center">
+                  <a href="#" class="themeBtn">Discover More</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Explore More Vehicles Section Start -->
+      <section class="explore-more-vehicles-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12 col-md-12 col-lg-12">
+                  <div class="main-heading heading-dark">
+                     <h2>I'm Looking for</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-2">
+                  <div class="explore-more-car-wrapper">
+                     <a href="#"><img src="images/bt/wagon.svg" class="img-fluid" alt="Chrysler"></a>
+                     <h5><a href="#">Chevrolet Corvette</a></h5>
+                  </div>
+               </div>
+               <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-2">
+                  <div class="explore-more-car-wrapper">
+                     <a href="#"><img src="images/bt/convirtible.svg" class="img-fluid" alt="Chrysler"></a>
+                     <h5><a href="#">Subaru Forester</a></h5>
+                  </div>
+               </div>
+               <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-2">
+                  <div class="explore-more-car-wrapper">
+                     <a href="#"><img src="images/bt/coupe.svg" class="img-fluid" alt="Chrysler"></a>
+                     <h5><a href="#">Ford Fiesta</a></h5>
+                  </div>
+               </div>
+               <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-2">
+                  <div class="explore-more-car-wrapper">
+                     <a href="#"><img src="images/bt/hatchback.svg" class="img-fluid" alt="Chrysler"></a>
+                     <h5><a href="#">Honda Fit</a></h5>
+                  </div>
+               </div>
+               <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-2">
+                  <div class="explore-more-car-wrapper">
+                     <a href="#"><img src="images/bt/suv.svg" class="img-fluid" alt="Chrysler"></a>
+                     <h5><a href="#">MINI Cooper</a></h5>
+                  </div>
+               </div>
+               <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-2">
+                  <div class="explore-more-car-wrapper">
+                     <a href="#"><img src="images/bt/sedan.svg" class="img-fluid" alt="Chrysler"></a>
+                     <h5><a href="#">Toyota Prius</a></h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Explore More Vehicles Section End -->
+      <!-- New car Section Start -->
+      <section class="new-car-section2">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12 col-md-12 col-lg-12">
+                  <div class="main-heading heading-dark">
+                     <h2>Our Top Vehicles</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-12">
+                  <div class="gridSlider2">
+                     <div class="cargrid-slide2">
+                        <div class="new-car-wrapper2">
+                           <div class="new-car-title2">
+                              <h4><a href="#">Ferrari F355 GTS</a></h4>
+                              <p>Starting MSRP $52,600*</p>
+                           </div>
+                           <div class="new-car-img2">
+                              <a href="#"><img src="images/car/458.png" class="img-fluid" alt="Chrysler"></a>
+                           </div>
+                           <div class="new-car-content2">
+                              <div class="new-car-btn">
+                                 <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="cargrid-slide2">
+                        <div class="new-car-wrapper2">
+                           <div class="new-car-title2">
+                              <h4><a href="#">Ferrari 488 Spider</a></h4>
+                              <p>Starting MSRP $52,600*</p>
+                           </div>
+                           <div class="new-car-img2">
+                              <a href="#"><img src="images/car/488.png" class="img-fluid" alt="Chrysler"></a>
+                           </div>
+                           <div class="new-car-content2">
+                              <div class="new-car-btn2">
+                                 <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="cargrid-slide2">
+                        <div class="new-car-wrapper2">
+                           <div class="new-car-title2">
+                              <h4><a href="#">Ferrari F8 Tributo</a></h4>
+                              <p>Starting MSRP $52,600*</p>
+                           </div>
+                           <div class="new-car-img2">
+                              <a href="#"><img src="images/car/f8-tributo.png" class="img-fluid" alt="Chrysler"></a>
+                           </div>
+                           <div class="new-car-content2">
+                              <div class="new-car-btn2">
+                                 <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="cargrid-slide2">
+                        <div class="new-car-wrapper2">
+                           <div class="new-car-title2">
+                              <h4><a href="#">Ferrari 812 Superfast</a></h4>
+                              <p>Starting MSRP $52,600*</p>
+                           </div>
+                           <div class="new-car-img2">
+                              <a href="#"><img src="images/car/812-superfast.png" class="img-fluid" alt="Chrysler"></a>
+                           </div>
+                           <div class="new-car-content2">
+                              <div class="new-car-btn2">
+                                 <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="cargrid-slide2">
+                        <div class="new-car-wrapper2">
+                           <div class="new-car-title2">
+                              <h4><a href="#">Ferrari F355 GTS</a></h4>
+                              <p>Starting MSRP $52,600*</p>
+                           </div>
+                           <div class="new-car-img2">
+                              <a href="#"><img src="images/car/458.png" class="img-fluid" alt="Chrysler"></a>
+                           </div>
+                           <div class="new-car-content2">
+                              <div class="new-car-btn2">
+                                 <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="cargrid-slide2">
+                        <div class="new-car-wrapper2">
+                           <div class="new-car-title2">
+                              <h4><a href="#">Ferrari 488 Spider</a></h4>
+                              <p>Starting MSRP $52,600*</p>
+                           </div>
+                           <div class="new-car-img2">
+                              <a href="#"><img src="images/car/488.png" class="img-fluid" alt="Chrysler"></a>
+                           </div>
+                           <div class="new-car-content2">
+                              <div class="new-car-btn2">
+                                 <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row mt-5">
+               <div class="col-12 col-md-12 composer-themeBtn text-center">
+                  <a href="#" class="themeBtn">Discover More</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="blogsSection">
+         <div class="container">
+            <div class="blogsSectionWrap">
+               <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                     <div class="main-heading heading-dark mb-5">
+                        <h2> Car news and detailed reviews</h2>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12 col-xl-7">
+                     <div class="row">
+                        <div class="col-md-12  wow slideInUp" style="visibility: visible; animation-name: slideInUp;">
+                           <div class="homeBlogWrap">
+                              <div class="homeBlogWrap_img">
+                                 <a href="#"><img src="images/JAGUAR-OWNERS-INSURANCE.jpg" class="img-fluid" alt="blog-1"></a>
+                                 <div class="blog-cat">
+                                    <a href="#">Reviews</a>
+                                 </div>
+                              </div>
+                              <div class="blog-grid-title">
+                                 <div class="blog-date">4th April</div>
+                                 <h4><a href="#">Performance Worth Executing And Repeating, Revving A Boastful Jaguar JaguarJaguar</a></h4>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-12 col-xl-5">
+                     <div class="home-news-grid">
+                        <div class="row">
+                           <div class="col-xl-12 col-lg-6  wow slideInUp" style="visibility: visible; animation-name: slideInUp;">
+                              <div class="blog-grid">
+                                 <div class="blog-grid-img">
+                                    <a class="blog-side-cat" href="#">News</a>
+                                    <a href="#"><img src="images/SPECIAL-OFFERS.jpg" class="img-fluid" alt="blog-1"></a>
+                                 </div>
+                                 <div class="blog-grid-side-title">
+                                    <div>
+                                       <a href="#">
+                                          <h6>Specially Curated Offers In The Best Interest Of Customer</h6>
+                                       </a>
+                                    </div>
+                                    <div class="blog-date">4th April</div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-xl-12 col-lg-6  wow slideInUp" style="visibility: visible; animation-name: slideInUp;">
+                              <div class="blog-grid">
+                                 <div class="blog-grid-img">
+                                    <a class="blog-side-cat" href="#">News</a>
+                                    <a href="#"><img src="images/PERFORMANCE.jpg" class="img-fluid" alt="blog-1"></a>
+                                 </div>
+                                 <div class="blog-grid-side-title">
+                                    <div>
+                                       <a href="#">
+                                          <h6>Ownership Of Your Jaguar Now Dwindled As A Truer Stance
+                                          </h6>
+                                       </a>
+                                    </div>
+                                    <div class="blog-date">4th April</div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-xl-12 col-lg-6  wow slideInUp" style="visibility: visible; animation-name: slideInUp;">
+                              <div class="blog-grid">
+                                 <div class="blog-grid-img">
+                                    <a class="blog-side-cat" href="#">News</a>
+                                    <a href="#"><img src="images/OWNERSHIP.jpg" class="img-fluid" alt="blog-1"></a>
+                                 </div>
+                                 <div class="blog-grid-side-title">
+                                    <div>
+                                       <a href="#">
+                                          <h6>Comprehensive Insurance Schemes For Your Roaring Jaguar
+                                          </h6>
+                                       </a>
+                                    </div>
+                                    <div class="blog-date">4th April</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-12 col-md-12 text-center mt-3 wow slideInUp" style="visibility: visible; animation-name: slideInUp;">
+                  <a href="#" class="themeBtn"><i class="lnr lnr-arrow-right mr-1"></i> <span>Discover More</span></a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="faq py-5">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-10">
+                  <div class="main-heading heading-dark mb-5">
+                     <h2>Read the FAQs</h2>
+                  </div>
+               </div>
+            </div>
+            <div id="accordion" class="faqBlock">
+               <div class="card border">
+                  <div class="card-header">
+                     <a class="card-link" data-toggle="collapse" href="#collapseOne" aria-expanded="true">
+                        <h5 class="mb-0">What you ipsum dolor sit.</h5>
+                     </a>
+                  </div>
+                  <div id="collapseOne" class="collapse show" style="">
+                     <div class="card-body">
+                        <p>Duis sed odio sit amet nibh gravida Duis sed odio sit amet nibh vulputate cursus a sit roin gravida Duis sed odio sit amet nibh vulputate cursus a sit roin gravida Duis sed odio sit amet nibh vulputate cursus a sit roin gravida
+                           vida Duis sed odio sit amet nibh vulputate cursus a sit roin gravida Duis sed odio sit amet nibh vulputate cursus a sit roin gravida Duis sed odio sit amet nibh vulputate cursus a sit roin gravida
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="card border">
+                  <div class="card-header">
+                     <a class="card-link" data-toggle="collapse" href="#collapseTwo" aria-expanded="true">
+                        <h5 class="mb-0">Why do this ipsum consetvh dolor sit.</h5>
+                     </a>
+                  </div>
+                  <div id="collapseTwo" class="collapse">
+                     <div class="card-body">
+                        <p>Duis sed odio sit amet nibh vulputate roin gravida Duis sed odio sit amet nibh vulputate cursus.</p>
+                        <p>Duis sed odio sit amet nibh vulputate roin gravida Duis sed odio sit ame.</p>
+                        <p>Duis sed  odio sit amet nibh vulputate roin  odio sit amet nibh vulputate roin gravida Duis sed odio sit ame. Duis sed odio sit amet nibh vulputate roin gravida Duis sed odio sit amet nibh vulputate cursus a.</p>
+                        <p> Duis sed  odio sit amet nibh vulputate roin  odio sit amet nibh vulputate roin gravida Duis sed odio sit ame. Duis sev Duis sed  odio sit amet nibh vulputate roin  odio sit amet nibh vulputate roin gravida Duis sed odio sit ame. Duis sed odio sit amet nibh vulputate roin gravida Duis sed odio sit amet nibh vulputate cursus a.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="card border">
+                  <div class="card-header">
+                     <a class=" card-link" data-toggle="collapse" href="#collapseThree">
+                        <h5 class="mb-0">What you Lorem ipsum dolor sit amet consectetur.</h5>
+                     </a>
+                  </div>
+                  <div id="collapseThree" class="collapse">
+                     <div class="card-body">
+                        <p>Duis sed odio sit amet nibh vulputate roin gravida Duis sed odio sit amet nibh vulputate cursus a sit roin gravida Duis sed odio sit amet nibh vulputate cursus a sit roin gravida Duis sed odio sit amet nibh vulputate cursus a sit roin gravida</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="card border">
+                  <div class="card-header">
+                     <a class=" card-link" data-toggle="collapse" href="#collapse4">
+                        <h5 class="mb-0">Ipsum dolor sit amet consectetur.</h5>
+                     </a>
+                  </div>
+                  <div id="collapse4" class="collapse">
+                     <div class="card-body">
+                        <p>Duis sed odio sit amet nibh vulputate roin gravida Duis sed odio sit amet nibh vulputatea.</p>
+                        <p>Duis sed odio sit amet nibh vulputate roin gravida Duis sed odio sit ame.</p>
+                        <p>Duis sed  odio sit amet nibh vulputate roin  odio sit amet nibh vulputate roin gravida Duis sed odio sit ame. Duis sed odio sit amet nibh vulputate roin gravida Duis sed odio sit amet nibh vulputate cursus a.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Compare Cars Section Start -->
+      <section class="compare-car-section" id="compare-car-section">
+         <div class="container-fluid">
+            <div class="compare-car-section-inner">
+               <div class="row">
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                     <div class="car-comparison-heading">
+                        <div class="main-heading wow slideInUp">
+                           <h5>Car Comparison</h5>
+                           <h2>Details <span>differ with cars</span>, a take on <span>comparison</span></h2>
+                           <p>Compare any cars based on their price, specifications, features, mileage and overall performance.</p>
+                        </div>
+                        <div class="slider-arrows d-flex align-items-center">
+                           <div id="compPrev" class="slider-nav nav-prev">
+                              <i class="fa fa-angle-left"></i>
+                           </div>
+                           <div id="compNext" class="slider-nav nav-next">
+                              <i class="fa fa-angle-right"></i>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-8">
+                     <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12">
+                           <div class="compareSlider">
+                              <div class="compare-car-slide">
+                                 <div class="compare-car-wrapper">
+                                    <div class="compare-car-bg">
+                                       <a href="#">
+                                          <div class="compare-car-img" style="background-image: url('images/Mazda-cx-5-vs-ford-escape-1024x576-1.jpg');"></div>
+                                       </a>
+                                    </div>
+                                    <div class="compare-car-content">
+                                       <span class="compare-category">Compare</span>
+                                       <h3 class="compare-car-title"><a href="#">Compare 2021 Mazda cx5 VS 2021 Ford Escape ...</a></h3>
+                                       <a href="#" class="compare-btn-link">View More <i class="fa fa-angle-right ml-1"></i></a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="compare-car-slide">
+                                 <div class="compare-car-wrapper">
+                                    <div class="compare-car-bg">
+                                       <a href="#">
+                                          <div class="compare-car-img" style="background-image: url('images/2020-Mercedes-Benz-GLS-Class-vs-bmw-x7-1024x576-1.jpg');"></div>
+                                       </a>
+                                    </div>
+                                    <div class="compare-car-content">
+                                       <span class="compare-category">Compare</span>	
+                                       <h3 class="compare-car-title"><a href="#">Compare 2020 Mercedes Benz GLS vs 2020 BMW x7 ...</a></h3>
+                                       <a href="#" class="compare-btn-link">View More <i class="fa fa-angle-right ml-1"></i></a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="compare-car-slide">
+                                 <div class="compare-car-wrapper">
+                                    <div class="compare-car-bg">
+                                       <a href="#">
+                                          <div class="compare-car-img" style="background-image: url('images/Acura-MDX-VS-Audi-Q7-cars-1024x576-1.jpg');"></div>
+                                       </a>
+                                    </div>
+                                    <div class="compare-car-content">
+                                       <span class="compare-category">Compare</span>	
+                                       <h3 class="compare-car-title"><a href="#">Compare 2021 Acura MDX VS 2021 Audi Q7 Cars ...</a></h3>
+                                       <a href="#" class="compare-btn-link">View More <i class="fa fa-angle-right ml-1"></i></a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="compare-car-slide">
+                                 <div class="compare-car-wrapper">
+                                    <div class="compare-car-bg">
+                                       <a href="#">
+                                          <div class="compare-car-img" style="background-image: url('images/Compare-Ram-1500-vs-Chevrolet-Silverado-1500.jpg');"></div>
+                                       </a>
+                                    </div>
+                                    <div class="compare-car-content">
+                                       <span class="compare-category">Compare</span>	
+                                       <h3 class="compare-car-title"><a href="#">Compare 2021 Ram 1500 VS 2021 Chevrolet Silverado ...</a></h3>
+                                       <a href="#" class="compare-btn-link">View More <i class="fa fa-angle-right ml-1"></i></a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="compare-car-slide">
+                                 <div class="compare-car-wrapper">
+                                    <div class="compare-car-bg">
+                                       <a href="#">
+                                          <div class="compare-car-img" style="background-image: url('images/KIA-TELLURIDE-VS-hyundai-paisade-1024x576-1.jpg');"></div>
+                                       </a>
+                                    </div>
+                                    <div class="compare-car-content">
+                                       <span class="compare-category">Compare</span>		
+                                       <h3 class="compare-car-title"><a href="#">Compare 2021 KIA Telluride VS 2021 Hyundai Paisade ...</a></h3>
+                                       <a href="#" class="compare-btn-link">View More <i class="fa fa-angle-right ml-1"></i></a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="compare-car-slide">
+                                 <div class="compare-car-wrapper">
+                                    <div class="compare-car-bg">
+                                       <a href="#">
+                                          <div class="compare-car-img" style="background-image: url('images/nissan-gt_r-2020-vs-2019-1024x576-1.jpg');"></div>
+                                       </a>
+                                    </div>
+                                    <div class="compare-car-content">
+                                       <span class="compare-category">Compare</span>	
+                                       <h3 class="compare-car-title"><a href="#">Compare Nissan gtr 2020 VS Nissan gtr 2019 ...</a></h3>
+                                       <a href="#" class="compare-btn-link">View More <i class="fa fa-angle-right ml-1"></i></a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Compare Cars Section End -->
+
+      <!-- Footer start -->
+      <footer class="siteFooter pt-5">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-4">
+                  <div class="">
+                     <a class="navbar-brand p-0 mb-4" href="#">
+                     <img src="images/ucnm.png" class="img-fluid" alt="logo" title="logo">
+                     </a>
+                     <p>Duis sed odio sit amet nibh vulputate roin .</p>
+                  </div>
+               </div>
+               <div class="col-xl-8 p-xl-0">
+                  <div class="row m-xl-0">
+                     <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="mb-3">
+                           <h6 class="mb-4">Product</h6>
+                           <ul class="list-style-none footer_list-item">
+                              <li><a href="#">Features</a></li>
+                              <li><a href="#">Security</a></li>
+                              <li><a href="#">Team</a></li>
+                              <li><a href="#">Enterprise</a></li>
+                              <li><a href="#">Customer Stories</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="mb-3">
+                           <h6 class="mb-4">Platform</h6>
+                           <ul class="list-style-none footer_list-item">
+                              <li><a href="#">Partners</a></li>
+                              <li><a href="#">Team</a></li>
+                              <li><a href="#">Enterprise</a></li>
+                              <li><a href="#">Clients</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="mb-3">
+                           <h6 class="mb-4">Support</h6>
+                           <ul class="list-style-none footer_list-item">
+                              <li><a href="#">Docs</a></li>
+                              <li><a href="#">Community Fourm</a></li>
+                              <li><a href="#">Professional Services</a></li>
+                              <li><a href="#">Lab</a></li>
+                              <li><a href="#">Status</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="mb-3">
+                           <h6 class="mb-4">Company</h6>
+                           <ul class="list-style-none footer_list-item">
+                              <li><a href="#">About</a></li>
+                              <li><a href="#">Blog</a></li>
+                              <li><a href="#">Careers</a></li>
+                              <li><a href="#">Social Impact</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer_secondary mt-5 py-3">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="d-flex footer-menu">
+                        <span>© 2021 DKOT, Inc.</span>
+                        <ul class="list-style-none footer_list-item mt-2 mt-sm-0 ml-sm-3">
+                           <li><a href="#" class="mr-3">Terms</a></li>
+                           <li><a href="#" class="mr-3">Privacy</a></li>
+                           <li><a href="#" class="mr-3">Sitemap</a></li>
+                           <li><a href="#" class="mr-3">What is DKOT?</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-6 order-first order-md-last">
+                     <ul class="list-style-none social-links mb-2 mb-md-0">
+                        <li>
+                           <a href="#" class="facebook">
+                           <i class="fa fa-facebook-square"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" class="twitter">
+                           <i class="fa fa-twitter"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" class="youtube">
+                           <i class="fa fa-youtube-play"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" class="linkedin">
+                           <i class="fa fa-linkedin"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- jQuery -->
+      <script src="js/jquery.js"></script>
+      <script src="js/popper.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery-ui.js"></script>
+      <script src="js/select2.min.js"></script>
+      <script src="js/slick.js"></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>
