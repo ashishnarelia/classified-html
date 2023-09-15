@@ -3,26 +3,27 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-
     <title>Used Cars Near Me</title>
-
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.css">
-
     <!-- Select2 CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/select2.min.css">
-
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/slick-theme.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous" />
 </head>
 
-<body>
+<body class="srpbody">
 
        <!-- Header Section Start -->
        <header class="site-header" id="header">
@@ -68,216 +69,790 @@
         </div>
      </header>
      <!-- Header Section End -->
-
-    <main class="ares-page-body">
-        <!-- Dealer Ads Start -->
-        <div class="container">
-            <div class="dealerAdsBox text-center d-sm-block d-md-none d-lg-none d-xl-nonecol-sm-12">
-                <div class="carousel slide carousel-fade" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <a href="#" target="_blank">
-                                <span><i class="fa fa-info-circle"> </i> Ad</span>
-                                <img src="images/ads/300x50.jpg" class="img-fluid" alt="300x50" class="300x50">
-                            </a>
-                        </div>
-
-                        <div class="carousel-item">
-                            <a href="#" target="_blank">
-                                <span><i class="fa fa-info-circle"> </i> Ad</span>
-                                <img src="images/ads/300x50.jpg" class="img-fluid" alt="300x50" class="300x50">
-                            </a>
-                        </div>
-
-                        <div class="carousel-item">
-                            <a href="#" target="_blank">
-                                <span><i class="fa fa-info-circle"> </i> Ad</span>
-                                <img src="images/ads/300x50.jpg" class="img-fluid" alt="300x50" class="300x50">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    
+     <div class="container">
+        <div class="head-textbox mt-4">
+          <h1>New Cars in 2023</h1>      
+          <p>We brings a complete range of new cars in 2023 in India with prices. You can search cars by applying filters such as by price, by bodytype, by brand, by seating capacity & more. Also, stay updated with upcoming cars, electric cars in India, compare cars in your price range and stay tuned to the latest car news.</p>
         </div>
-        <!-- Dealer Ads End -->
+    </div>
 
-        <!-- Vehicle Inventory Grid Section Start -->
-        <section class="vehicle-grid-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12 ares-padding-8">
-                        <div class="vehicle-counting-sorting">
-
-                            <div class="vehicle-inventory-sorting mobile-view-sort">
-                                <select name="sorting" class="form-control">
-                                    <option value="" selected="">Recently Added</option>
-                                    <option value="">Best match</option>
-                                    <option value="">Recently added</option>
-                                    <option value="">Price low to high</option>
-                                    <option value="">Price high to low</option>
-                                    <option value="">Mileage low to high</option>
-                                    <option value="">Year ascending order</option>
-                                    <option value="">Year descending order</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                     
-                    <div class="col-3">
-                        <div class="filters">
-    
-                                <div class="more-filters-list">
-                                    <h3>Search By Body Type</h3>
-    
-                                    <div class="bodytype-filters">
-                                        <div class="check-filter checkBodyStyle">
-                                            <label class="control-label" for="body_type-9">
-                                                <input type="checkbox" name="body_type" id="body_type-9" value="9">
-                                                <label for="body_type-9"></label>
-                                            <span class="d-flex flex-column justify-content-center align-items-center text-center">
-                                                    <img alt="SUV" src="images/suv.svg" width="55"> SUV 
-                                                    <span class="text-secondary">(686)</span>
-                                            </span>
-                                            </label>
-                                        </div>
-    
-                                        <div class="check-filter checkBodyStyle">
-                                            <label class="control-label" for="body_type-8">
-                                                <input type="checkbox" name="body_type" id="body_type-8" value="8">
-                                                <label for="body_type-8"></label>
-                                            <span class="d-flex flex-column justify-content-center align-items-center text-center">
-                                                    <img alt="SUV" src="images/sedan.svg" width="55"> Sedan 
-                                                    <span class="text-secondary">(686)</span>
-                                            </span>
-                                            </label>
-                                        </div>
-    
-                                        <div class="check-filter checkBodyStyle">
-                                            <label class="control-label" for="body_type-7">
-                                                <input type="checkbox" name="body_type" id="body_type-7" value="7">
-                                                <label for="body_type-7"></label>
-                                            <span class="d-flex flex-column justify-content-center align-items-center text-center">
-                                                    <img alt="SUV" src="images/truck.svg" width="55"> Truck 
-                                                    <span class="text-secondary">(676)</span>
-                                            </span>
-                                            </label>
-                                        </div>
-    
-                                        <div class="check-filter checkBodyStyle">
-                                            <label class="control-label" for="body_type-6">
-                                                <input type="checkbox" name="body_type" id="body_type-6" value="6">
-                                                <label for="body_type-6"></label>
-                                            <span class="d-flex flex-column justify-content-center align-items-center text-center">
-                                                    <img alt="SUV" src="images/wagon.svg" width="55"> Wagon 
-                                                    <span class="text-secondary">(666)</span>
-                                            </span>
-                                            </label>
-                                        </div>
-    
-                                        <div class="check-filter checkBodyStyle">
-                                            <label class="control-label" for="body_type-5">
-                                                <input type="checkbox" name="body_type" id="body_type-5" value="5">
-                                                <label for="body_type-5"></label>
-                                            <span class="d-flex flex-column justify-content-center align-items-center text-center">
-                                                    <img alt="SUV" src="images/van.svg" width="55"> Van 
-                                                    <span class="text-secondary">(656)</span>
-                                            </span>
-                                            </label>
-                                        </div>
-    
-                                        <div class="check-filter checkBodyStyle">
-                                            <label class="control-label" for="body_type-4">
-                                                <input type="checkbox" name="body_type" id="body_type-4" value="4">
-                                                <label for="body_type-4"></label>
-                                            <span class="d-flex flex-column justify-content-center align-items-center text-center">
-                                                    <img alt="SUV" src="images/hatchback.svg" width="55"> Hatchback 
-                                                    <span class="text-secondary">(646)</span>
-                                            </span>
-                                            </label>
-                                        </div>
-    
-                                        <div class="check-filter checkBodyStyle">
-                                            <label class="control-label" for="body_type-3">
-                                                <input type="checkbox" name="body_type" id="body_type-3" value="3">
-                                                <label for="body_type-3"></label>
-                                            <span class="d-flex flex-column justify-content-center align-items-center text-center">
-                                                    <img alt="SUV" src="images/coupe.svg" width="55"> Coupe 
-                                                    <span class="text-secondary">(636)</span>
-                                            </span>
-                                            </label>
-                                        </div>
-    
-                                        <div class="check-filter checkBodyStyle">
-                                            <label class="control-label" for="body_type-2">
-                                                <input type="checkbox" name="body_type" id="body_type-2" value="2">
-                                                <label for="body_type-2"></label>
-                                            <span class="d-flex flex-column justify-content-center align-items-center text-center">
-                                                    <img alt="SUV" src="images/unknown.svg" width="55"> Unknown 
-                                                    <span class="text-secondary">(626)</span>
-                                            </span>
-                                            </label>
-                                        </div>
-    
-                                        <div class="check-filter checkBodyStyle">
-                                            <label class="control-label" for="body_type-1">
-                                                <input type="checkbox" name="body_type" id="body_type-1" value="1">
-                                                <label for="body_type-1"></label>
-                                            <span class="d-flex flex-column justify-content-center align-items-center text-center">
-                                                    <img alt="SUV" src="images/convertible.svg" width="55"> Convertible 
-                                                    <span class="text-secondary">(616)</span>
-                                            </span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <div class="more-filters-list">
-                                    <h3>Search By Price range</h3>
-                                    <div class="filter-input">
-                                        <div id="miles-range" class="range-slider"></div>
-                                        <div class="d-flex justify-content-center">
-                                            <input type="text" id="minMiles" value="0" readonly />
-                                            <input type="text" id="maxMiles" value="100000" readonly />
-                                        </div>
-                                    </div>
-                                </div>
-                          
-                        </div>
-                    </div>
-                    <div class="col-9">
-                        <div class="row">
-                            <div class="col-12 ares-padding-8">
-                                <div class="row vehicleInventoryBox">
-                                        <div class="col-4">
-                                           <div class="vehicleImage">
-                                                <img src="images/acura-img6.jpeg" class="img-fluid" alt="Car" title="Car">
-                                            </div>
-                                       </div>
-                                        <div class="col-8">
-                                               <div class="vehicleTitle">
-                                                    <h3 class="vehicleName">2022 Acura MDX</h3>
-                                                    <h5 class="price-range">$33,900 - $50,232</h5>
-                                                </div>
-                                            <div class="p-2 vehicle-details d-flex">
-                                                <h5 class="body-type flex-fill"><i class="fa fa-car" aria-hidden="true"></i> SUV</h5>
-                                                 <h5 class="range flex-fill"><i class="fa fa-road" aria-hidden="true"></i> <span>300 KM</span></h5>
-                                                 <h5 class="battery-capacity flex-fill"><i class="fa fa-battery-full" aria-hidden="true"></i> <span>30.2kWh</span></h5>
-                                            </div>
-                                        </div>
-                                    </div>        
-                            </div>
+      <!-- car brand section starts -->
+      <section class="car-brand-section-srp">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-12">
+                 <div class="themeHeading heading-dark mb-4 ml-0">
+                    <h2 class="mb-3 text-capitalize title-sep">Explore Cars by <span>Brands</span></h2>
+                 </div>
+              </div>
+           </div>
+           <div class="row">
+              <div class="col-sm-12">
             
+                       <div class="row">
+                          <div class="col-md-3 col-lg-2 col-sm-4 col-6">
+                             <div class="srp-brand mt-3 mx-md-n2">
+                                   <a href="#">
+                                         <img src="images/brand/acura.png" class="img-fluid" title="acura" alt="acura">
+                                   </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-2 col-sm-4 col-6">
+                                <div class="srp-brand mt-3 mx-md-n2">
+                                      <a href="#">
+                                         <img src="images/brand/chrysler.png" class="img-fluid" title="chrysler" alt="chrysler">
+                                       </a>
+                                </div>
+                            </div>
+                                <div class="col-md-3 col-lg-2 col-sm-4 col-6">
+                                    <div class="srp-brand mt-3 mx-md-n2">
+                                          <a href="#">
+                                         <img src="images/brand/dodge.png" class="img-fluid" title="dodge" alt="dodge">
+                                       </a>
+                                </div>
+                            </div>
+                                <div class="col-md-3 col-lg-2 col-sm-4 col-6">
+                                    <div class="srp-brand mt-3 mx-md-n2">
+                                          <a href="#">
+                                         <img src="images/brand/Ferrari.png" class="img-fluid" title="ferrari" alt="ferrari">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-lg-2 col-sm-4 col-6">
+                             <div class="srp-brand mt-3 mx-md-n2">
+                                   <a href="#">
+                                         <img src="images/brand/fiat.png" class="img-fluid" title="fiat" alt="fiat">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-lg-2 col-sm-4 col-6">
+                             <div class="srp-brand mt-3 mx-md-n2">
+                                   <a href="#">
+                                         <img src="images/brand/ford.png" class="img-fluid" title="ford" alt="ford">
+                                       </a>
+                                </div>
+                            </div>
+                                <div class="col-md-3 col-lg-2 col-sm-4 col-6">
+                             <div class="srp-brand mt-3 mx-md-n2">
+                                   <a href="#">
+                                         <img src="images/brand/alfa-romeo.png" class="img-fluid" title="alfa-romeo" alt="alfa-romeo">
+                                       </a>
+                                </div>
+                            </div>
+                                <div class="col-md-3 col-lg-2 col-sm-4 col-6">
+                             <div class="srp-brand mt-3 mx-md-n2">
+                                   <a href="#">
+                                         <img src="images/brand/audi.png" class="img-fluid" title="audi" alt="audi">
+                                       </a>
+                                </div>
+                            </div>
+                                <div class="col-md-3 col-lg-2 col-sm-4 col-6">
+                             <div class="srp-brand mt-3 mx-md-n2">
+                                   <a href="#">
+                                         <img src="images/brand/bmw.png" class="img-fluid" title="bmw" alt="bmw">
+                                       </a>
+                                </div>
+                            </div>
+                                <div class="col-md-3 col-lg-2 col-sm-4 col-6">
+                             <div class="srp-brand mt-3 mx-md-n2">
+                                   <a href="#">
+                                         <img src="images/brand/chevrolet.png" class="img-fluid" title="chevrolet" alt="chevrolet">
+                                       </a>
+                                </div>
+                            </div>
+                                <div class="col-md-3 col-lg-2 col-sm-4 col-6">
+                             <div class="srp-brand mt-3 mx-md-n2">
+                                   <a href="#">
+                                         <img src="images/brand/kia.png" class="img-fluid" title="kia" alt="kia">
+                                       </a>
+                                </div>
+                            </div>
+                                <div class="col-md-3 col-lg-2 col-sm-4 col-6">
+                             <div class="srp-brand mt-3 mx-md-n2">
+                                   <a href="#">
+                                         <img src="images/brand/Infiniti.png" class="img-fluid" title="Infiniti" alt="Infiniti">
+                                       </a>
+                                </div>
+                            </div>
+                             </div>
+                          </div>
+                       </div>
+                  
+              </div>
+           </div>
+        </div>
+     </section>
+     <!-- car brand section ends -->
+
+     <section class="most-searched-car-section custom-grids">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-12">
+                 <div class="main-heading heading-dark mb-4">
+                    <h2 class="mb-3 text-capitalize title-sep"> Drive your <span>favorite car models</span></h2>
+                 </div>
+              </div>
+           </div>
+           <div class="row">
+              <div class="col-md-12 wow slideInUp" style="visibility: visible; animation-name: slideInUp;">
+                 <div class="most-searched-car-models">
+                    <ul class="nav nav-tabs" role="tablist">
+                       <li class="nav-item">
+                          <a class="nav-link active" data-toggle="tab" href="#All-Models">All Models</a>
+                       </li>
+                       <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" href="#Convertible">Convertible</a>
+                       </li>
+                       <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" href="#Coupe">Coupe</a>
+                       </li>
+                       <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" href="#SUV">SUV</a>
+                       </li>
+                       <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" href="#Sedan">Sedan</a>
+                       </li>
+                    </ul>
+                    <div class="tab-content mt-4">
+                        <div id="All-Models" class="tab-pane active">
+                            <div class="row">
+                                <div class="col-lg-3 col-6 col-md-4">
+                                   <div class="trending-car-wrapper">
+                                      <div class="trending-car-title">
+                                         <h4><a href="#">Ferrari F355 GTS</a></h4>
+                                         <p>Starting MSRP $52,600*</p>
+                                      </div>
+                                      <div class="trending-car-img">
+                                         <a href="#"><img src="images/car/458.png" class="img-fluid" alt="Chrysler"></a>
+                                      </div>
+                                      <div class="trending-car-content">
+                                         <div class="trending-car-btn">
+                                            <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                                <div class="col-lg-3 col-6 col-md-4">
+                                   <div class="trending-car-wrapper">
+                                      <div class="trending-car-title">
+                                         <h4><a href="#">Ferrari 488 Spider</a></h4>
+                                         <p>Starting MSRP $52,600*</p>
+                                      </div>
+                                      <div class="trending-car-img">
+                                         <a href="#"><img src="images/car/488.png" class="img-fluid" alt="Chrysler"></a>
+                                      </div>
+                                      <div class="trending-car-content">
+                                         <div class="trending-car-btn">
+                                            <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                                <div class="col-lg-3 col-6 col-md-4">
+                                   <div class="trending-car-wrapper">
+                                      <div class="trending-car-title">
+                                         <h4><a href="#">Ferrari F8 Tributo</a></h4>
+                                         <p>Starting MSRP $52,600*</p>
+                                      </div>
+                                      <div class="trending-car-img">
+                                         <a href="#"><img src="images/car/f8-tributo.png" class="img-fluid" alt="Chrysler"></a>
+                                      </div>
+                                      <div class="trending-car-content">
+                                         <div class="trending-car-btn">
+                                            <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                                <div class="col-lg-3 col-6 col-md-4">
+                                   <div class="trending-car-wrapper">
+                                      <div class="trending-car-title">
+                                         <h4><a href="#">Ferrari 812 Superfast</a></h4>
+                                         <p>Starting MSRP $52,600*</p>
+                                      </div>
+                                      <div class="trending-car-img">
+                                         <a href="#"><img src="images/car/812-superfast.png" class="img-fluid" alt="Chrysler"></a>
+                                      </div>
+                                      <div class="trending-car-content">
+                                         <div class="trending-car-btn">
+                                            <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                                <div class="col-lg-3 col-6 col-md-4">
+                                   <div class="trending-car-wrapper">
+                                      <div class="trending-car-title">
+                                         <h4><a href="#">Ferrari F355 GTS</a></h4>
+                                         <p>Starting MSRP $52,600*</p>
+                                      </div>
+                                      <div class="trending-car-img">
+                                         <a href="#"><img src="images/car/458.png" class="img-fluid" alt="Chrysler"></a>
+                                      </div>
+                                      <div class="trending-car-content">
+                                         <div class="trending-car-btn">
+                                            <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                                <div class="col-lg-3 col-6 col-md-4">
+                                   <div class="trending-car-wrapper">
+                                      <div class="trending-car-title">
+                                         <h4><a href="#">Ferrari 488 Spider</a></h4>
+                                         <p>Starting MSRP $52,600*</p>
+                                      </div>
+                                      <div class="trending-car-img">
+                                         <a href="#"><img src="images/car/488.png" class="img-fluid" alt="Chrysler"></a>
+                                      </div>
+                                      <div class="trending-car-content">
+                                         <div class="trending-car-btn">
+                                            <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                                 <div class="col-lg-3 col-6 col-md-4">
+                                    <div class="trending-car-wrapper">
+                                       <div class="trending-car-title">
+                                          <h4><a href="#">Ferrari 812 Superfast</a></h4>
+                                          <p>Starting MSRP $52,600*</p>
+                                       </div>
+                                       <div class="trending-car-img">
+                                          <a href="#"><img src="images/car/812-superfast.png" class="img-fluid" alt="Chrysler"></a>
+                                       </div>
+                                       <div class="trending-car-content">
+                                          <div class="trending-car-btn">
+                                             <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                             </div>
+                         </div>
+                       <div id="Convertible" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-lg-3 col-6 col-md-4">
+                               <div class="trending-car-wrapper">
+                                  <div class="trending-car-title">
+                                     <h4><a href="#">Ferrari F355 GTS</a></h4>
+                                     <p>Starting MSRP $52,600*</p>
+                                  </div>
+                                  <div class="trending-car-img">
+                                     <a href="#"><img src="images/car/458.png" class="img-fluid" alt="Chrysler"></a>
+                                  </div>
+                                  <div class="trending-car-content">
+                                     <div class="trending-car-btn">
+                                        <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="col-lg-3 col-6 col-md-4">
+                               <div class="trending-car-wrapper">
+                                  <div class="trending-car-title">
+                                     <h4><a href="#">Ferrari 488 Spider</a></h4>
+                                     <p>Starting MSRP $52,600*</p>
+                                  </div>
+                                  <div class="trending-car-img">
+                                     <a href="#"><img src="images/car/488.png" class="img-fluid" alt="Chrysler"></a>
+                                  </div>
+                                  <div class="trending-car-content">
+                                     <div class="trending-car-btn">
+                                        <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="col-lg-3 col-6 col-md-4">
+                               <div class="trending-car-wrapper">
+                                  <div class="trending-car-title">
+                                     <h4><a href="#">Ferrari F8 Tributo</a></h4>
+                                     <p>Starting MSRP $52,600*</p>
+                                  </div>
+                                  <div class="trending-car-img">
+                                     <a href="#"><img src="images/car/f8-tributo.png" class="img-fluid" alt="Chrysler"></a>
+                                  </div>
+                                  <div class="trending-car-content">
+                                     <div class="trending-car-btn">
+                                        <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="col-lg-3 col-6 col-md-4">
+                               <div class="trending-car-wrapper">
+                                  <div class="trending-car-title">
+                                     <h4><a href="#">Ferrari 812 Superfast</a></h4>
+                                     <p>Starting MSRP $52,600*</p>
+                                  </div>
+                                  <div class="trending-car-img">
+                                     <a href="#"><img src="images/car/812-superfast.png" class="img-fluid" alt="Chrysler"></a>
+                                  </div>
+                                  <div class="trending-car-content">
+                                     <div class="trending-car-btn">
+                                        <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="col-lg-3 col-6 col-md-4">
+                               <div class="trending-car-wrapper">
+                                  <div class="trending-car-title">
+                                     <h4><a href="#">Ferrari F355 GTS</a></h4>
+                                     <p>Starting MSRP $52,600*</p>
+                                  </div>
+                                  <div class="trending-car-img">
+                                     <a href="#"><img src="images/car/458.png" class="img-fluid" alt="Chrysler"></a>
+                                  </div>
+                                  <div class="trending-car-content">
+                                     <div class="trending-car-btn">
+                                        <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="col-lg-3 col-6 col-md-4">
+                               <div class="trending-car-wrapper">
+                                  <div class="trending-car-title">
+                                     <h4><a href="#">Ferrari 488 Spider</a></h4>
+                                     <p>Starting MSRP $52,600*</p>
+                                  </div>
+                                  <div class="trending-car-img">
+                                     <a href="#"><img src="images/car/488.png" class="img-fluid" alt="Chrysler"></a>
+                                  </div>
+                                  <div class="trending-car-content">
+                                     <div class="trending-car-btn">
+                                        <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                       </div>
+                       <div id="Coupe" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-lg-3 col-6 col-md-4">
+                               <div class="trending-car-wrapper">
+                                  <div class="trending-car-title">
+                                     <h4><a href="#">Ferrari F355 GTS</a></h4>
+                                     <p>Starting MSRP $52,600*</p>
+                                  </div>
+                                  <div class="trending-car-img">
+                                     <a href="#"><img src="images/car/458.png" class="img-fluid" alt="Chrysler"></a>
+                                  </div>
+                                  <div class="trending-car-content">
+                                     <div class="trending-car-btn">
+                                        <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="col-lg-3 col-6 col-md-4">
+                               <div class="trending-car-wrapper">
+                                  <div class="trending-car-title">
+                                     <h4><a href="#">Ferrari 488 Spider</a></h4>
+                                     <p>Starting MSRP $52,600*</p>
+                                  </div>
+                                  <div class="trending-car-img">
+                                     <a href="#"><img src="images/car/488.png" class="img-fluid" alt="Chrysler"></a>
+                                  </div>
+                                  <div class="trending-car-content">
+                                     <div class="trending-car-btn">
+                                        <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="col-lg-3 col-6 col-md-4">
+                               <div class="trending-car-wrapper">
+                                  <div class="trending-car-title">
+                                     <h4><a href="#">Ferrari F8 Tributo</a></h4>
+                                     <p>Starting MSRP $52,600*</p>
+                                  </div>
+                                  <div class="trending-car-img">
+                                     <a href="#"><img src="images/car/f8-tributo.png" class="img-fluid" alt="Chrysler"></a>
+                                  </div>
+                                  <div class="trending-car-content">
+                                     <div class="trending-car-btn">
+                                        <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="col-lg-3 col-6 col-md-4">
+                               <div class="trending-car-wrapper">
+                                  <div class="trending-car-title">
+                                     <h4><a href="#">Ferrari 812 Superfast</a></h4>
+                                     <p>Starting MSRP $52,600*</p>
+                                  </div>
+                                  <div class="trending-car-img">
+                                     <a href="#"><img src="images/car/812-superfast.png" class="img-fluid" alt="Chrysler"></a>
+                                  </div>
+                                  <div class="trending-car-content">
+                                     <div class="trending-car-btn">
+                                        <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="col-lg-3 col-6 col-md-4">
+                               <div class="trending-car-wrapper">
+                                  <div class="trending-car-title">
+                                     <h4><a href="#">Ferrari F355 GTS</a></h4>
+                                     <p>Starting MSRP $52,600*</p>
+                                  </div>
+                                  <div class="trending-car-img">
+                                     <a href="#"><img src="images/car/458.png" class="img-fluid" alt="Chrysler"></a>
+                                  </div>
+                                  <div class="trending-car-content">
+                                     <div class="trending-car-btn">
+                                        <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="col-lg-3 col-6 col-md-4">
+                               <div class="trending-car-wrapper">
+                                  <div class="trending-car-title">
+                                     <h4><a href="#">Ferrari 488 Spider</a></h4>
+                                     <p>Starting MSRP $52,600*</p>
+                                  </div>
+                                  <div class="trending-car-img">
+                                     <a href="#"><img src="images/car/488.png" class="img-fluid" alt="Chrysler"></a>
+                                  </div>
+                                  <div class="trending-car-content">
+                                     <div class="trending-car-btn">
+                                        <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                       </div>
+                       <div id="SUV" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-lg-3 col-6 col-md-4">
+                               <div class="trending-car-wrapper">
+                                  <div class="trending-car-title">
+                                     <h4><a href="#">Ferrari F355 GTS</a></h4>
+                                     <p>Starting MSRP $52,600*</p>
+                                  </div>
+                                  <div class="trending-car-img">
+                                     <a href="#"><img src="images/car/458.png" class="img-fluid" alt="Chrysler"></a>
+                                  </div>
+                                  <div class="trending-car-content">
+                                     <div class="trending-car-btn">
+                                        <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="col-lg-3 col-6 col-md-4">
+                               <div class="trending-car-wrapper">
+                                  <div class="trending-car-title">
+                                     <h4><a href="#">Ferrari 488 Spider</a></h4>
+                                     <p>Starting MSRP $52,600*</p>
+                                  </div>
+                                  <div class="trending-car-img">
+                                     <a href="#"><img src="images/car/488.png" class="img-fluid" alt="Chrysler"></a>
+                                  </div>
+                                  <div class="trending-car-content">
+                                     <div class="trending-car-btn">
+                                        <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="col-lg-3 col-6 col-md-4">
+                               <div class="trending-car-wrapper">
+                                  <div class="trending-car-title">
+                                     <h4><a href="#">Ferrari F8 Tributo</a></h4>
+                                     <p>Starting MSRP $52,600*</p>
+                                  </div>
+                                  <div class="trending-car-img">
+                                     <a href="#"><img src="images/car/f8-tributo.png" class="img-fluid" alt="Chrysler"></a>
+                                  </div>
+                                  <div class="trending-car-content">
+                                     <div class="trending-car-btn">
+                                        <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="col-lg-3 col-6 col-md-4">
+                               <div class="trending-car-wrapper">
+                                  <div class="trending-car-title">
+                                     <h4><a href="#">Ferrari 812 Superfast</a></h4>
+                                     <p>Starting MSRP $52,600*</p>
+                                  </div>
+                                  <div class="trending-car-img">
+                                     <a href="#"><img src="images/car/812-superfast.png" class="img-fluid" alt="Chrysler"></a>
+                                  </div>
+                                  <div class="trending-car-content">
+                                     <div class="trending-car-btn">
+                                        <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="col-lg-3 col-6 col-md-4">
+                               <div class="trending-car-wrapper">
+                                  <div class="trending-car-title">
+                                     <h4><a href="#">Ferrari F355 GTS</a></h4>
+                                     <p>Starting MSRP $52,600*</p>
+                                  </div>
+                                  <div class="trending-car-img">
+                                     <a href="#"><img src="images/car/458.png" class="img-fluid" alt="Chrysler"></a>
+                                  </div>
+                                  <div class="trending-car-content">
+                                     <div class="trending-car-btn">
+                                        <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="col-lg-3 col-6 col-md-4">
+                               <div class="trending-car-wrapper">
+                                  <div class="trending-car-title">
+                                     <h4><a href="#">Ferrari 488 Spider</a></h4>
+                                     <p>Starting MSRP $52,600*</p>
+                                  </div>
+                                  <div class="trending-car-img">
+                                     <a href="#"><img src="images/car/488.png" class="img-fluid" alt="Chrysler"></a>
+                                  </div>
+                                  <div class="trending-car-content">
+                                     <div class="trending-car-btn">
+                                        <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                       </div>
+                       <div id="Sedan" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-lg-3 col-6 col-md-4">
+                               <div class="trending-car-wrapper">
+                                  <div class="trending-car-title">
+                                     <h4><a href="#">Ferrari F355 GTS</a></h4>
+                                     <p>Starting MSRP $52,600*</p>
+                                  </div>
+                                  <div class="trending-car-img">
+                                     <a href="#"><img src="images/car/458.png" class="img-fluid" alt="Chrysler"></a>
+                                  </div>
+                                  <div class="trending-car-content">
+                                     <div class="trending-car-btn">
+                                        <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="col-lg-3 col-6 col-md-4">
+                               <div class="trending-car-wrapper">
+                                  <div class="trending-car-title">
+                                     <h4><a href="#">Ferrari 488 Spider</a></h4>
+                                     <p>Starting MSRP $52,600*</p>
+                                  </div>
+                                  <div class="trending-car-img">
+                                     <a href="#"><img src="images/car/488.png" class="img-fluid" alt="Chrysler"></a>
+                                  </div>
+                                  <div class="trending-car-content">
+                                     <div class="trending-car-btn">
+                                        <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="col-lg-3 col-6 col-md-4">
+                               <div class="trending-car-wrapper">
+                                  <div class="trending-car-title">
+                                     <h4><a href="#">Ferrari F8 Tributo</a></h4>
+                                     <p>Starting MSRP $52,600*</p>
+                                  </div>
+                                  <div class="trending-car-img">
+                                     <a href="#"><img src="images/car/f8-tributo.png" class="img-fluid" alt="Chrysler"></a>
+                                  </div>
+                                  <div class="trending-car-content">
+                                     <div class="trending-car-btn">
+                                        <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="col-lg-3 col-6 col-md-4">
+                               <div class="trending-car-wrapper">
+                                  <div class="trending-car-title">
+                                     <h4><a href="#">Ferrari 812 Superfast</a></h4>
+                                     <p>Starting MSRP $52,600*</p>
+                                  </div>
+                                  <div class="trending-car-img">
+                                     <a href="#"><img src="images/car/812-superfast.png" class="img-fluid" alt="Chrysler"></a>
+                                  </div>
+                                  <div class="trending-car-content">
+                                     <div class="trending-car-btn">
+                                        <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="col-lg-3 col-6 col-md-4">
+                               <div class="trending-car-wrapper">
+                                  <div class="trending-car-title">
+                                     <h4><a href="#">Ferrari F355 GTS</a></h4>
+                                     <p>Starting MSRP $52,600*</p>
+                                  </div>
+                                  <div class="trending-car-img">
+                                     <a href="#"><img src="images/car/458.png" class="img-fluid" alt="Chrysler"></a>
+                                  </div>
+                                  <div class="trending-car-content">
+                                     <div class="trending-car-btn">
+                                        <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="col-lg-3 col-6 col-md-4">
+                               <div class="trending-car-wrapper">
+                                  <div class="trending-car-title">
+                                     <h4><a href="#">Ferrari 488 Spider</a></h4>
+                                     <p>Starting MSRP $52,600*</p>
+                                  </div>
+                                  <div class="trending-car-img">
+                                     <a href="#"><img src="images/car/488.png" class="img-fluid" alt="Chrysler"></a>
+                                  </div>
+                                  <div class="trending-car-content">
+                                     <div class="trending-car-btn">
+                                        <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                       </div>
                     </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+
+       <!-- New car Section Start -->
+       <section class="trending-car-section">
+        <div class="container">
+           <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                 <div class="main-heading heading-dark">
+                    <h2>Our Top Vehicles</h2>
+                 </div>
+              </div>
+           </div>
+           <div class="row">
+              <div class="col-12">
+                 <div class="gridSlider">
+                    <div class="cargrid-slide">
+                       <div class="trending-car-wrapper">
+                          <div class="trending-car-title">
+                             <h4><a href="#">Ferrari F355 GTS</a></h4>
+                             <p>Starting MSRP $52,600*</p>
+                          </div>
+                          <div class="trending-car-img">
+                             <a href="#"><img src="images/car/458.png" class="img-fluid" alt="Chrysler"></a>
+                          </div>
+                          <div class="trending-car-content">
+                             <div class="trending-car-btn">
+                                <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                             </div>
+                          </div>
+                       </div>
                     </div>
-    
-                </div>
-            </div>
-        </section>
-        <!-- Vehicle Inventory Grid Section End -->
-    </main>
+                    <div class="cargrid-slide">
+                       <div class="trending-car-wrapper">
+                          <div class="trending-car-title">
+                             <h4><a href="#">Ferrari 488 Spider</a></h4>
+                             <p>Starting MSRP $52,600*</p>
+                          </div>
+                          <div class="trending-car-img">
+                             <a href="#"><img src="images/car/488.png" class="img-fluid" alt="Chrysler"></a>
+                          </div>
+                          <div class="trending-car-content">
+                             <div class="trending-car-btn">
+                                <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="cargrid-slide">
+                       <div class="trending-car-wrapper">
+                          <div class="trending-car-title">
+                             <h4><a href="#">Ferrari F8 Tributo</a></h4>
+                             <p>Starting MSRP $52,600*</p>
+                          </div>
+                          <div class="trending-car-img">
+                             <a href="#"><img src="images/car/f8-tributo.png" class="img-fluid" alt="Chrysler"></a>
+                          </div>
+                          <div class="trending-car-content">
+                             <div class="trending-car-btn">
+                                <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="cargrid-slide">
+                       <div class="trending-car-wrapper">
+                          <div class="trending-car-title">
+                             <h4><a href="#">Ferrari 812 Superfast</a></h4>
+                             <p>Starting MSRP $52,600*</p>
+                          </div>
+                          <div class="trending-car-img">
+                             <a href="#"><img src="images/car/812-superfast.png" class="img-fluid" alt="Chrysler"></a>
+                          </div>
+                          <div class="trending-car-content">
+                             <div class="trending-car-btn">
+                                <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="cargrid-slide">
+                       <div class="trending-car-wrapper">
+                          <div class="trending-car-title">
+                             <h4><a href="#">Ferrari F355 GTS</a></h4>
+                             <p>Starting MSRP $52,600*</p>
+                          </div>
+                          <div class="trending-car-img">
+                             <a href="#"><img src="images/car/458.png" class="img-fluid" alt="Chrysler"></a>
+                          </div>
+                          <div class="trending-car-content">
+                             <div class="trending-car-btn">
+                                <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="cargrid-slide">
+                       <div class="trending-car-wrapper">
+                          <div class="trending-car-title">
+                             <h4><a href="#">Ferrari 488 Spider</a></h4>
+                             <p>Starting MSRP $52,600*</p>
+                          </div>
+                          <div class="trending-car-img">
+                             <a href="#"><img src="images/car/488.png" class="img-fluid" alt="Chrysler"></a>
+                          </div>
+                          <div class="trending-car-content">
+                             <div class="trending-car-btn">
+                                <a href="#"><i class="fa fa-angle-right ml-1"></i></a>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+     <!-- Explore More Vehicles Section Start -->
 
      <!-- Footer start -->
      <footer class="siteFooter pt-5">

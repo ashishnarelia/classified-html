@@ -451,4 +451,12 @@ jQuery(document).ready(function() {
             }}]
       });
 
+      $('a[data-toggle="tab"]').on('shown.bs.tab', function() {   
+        $($(this).attr('href')).find('.slider').slick({
+          dots: true,
+          arrows: true
+        })
+      }).first().trigger('shown.bs.tab');
+
+
 });
