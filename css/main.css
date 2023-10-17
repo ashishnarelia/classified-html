@@ -8,7 +8,7 @@ html {
   --primary-color-lighter: #5cc4ff;
   --secondary-color: #2c2c2c;
   --text-color: #656060;
-  --dark-color: #6c757d;
+  --dark-color: #333;
   --white-color: #fff;
 }
 .srpbody:before {
@@ -198,12 +198,12 @@ button:focus {
 }
 @media (min-width: 1601px) {
   .main-heading h2 {
-      font-size: 28px;
+      font-size: 30px;
  }
 }
 @media (min-width: 1921px) {
   .main-heading h2 {
-      font-size: 28px;
+      font-size: 32px;
  }
 }
 .main-heading h2::before {
@@ -1346,29 +1346,29 @@ h1, h2, h3, h4, h5, h6 {
 .most-searched-car-section .most-searched-car-models .nav-tabs {
   border-radius: 0;
   display: inline-block;
-  border: 0;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
   margin-top: 20px;
   margin-bottom: 15px;
 }
 .most-searched-car-section .most-searched-car-models .nav-tabs .nav-item {
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   border-radius: 30px;
   margin-left: 5px;
   margin-right: 5px;
 }
 .most-searched-car-section .most-searched-car-models .nav-tabs .nav-item .nav-link {
-  padding: 6px 15px;
+  padding: 12px 15px;
   text-transform: capitalize;
   background: #fff;
-  border: 1px solid transparent;
+  border: 3px solid transparent;
   width: 100%;
   text-align: center;
   color: #000;
   font-size: 14px;
   position: relative;
   z-index: 1;
-  border-radius: 30px;
   letter-spacing: 1px;
 }
 @media (max-width: 767px) {
@@ -1377,10 +1377,11 @@ h1, h2, h3, h4, h5, h6 {
  }
 }
 .most-searched-car-section .most-searched-car-models .nav-tabs .nav-item .nav-link.active {
-  background: #08ba98;
+  color: #08ba98;
   position: relative;
-  border: 1px solid #08ba98;
-  color: #fff;
+  border-bottom: 3px solid #08ba98 !important;
+  border-radius: 0;
+  padding-bottom: 12px;
 }
 .most-searched-car-section .most-searched-car-models .tab-content .vehicleGrid {
   text-align: center;
@@ -2437,10 +2438,23 @@ h1, h2, h3, h4, h5, h6 {
   padding: 50px 0;
   position: relative;
 }
+.new-car-page-banner {
+  padding: 99px 0;
+}
+.new-car-page-banner:after {
+  content: "";
+  position: absolute;
+  width: 230px;
+  height: 226px;
+  right: -115px;
+  top: 116px;
+  background: #e8876d;
+  mix-blend-mode: normal;
+  filter: blur(232.955px);
+}
 
+/*new car  css*/
 
-
-/*srp  css*/
 
 .head-textbox {
   padding: 3rem;
@@ -2449,43 +2463,47 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0.3rem;
 }
 
-.car-brand-section-srp {
-  
+.car-brand-section-srp .new-page-search select .select2-selection .select2-selection--multiple{
+  border: none;
+  box-shadow: 0px 4px 12px rgba(0,0,0,.1);
+  border-radius: 12px 0 0 12px;
+  padding: 8px;
+  margin: 12px 0 16px;
+  background: #fff;
 }
 
 .car-brand-section-srp .srp-brand {
   text-align: center;
-  margin-bottom: 25px
+  margin-bottom: 20px;
+  border: 1px solid rgba(36,39,44,.15);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .car-brand-section-srp .srp-brand img {
   max-width: 100px;
 }
 
-/* ------------------------------------- Trending Car Section CSS Start ---------------------------------*/
+/* ------------------------------------- trending Car Section CSS Start ---------------------------------*/
 
 .trending-car-section {
-  padding: 70px 0;
+  padding: 50px 0;
 }
 
 .trending-car-section .trending-car-wrapper {
   position: relative;
   display: block;
   outline: none;
-  color: #444;
-  background-color: #f8f9fa;
-  border-radius: 8px;
-  padding: 0px;
+  color: #333;
+  border-radius: 4px;
+  padding: 15px 24px;
   margin: 15px 0;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  box-shadow: 0 1px 3px rgba(36,39,44,.15);
 }
 .trending-car-section .cargrid-slide {
   padding: 0 15px;
 }
-.trending-car-section .trending-car-wrapper:hover {
-  background-color: #DBEBEB;
-}
+
 .trending-car-section .new-car-wrapper-dark {
   background: #DBEBEB;
 }
@@ -2503,33 +2521,134 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 .trending-car-section .trending-car-wrapper .trending-car-title {
-  padding: 20px;
+  padding: 0 20px 20px;
 }
 .trending-car-section .trending-car-wrapper .trending-car-title a {
   color: #1f1f1f;
-  font-size: 22px;
-  letter-spacing: 1px;
-  display: block;
+    font-size: 18px;
+    display: block;
+}
+.trending-car-section .trending-car-wrapper .trending-car-title p {
+  font-weight: 800;
 }
 @media (max-width: 1199px) {
   .trending-car-section .trending-car-wrapper .trending-car-title a {
       font-size: 16px;
  }
 }
-.trending-car-section .trending-car-wrapper .trending-car-content {
-  padding: 20px;
-  padding-bottom: 30px 
-}
-.trending-car-section .trending-car-btn a {
-  text-align: center;
+.trending-car-section .trending-car-wrapper .trending-car-btn a {
+  border: 1px solid var(--primary-color);
+  padding: 10px 12px;
   width: 100%;
-  background: transparent;
-  color: #333;
-  border: 1px solid #888;
-  font-size: 20px;
-  text-transform: capitalize;
-  border-radius: 100%;
-  padding: 8px 15px;
+  display: block;
+  text-align: center;
+  font-size: 13px;
 }
-/* ------------------------------------- trending  Car Section CSS End ---------------------------------*/
+
+.trending-car-section .trending-car-models .nav-tabs {
+  border-radius: 0;
+  display: inline-block;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.trending-car-section .trending-car-models .nav-tabs .nav-item {
+  display: inline-block;
+  margin-bottom: 0;
+  border-radius: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.trending-car-section .trending-car-models .nav-tabs .nav-item .nav-link {
+  padding: 12px 15px;
+  text-transform: capitalize;
+  background: #fff;
+  border: 3px solid transparent;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+  position: relative;
+  z-index: 1;
+  letter-spacing: 1px;
+}
+@media (max-width: 767px) {
+  .trending-car-section .trending-car-models .nav-tabs .nav-item .nav-link {
+      font-size: 13px;
+ }
+}
+.trending-car-section .trending-car-models .nav-tabs .nav-item .nav-link.active {
+  color: #08ba98;
+  position: relative;
+  border-bottom: 3px solid #08ba98 !important;
+  border-radius: 0;
+  padding-bottom: 12px;
+}
+
+/* ------------------------------------- upcoming  Car Section CSS End ---------------------------------*/
+
+
+.upcoming-car-section {
+  padding: 50px 0;
+}
+
+.upcoming-car-section .upcoming-car-wrapper {
+  position: relative;
+  display: block;
+  outline: none;
+  color: #333;
+  border-radius: 8px;
+  padding: 0px;
+  margin: 15px 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.upcoming-car-section .cargrid-slide {
+  padding: 0 15px;
+}
+
+.upcoming-car-section .new-car-wrapper-dark {
+  background: #DBEBEB;
+}
+.upcoming-car-section .upcoming-car-wrapper .upcoming-car-img {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+.upcoming-car-section .upcoming-car-wrapper .upcoming-car-img a {
+  display: block;
+}
+.upcoming-car-section .upcoming-car-wrapper .upcoming-car-img img {
+  position: relative;
+  margin: 0 auto;
+}
+.upcoming-car-section .upcoming-car-wrapper .upcoming-car-title {
+  padding: 20px;
+}
+.upcoming-car-section .upcoming-car-wrapper .upcoming-car-title a {
+  color: #1f1f1f;
+  font-size: 20px;
+  display: block;
+  font-weight: 800;
+}
+.upcoming-car-section .upcoming-car-wrapper .upcoming-car-title p {
+  font-weight: 800;
+}
+@media (max-width: 1199px) {
+  .upcoming-car-section .upcoming-car-wrapper .upcoming-car-title a {
+      font-size: 16px;
+ }
+}
+.upcoming-car-section .upcoming-car-wrapper .upcoming-car-content {
+  padding: 10px 20px 25px;
+}
+
+.upcoming-car-section .upcoming-car-wrapper .upcoming-car-content .launch-date {
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+/* ------------------------------------- upcoming  Car Section CSS End ---------------------------------*/
 
